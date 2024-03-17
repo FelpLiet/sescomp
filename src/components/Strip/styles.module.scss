@@ -1,0 +1,28 @@
+@keyframes animateText {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+.strip {
+  background-color: var(--color-primary);
+  overflow: hidden;
+  ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0;
+    animation: animateText 30s linear infinite;
+  }
+
+  li {
+    white-space: nowrap;
+    padding: 16px;
+    list-style: none;
+    font-weight: 600;
+    color: var(--color-text-white);
+  }
+}
