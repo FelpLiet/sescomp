@@ -1,0 +1,40 @@
+.navbar {
+  background-color: #FAFAFA;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  /* Gray scale/800 */
+  border-bottom: 1px solid #E6E6E6;
+
+  > svg {
+    padding: 16px 50px;
+    width: 20%;
+  }
+
+  ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 50%;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+
+    li {
+      cursor: pointer;
+    }
+  }
+
+  a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+  }
+  div {
+    width: 20%;
+    margin-right: 50px;
+    margin-left: 20px;
+  }
+}
