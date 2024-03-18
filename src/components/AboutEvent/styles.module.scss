@@ -1,0 +1,68 @@
+.aboutEvent {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 56px 72px;
+  width: 90%;
+  div > h1 {
+    color: #1a1a1a;
+    font-family: Montserrat;
+    font-size: 48px;
+    font-weight: 700;
+    text-align: left;
+  }
+
+  div,
+  p {
+    color: #1a1a1a;
+  }
+  :last-child {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+  }
+}
+
+.card {
+  display: flex;
+  padding: 56px 40px;
+  background: #2ab1dc80;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  h2 {
+    font-family: Montserrat;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 120%;
+    text-align: left;
+  }
+  p {
+    font-family: Anonymous Pro;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 120%;
+    text-align: left;
+  }
+}
+
+@media (max-width: 768px) {
+  .aboutEvent {
+    padding: 56px 24px;
+    div > h1 {
+      font-size: 32px;
+    }
+    :last-child {
+      flex-wrap: wrap;
+    }
+  }
+  .card {
+    padding: 56px 24px;
+    h2 {
+      font-size: 24px;
+    }
+    p {
+      font-size: 18px;
+    }
+  }
+}

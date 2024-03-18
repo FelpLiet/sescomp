@@ -1,0 +1,38 @@
+.dropdownMenu {
+  border: none;
+  background-color: #e6e6e6;
+  cursor: pointer;
+
+  &:hover {
+    filter: brightness(0.95);
+  }
+
+  &:focus {
+    outline: 1px solid #e6e6e6;
+    border-radius: 6px;
+  }
+}
+
+.dropdownMenuContent {
+  display: flex;
+  flex-direction: column;
+  background-color: #e6e6e6;
+
+  ul {
+    list-style: none;
+    padding: 10px;
+    margin: 0;
+    li {
+      padding: 10px;
+
+    }
+    li a {
+      text-decoration: none;
+      color: #000;
+    }
+
+    li:hover {
+      background-color: #f2f2f2;
+    }
+  }
+}

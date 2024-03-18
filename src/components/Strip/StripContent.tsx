@@ -1,8 +1,8 @@
 export function StripContent() {
   return (
     <ul>
-      {Array.from({ length: 10 }, () => (
-        <>
+      {Array.from([1, 2, 3, 4, 6, 7, 8, 9, 10], (i) => (
+        <ul key={i}>
           <li>22-25 DE ABRIL</li>
           <li>
             <svg
@@ -16,7 +16,7 @@ export function StripContent() {
             </svg>
           </li>
           <li>INGRESSO GRATUITO</li>
-        </>
+        </ul>
       ))}
     </ul>
   );
