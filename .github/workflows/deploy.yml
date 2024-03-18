@@ -19,9 +19,9 @@ jobs:
       - name: Build
         run: npm run build
 
-      - name: Deploy to GitHub Pages
+      - name: Deploy sescomp
         uses: JamesIves/github-pages-deploy-action@3.7.1
         with:
           GITHUB_TOKEN: ${{ secrets.ACTION }}
           BRANCH: gh-pages 
-          FOLDER: build
+          FOLDER: dist
