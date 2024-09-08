@@ -1,0 +1,26 @@
+.organization {
+  background-color: #fff;
+  height: 330px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  &_img_org {
+    width: 70%;
+    @media screen and (max-width: 1024px) {
+      width: 100%;
+    }
+  }
+  &_img_title {
+    width: 18%;
+    @media screen and (max-width: 1024px) {
+      width: 26%;
+    }
+    @media screen and (max-width: 768px) {
+      width: 40%;
+    }
+  }
+  @media screen and (max-width: 500px) {
+    height: 170px;
+  }
+}
