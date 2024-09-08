@@ -1,21 +1,21 @@
 @keyframes animateText {
   0% {
-    transform: translateX(100%);
+    transform: translateX(-100%);
   }
   100% {
-    transform: translateX(-100%);
+    transform: translateX(0%);
   }
 }
 .strip {
-  background-color: var(--color-primary);
+  background-color: #480CA8;
   overflow: hidden;
+  margin-bottom: -4px;
   ul {
     display: flex;
     flex-direction: row;
-    align-items: center;
     justify-content: space-around;
     margin: 0;
-    animation: animateText 30s linear infinite;
+    animation: animateText 20s linear infinite;
   }
 
   li {

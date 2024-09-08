@@ -1,21 +1,15 @@
+import Arrow  from "../../assets/graphisms/ArrowDou.svg";
 export function StripContent() {
   return (
     <ul>
-      {Array.from([1, 2, 3, 4, 6, 7, 8, 9, 10], (i) => (
+      {Array.from([1, 2, 3, 4, 6, 7, 8, 9, 10,11,12,13,14,15,16,17,18], (i) => (
         <ul key={i}>
-          <li>22-25 DE ABRIL</li>
+          <li>11-14 DE NOVEMBRO</li>
           <li>
-            <svg
-              width="12"
-              height="13"
-              viewBox="0 0 12 13"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <rect y="0.5" width="12" height="12" rx="5.93394" fill="white" />
-            </svg>
+            <img src={Arrow} />
           </li>
           <li>INGRESSO GRATUITO</li>
+          <img src={Arrow} />
         </ul>
       ))}
     </ul>
