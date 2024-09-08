@@ -3,43 +3,63 @@
   flex-direction: column;
   justify-content: space-between;
   padding: 56px 72px;
-  width: 90%;
+  background-color: #fafafa;
+  margin-top: -8rem;
+  >div:nth-of-type(1) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 30px;
+    @media screen and (max-width: 1024px) {
+      margin: 0;
+    }
+    @media screen and (max-width: 768px) {
+      margin: 0 auto;
+      gap: 76px;
+    }
+    @media screen and (max-width: 425px) {
+      flex-direction: column;
+      display: flex;
+      margin: 24px 12px;
+      gap: 10px;
+      align-items: flex-start;
+    }
+  }
+  .container {
+    display: flex;
+    gap: 10px;
+    justify-content: space-around;
+  }
   div > h1 {
-    color: #1a1a1a;
     font-family: Montserrat;
     font-size: 48px;
     font-weight: 700;
     text-align: left;
-  }
-
-  div,
-  p {
-    color: #1a1a1a;
-  }
-  :last-child {
-    display: flex;
-    justify-content: space-between;
-    gap: 2rem;
+    margin-bottom: 18px;
   }
 }
 
 .card {
+  width: 362px;
+  height: 556px;
   display: flex;
-  padding: 56px 40px;
-  background: #2ab1dc80;
   flex-direction: column;
   align-items: flex-start;
-  flex-wrap: wrap;
+  // flex-wrap: wrap;
+  @media screen and (max-width: 1024px) {
+    height: auto;
+  }
   h2 {
     font-family: Montserrat;
-    font-size: 32px;
+    font-size: 28px;
     font-weight: 700;
     line-height: 120%;
     text-align: left;
+    margin-bottom: 16px;
   }
   p {
     font-family: Anonymous Pro;
-    font-size: 24px;
+    font-size: 18px;
     font-weight: 400;
     line-height: 120%;
     text-align: left;
@@ -49,20 +69,34 @@
 @media (max-width: 768px) {
   .aboutEvent {
     padding: 56px 24px;
+    margin-top: -4rem;
+    .container {
+      flex-direction: column;
+      align-items: center;
+    }
     div > h1 {
       font-size: 32px;
     }
-    :last-child {
-      flex-wrap: wrap;
-    }
   }
   .card {
-    padding: 56px 24px;
+    width: 28rem;
     h2 {
       font-size: 24px;
     }
     p {
       font-size: 18px;
     }
+  }
+}
+
+@media (max-width: 480px) {
+  .aboutEvent {
+    .container {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  .card {
+    width: 22rem;
   }
 }
