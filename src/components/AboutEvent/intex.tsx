@@ -35,6 +35,7 @@ export function AboutEvent() {
         />
       </div>
     </section>
+
   );
 }
 

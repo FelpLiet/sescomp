@@ -1,0 +1,47 @@
+// Overlay escurecido para destacar o modal
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7); // Fundo escuro transparente
+  z-index: 10;
+}
+
+// Container principal do modal
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); // Centraliza o modal
+  z-index: 20;
+}
+
+// Conteúdo interno do modal
+.modalContent {
+    background-color: #4361EE;
+    padding: 4px;
+    width: 600px;
+    height: 400px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+// Botão de fechar no canto superior direito
+.closeButton {
+    position: absolute;
+    top: -22px;
+    right: -24px;
+    border: none;
+    cursor: pointer;
+    background-color: #ff007f;
+    transition: color 0.2s ease;
+    border-radius: 100%;
+    width: 48px;
+    height: 48px;
+  &:hover {
+    filter: brightness(.8); // Cor ao passar o mouse
+  }
+}

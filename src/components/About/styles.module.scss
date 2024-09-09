@@ -4,6 +4,16 @@
   justify-content: space-between;
   align-items: center;
   padding: 50px 72px;
+  height: 620px;
+  @media (max-width: 1024px) {
+    height: 670px;
+  }
+  @media (max-width: 768px) {
+    height: 770px;
+  }
+  @media (max-width: 425px) {
+    height: 1010px;
+  }
   h1 {
     font-size: 2rem;
     color: var(--color-text-white);
@@ -20,16 +30,17 @@
       font-size: 48px;
       font-weight: 700;
       line-height: 120%;
+      inline-size: max-content;
+      margin-bottom: 12px;
     }
 
     button {
       background-color: var(--color-secondary);
       border: none;
-      border-radius: 40px;
-      padding: 12px;
-      width: 56px;
-      height: auto;
+      border-radius: 57px;
+      padding: 18px;
       cursor: pointer;
+      display: flex;
 
       & :hover {
         filter: brightness(0.8);
@@ -37,7 +48,8 @@
     }
   }
   .accordionRoot {
-    padding: 4rem;
+    width: 555px;
+    height: 100%;
   }
 }
 
@@ -139,7 +151,7 @@
       margin-bottom: 40px;
     }
     .accordionRoot {
-      padding: 0;
+      width: 92vw;
     }
   }
 }

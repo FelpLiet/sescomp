@@ -1,19 +1,35 @@
 .slideshow {
-  width: 100%;
-  overflow: hidden;
   position: relative;
-}
-
-.slides {
+  height: 576px;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("/src/assets/images/herobanner.png");
   display: flex;
-  transition: transform 0.5s ease;
-}
+  align-items: center;
+  justify-content: flex-start;
 
-.slides img {
-  width: 100vw;
-  object-fit: cover; 
-  -o-object-fit: cover; 
-  -ms-object-fit: cover; 
-  -webkit-object-fit: cover; 
-  -moz-object-fit: cover; 
+  &__container {
+    width: 300px;
+    margin-left: 72px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    h1 {
+      color: #ffffff;
+      font-family: Montserrat;
+      font-size: 56px;
+      font-weight: 700;
+      line-height: 120%;
+      margin-top: -12px;
+    }
+    h6 {
+      color: #ffffff;
+      font-family: Anonymous Pro;
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 120%;
+    }
+  }
 }

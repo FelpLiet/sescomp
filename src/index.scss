@@ -16,19 +16,23 @@
   --color-primary: #4361ee;
   --color-secondary: #f72585;
   --color-tertiary: #e6e6e6;
-  --color-background: #e6e6e6;
+  --color-background: #fafafa;
   --color-text-black: #1a1a1a;
   --color-text-white: #ffffff;
   --color-text-highlight: #3f37ca;
 }
-
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body {
   margin: 0;
   padding: 0;
   width: 100%;
   font-family: var(--font-family);
   background-color: var(--color-background);
-  color: var(--color-text-white);
+  // color: var(--color-text-white);
   font-size: 1rem;
   line-height: 1.5;
   font-weight: 400;

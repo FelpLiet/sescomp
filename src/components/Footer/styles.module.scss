@@ -1,0 +1,78 @@
+.footer {
+  padding: 50px 72px;
+  background-color: #FAFAFA;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 4rem;
+  border-top: 1px solid #E6E6E6;
+  h6 {
+    color: #333333;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 120%;
+    letter-spacing: -1%;
+    text-align: left;
+    padding: 20px 0;
+    margin: 0;
+  }
+  .icon {
+    color: #000000;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: -1%;
+    text-align: left;
+    div {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  ul li {
+    list-style: none;
+    padding: 6px 0;
+  }
+  ul {
+    padding: 0;
+    margin: 0;
+  }
+  ul li a {
+    color: #333333;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: -1%;
+    text-align: left;
+    text-decoration: none;
+  }
+  .navigation {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .importantLinks {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .socialNetwork {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    svg {
+      margin-right: 10px;
+    }
+  }
+}
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 48px 16px;
+  }
+}

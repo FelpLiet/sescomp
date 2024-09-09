@@ -1,0 +1,107 @@
+.speakers {
+  // background-color: #4895ef;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 4rem;
+  background-image: url("/src/assets/images/palestrantes-fundo.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  background-position: center;
+  @media (max-width: 768px) {
+    background-image: url("/src/assets/images/palestrantes-fundo-tablet.png");
+  }
+  @media (max-width: 560px) {
+    background-image: url("/src/assets/images/palestrantes-fundo-mobile.png");
+  }
+  h1 {
+    color: #ffffff;
+    font-family: Montserrat;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 120%;
+    text-align: center;
+    margin: 60px 0 50px 0;
+  }
+  section {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    height: 18rem;
+    align-items: flex-end;
+  }
+}
+
+.speakerItem {
+  display: inline-block;
+  position: relative;
+  z-index: 9;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  figcaption {
+    position: absolute;
+    top: 34px;
+    right: 56px;
+    h1 {
+      color: #ffffff;
+      font-family: Montserrat;
+      font-size: 29.97px;
+      font-weight: 700;
+      line-height: 120%;
+      text-align: left;
+      margin: 0;
+      transform: rotate(-4.32deg);
+    }
+    h6 {
+      color: #ffffff;
+      font-family: Anonymous Pro;
+      font-size: 11px;
+      font-weight: 700;
+      line-height: 120%;
+      text-align: center;
+      transform: rotate(-4.23deg);
+    }
+  }
+  div {
+    position: absolute;
+    top: -104px;
+    right: 20px;
+    z-index: -9;
+    img {
+      width: 80%;
+    }
+  }
+  &:hover {
+    transform: translateY(-5px);
+    filter: drop-shadow(4px 15px rgba(0, 0, 0, 0.2));
+  }
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 290px);
+  grid-template-rows: Repeat(1, 280px);
+  align-items: end;
+  justify-items: center;
+}
+@media (max-width: 1024px) {
+  .container {
+    display: grid;
+    grid-template-columns: repeat(3, 290px);
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    display: grid;
+    grid-template-columns: repeat(2, 290px);
+    grid-template-rows: Repeat(4, 280px);
+  }
+}
+@media (max-width: 560px) {
+  .container {
+    display: grid;
+    grid-template-columns: repeat(1, 290px);
+    grid-template-rows: Repeat(8, 280px);
+  }
+}

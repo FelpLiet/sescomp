@@ -1,0 +1,134 @@
+.schedule {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 0;
+  background-image: url('/src/assets/images/programacao.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  text-align-last: start;
+  >img{
+    width: 100%;
+    margin-top: -340px;
+    margin-bottom: 28px;
+  }
+  .scheduleItem {
+    display: flex;
+    flex-direction: row;
+    gap: 4rem;
+    align-items: flex-start;
+    margin-left: -68px;
+    @media screen and (max-width: 1440px) {
+      margin-left: -100px;
+    }
+    @media screen and (max-width: 1024px) {
+      margin-left: -36px;
+    }
+    @media screen and (max-width: 768px) {
+      margin-left: -10px;
+    }
+    @media screen and (max-width: 425px) {
+      margin-left: 40px;
+    }
+    figure {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: -12px;
+    }
+    h3 {
+      color: #4361ee;
+      font-family: Montserrat;
+      font-size: 20px;
+      font-weight: 600;
+      line-height: 150%;
+      text-align: left;
+    }
+    div {
+      h2 {
+        color: #3f37ca;
+        font-family: Montserrat;
+        font-size: 28px;
+        font-weight: 600;
+        line-height: 120%;
+        text-align: center;
+        padding-bottom: 1rem;
+      }
+      p {
+        color: #4d4d4d;
+        font-family: Montserrat;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 150%;
+        text-align: left;
+        span {
+          font-weight: 400;
+        }
+      }
+    }
+  }
+  .btn {
+    margin: -43px 0 0 106px;
+  }
+}
+.scheduleTitle {
+  display: inline-block;
+  position: relative;
+  padding-bottom: 4rem;
+  figcaption {
+    position: absolute;
+    top: 40px;
+    right: 88px;
+    h1 {
+      color: #ffffff;
+      font-family: Montserrat;
+      font-size: 44px;
+      font-weight: 700;
+      line-height: 120%;
+      letter-spacing: -1%;
+      text-align: center;
+      transform: rotate(-5deg);
+      margin: 0;
+    }
+  }
+}
+@media (max-width: 768px) {
+  .scheduleTitle {
+    img {
+      width: 20rem;
+    }
+    figcaption {
+      top: 22px;
+      right: 44px;
+      h1 {
+        font-size: 32px;
+      }
+    }
+  }
+  .schedule {
+    .scheduleItem {
+      gap: 1rem;
+      figure {
+        text-align: left;
+        img {
+          width: 3rem;
+        }
+      }
+      h3 {
+        font-size: 18px;
+      }
+      div {
+        h2 {
+          font-size: 26px;
+        }
+        p {
+          font-size: 16px;
+        }
+      }
+    }
+    .btn {
+      margin: 0;
+      padding-top: 2rem;
+    }
+  }
+}

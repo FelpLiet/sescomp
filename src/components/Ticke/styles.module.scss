@@ -1,0 +1,133 @@
+.ticket {
+  background-color: #576bc3;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 50px 72px;
+  .info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    h1 {
+      margin: 0 0 0 0;
+      color: #ffffff;
+      font-family: Montserrat;
+      font-size: 40px;
+      font-weight: 700;
+      line-height: 120%;
+      text-align: left;
+      margin: 0 0 24px 0;
+    }
+    div {
+      display: flex;
+      align-items: center;
+      span {
+        padding: 8px;
+        color: #ffffff;
+        font-family: Montserrat;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 150%;
+        text-align: left;
+      }
+    }
+    :nth-child(5) {
+      margin-top: 24px;
+    }
+  }
+  .card {
+    display: flex;
+    flex-direction: row;
+    background: #f72585;
+    justify-content: center;
+    align-items: center;
+    height: 15rem;
+    img {
+      margin: 34px;
+      width: 4rem;
+    }
+    div {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding-right: 30px;
+      h1 {
+        /* Title/H3 */
+        color: #ffffff;
+        font-family: Anonymous Pro;
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 120%;
+        letter-spacing: -1%;
+        text-align: left;
+        margin: 0 0 32px 0;
+      }
+      span {
+        color: #ffffff;
+        font-family: Montserrat;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 120%;
+        letter-spacing: -1%;
+        text-align: left;
+      }
+      h2 {
+        /* Title/H3 */
+        color: #ffffff;
+        font-family: Anonymous Pro;
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 120%;
+        letter-spacing: -1%;
+        text-align: left;
+        margin: 32px 0 0 0;
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  .ticket {
+    flex-direction: column;
+    padding: 48px 16px;
+    gap: 2rem;
+    align-items: center;
+    .info {
+      h1 {
+      }
+      div {
+        span {
+        }
+      }
+    }
+    .card {
+      height: 12rem;
+      width: 26rem;
+      img {
+        margin: 18px;
+        width: 3rem;
+      }
+      div {
+        padding-right: 24px;
+        h1 {
+          font-size: 21px;
+          margin: 0 0 24px 0;
+        }
+        span {
+          font-size: 12px;
+        }
+        h2 {
+          font-size: 24px;
+          margin: 24px 0 0 0;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 480px) {
+  .ticket {
+    .card {
+      width: 24rem;
+    }
+  }
+}

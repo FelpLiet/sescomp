@@ -2,9 +2,16 @@ import styles from "./styles.module.scss";
 import Background from "../../assets/images/about.png";
 import * as Accordion from "@radix-ui/react-accordion";
 import classNames from "classnames";
-import { LegacyRef, forwardRef } from "react";
+import { LegacyRef, forwardRef, useState } from "react";
 import { Icon } from "../icons";
+import Modal from "../Modal";
 export function About() {
+    const [isModalOpen, setModalOpen] = useState(false);
+
+    // Funções para abrir e fechar o modal
+    const openModal = () => setModalOpen(true);
+    const closeModal = () => setModalOpen(false);
+
   return (
     <section
       className={styles.about}
@@ -20,7 +27,7 @@ export function About() {
           CONHEÇA A <br />
           SESCOMP
         </h1>
-        <button>
+      <button onClick={openModal}>
           <Icon.Play />
         </button>
       </div>
@@ -33,10 +40,13 @@ export function About() {
               <Icon.Plus className={styles.accordionPlus} />
             </AccordionTrigger>
             <AccordionContent className={styles.accordionContent}>
-              A Semana de Engenharia de Software e Ciência da Computação -
-              SESCOMP - é um evento realizado anualmente pelos alunos e
-              professores dos Cursos de Engenharia de Software e Ciência da
-              Computação da Universidade Federal do Ceará - Campus Russas.
+              A Semana de Engenharia de Software e Ciência da Computação
+              (SESCOMP) é um evento que conecta mentes brilhantes: alunos,
+              professores e profissionais que compartilham a paixão pela
+              tecnologia. Durante uma semana, você poderá imergir em uma
+              programação vibrante, com palestras motivadoras, espaços dinâmicos
+              e atividades práticas que irão aprofundar sua paixão pela
+              tecnologia e fortalecer suas conexões com outros entusiastas.
             </AccordionContent>
           </Accordion.Item>
 
@@ -47,10 +57,11 @@ export function About() {
               <Icon.Plus className={styles.accordionPlus} />
             </AccordionTrigger>
             <AccordionContent className={styles.accordionContent}>
-              A Semana de Engenharia de Software e Ciência da Computação -
-              SESCOMP - é um evento realizado anualmente pelos alunos e
-              professores dos Cursos de Engenharia de Software e Ciência da
-              Computação da Universidade Federal do Ceará - Campus Russas.
+              O evento recebe estudantes universitários, de ensino médio, as
+              comunidades locais e entusiastas da tecnologia que desejam se
+              atualizar, aprender novas habilidades e expandir sua rede de
+              contatos. Se você é apaixonado por inovação e busca crescer nesse
+              universo, a SESCOMP é para você.
             </AccordionContent>
           </Accordion.Item>
 
@@ -61,14 +72,31 @@ export function About() {
               <Icon.Plus className={styles.accordionPlus} />
             </AccordionTrigger>
             <Accordion.Content className={styles.accordionContent}>
-              A Semana de Engenharia de Software e Ciência da Computação -
-              SESCOMP - é um evento realizado anualmente pelos alunos e
-              professores dos Cursos de Engenharia de Software e Ciência da
-              Computação da Universidade Federal do Ceará - Campus Russas.
+              O evento busca fomentar o espírito profissional, de ensino e de
+              pesquisa, e extensão, promovendo o compartilhamento do
+              conhecimento, estimulando a inovação pela colaboração, conectando
+              ideias e pessoas, e transformando vidas pela inspiração, em
+              benefício da população.A Semana de Engenharia de Software e
+              Ciência da Computação - SESCOMP - é um evento realizado anualmente
+              pelos alunos e professores dos Cursos de Engenharia de Software e
+              Ciência da Computação da Universidade Federal do Ceará - Campus
+              Russas.
             </Accordion.Content>
           </Accordion.Item>
         </Accordion.Root>
       </div>
+      <Modal show={isModalOpen} onClose={closeModal}>
+        {/* Vídeo do YouTube */}
+        <iframe
+          width="100%"
+          height="100%"
+          src="https://www.youtube.com/embed/VIDEO_ID"
+          title="YouTube video player"
+          frameBorder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+        ></iframe>
+      </Modal>
     </section>
   );
 }

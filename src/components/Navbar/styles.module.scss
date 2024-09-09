@@ -1,27 +1,26 @@
 .navbar {
-  background-color: #e6e6e6;
+  background-color: #fafafa;
   display: flex;
   align-items: center;
+  border-bottom: 1px solid #e6e6e6;
+  justify-content: space-between;
+
   > svg {
-    padding: 16px 50px;
+    margin: 16px 50px;
     width: 10rem;
   }
   .content {
     width: 100%;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-
+    justify-content: flex-end;
     ul {
       display: flex;
       list-style: none;
       padding: 0;
       margin: 0;
-      width: 50%;
       gap: 1rem;
-      flex-wrap: wrap;
-      justify-content: flex-end;
-
+      align-items: center;
       li {
         cursor: pointer;
       }
@@ -33,9 +32,8 @@
       font-size: 16px;
     }
     div {
-      width: 20%;
-      margin-right: 50px;
-      margin-left: 20px;
+      margin-right: 70px;
+      margin-left: 40px;
     }
   }
   .menu {
@@ -49,7 +47,7 @@
     flex-direction: row;
     justify-content: space-between;
     > svg {
-      padding: 16px 10px;
+      margin: 16px 10px;
     }
     .content {
       display: none;

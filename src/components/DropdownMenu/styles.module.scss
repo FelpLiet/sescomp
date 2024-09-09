@@ -1,6 +1,6 @@
 .dropdownMenu {
   border: none;
-  background-color: #e6e6e6;
+  background-color: #FAFAFA;
   cursor: pointer;
 
   &:hover {
@@ -8,7 +8,7 @@
   }
 
   &:focus {
-    outline: 1px solid #e6e6e6;
+    outline: 1px solid #FAFAFA;
     border-radius: 6px;
   }
 }
@@ -16,7 +16,7 @@
 .dropdownMenuContent {
   display: flex;
   flex-direction: column;
-  background-color: #e6e6e6;
+  background-color: #FAFAFA;
 
   ul {
     list-style: none;
