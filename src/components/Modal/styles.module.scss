@@ -5,20 +5,18 @@
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-color: rgba(0, 0, 0, 0.7); // Fundo escuro transparente
+  background-color: rgba(0, 0, 0, 0.7); 
   z-index: 10;
 }
 
-// Container principal do modal
 .modal {
   position: fixed;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%); // Centraliza o modal
+  transform: translate(-50%, -50%); 
   z-index: 20;
 }
 
-// Conteúdo interno do modal
 .modalContent {
     background-color: #4361EE;
     padding: 4px;
@@ -29,7 +27,6 @@
     position: relative;
 }
 
-// Botão de fechar no canto superior direito
 .closeButton {
     position: absolute;
     top: -22px;

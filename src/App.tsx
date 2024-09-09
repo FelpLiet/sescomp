@@ -6,10 +6,8 @@ import Footer from "./components/Footer";
 import { Navbar } from "./components/Navbar/Index";
 import { Organization } from "./components/Organization";
 import { Schedule } from "./components/Schedule";
-import { Shop } from "./components/Shop";
 import { Slider } from "./components/Slider";
 import { Speakers } from "./components/Speakers";
-import { Sponsors } from "./components/Sponsors";
 import { Strip } from "./components/Strip";
 import { Ticket } from "./components/Ticke";
 

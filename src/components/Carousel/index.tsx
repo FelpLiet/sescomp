@@ -1,9 +1,13 @@
 import React, { useState } from "react";
 import styles from "./Carousel.module.scss";
+interface CarouselProps {
+  visibleItems: number;
+  children: React.ReactNode;
+}
 
-const Carousel = ({ children, visibleItems = 1 }) => {
+const Carousel = ({ children, visibleItems = 1 }: CarouselProps) => {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const totalItems = React.Children.count(children); // Total de itens no slider
+  const totalItems = React.Children.count(children);
 
   const nextSlide = () => {
     setCurrentIndex((prevIndex) =>
@@ -41,10 +45,13 @@ const Carousel = ({ children, visibleItems = 1 }) => {
 
       <div className={styles.slider}>
         <div className={styles.sliderWrapper} style={slideOffset}>
-          {React.Children.map(children, (child, index) => (
+          {React.Children.map(children, (child) => (
             <div
               className={styles.sliderItem}
-              style={{ flex: `0 0 ${100 / visibleItems}%`, margin:visibleItems !==1 ? '0 -20px':''}}
+              style={{
+                flex: `0 0 ${100 / visibleItems}%`,
+                margin: visibleItems !== 1 ? "0 -20px" : "",
+              }}
             >
               {child}
             </div>
