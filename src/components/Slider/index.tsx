@@ -6,9 +6,15 @@ export function Slider() {
   return (
     <div className={styles.slideshow}>
       <div className={styles.slideshow__container}>
-        <img src="" alt="" />
-        <h1>Venha se reinventar</h1>
-        <h6>IA e Ética - O Futuro é Agora!</h6>
+        <h1>
+          <span>O <b>&nbsp;maior&nbsp;</b> evento</span>
+          <span>de tecnologia do</span>
+          <span>Vale do Jaguaribe</span>
+        </h1>
+        <h6>
+          <span>Venha se reinventar |&nbsp;</span>
+          <span>IA e Ética - O Futuro é Agora!</span>
+        </h6>
         <Button.Root>
           <Button.Content label="Participar do Evento" />
         </Button.Root>

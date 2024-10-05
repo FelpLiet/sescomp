@@ -1,3 +1,4 @@
+$contorno-texto: 1px 1px 0 #fff,  -1px 1px 0 #fff,  1px -1px 0 #fff,  -1px -1px 0 #fff;
 .slideshow {
   position: relative;
   height: 576px;
@@ -10,7 +11,6 @@
   justify-content: flex-start;
 
   &__container {
-    width: 300px;
     margin-left: 72px;
     display: flex;
     flex-direction: column;
@@ -19,17 +19,38 @@
     h1 {
       color: #ffffff;
       font-family: Montserrat;
-      font-size: 56px;
+      font-size: 48px;
       font-weight: 700;
       line-height: 120%;
       margin-top: -12px;
+      span{
+        display: flex;
+        b{
+          color: #F72585;
+          text-shadow: $contorno-texto;
+
+        }
+      }
+      @media (max-width: 768px) {
+        font-size: 38px;
+      }
+      @media (max-width: 425px) {
+        font-size: 26px;
+      }
     }
     h6 {
       color: #ffffff;
       font-family: Anonymous Pro;
-      font-size: 18px;
-      font-weight: 700;
+      font-size: 16px;
+      font-weight: bold;
       line-height: 120%;
+      @media (max-width: 768px) {
+        font-size: 14px;
+      }
+      @media (max-width: 425px) {
+        display: flex;
+        flex-direction: column;
+      }
     }
   }
 }
