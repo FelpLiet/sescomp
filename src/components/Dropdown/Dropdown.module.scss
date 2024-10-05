@@ -6,16 +6,12 @@
 .dropdown-header {
   display: flex;
   justify-content: space-between;
-  padding: 16px;
+  padding: 16px 0;
   cursor: pointer;
   font-size: 16px;
-  background-color: #fff;
+  background-color: transparent;
   border-radius: 8px;
   transition: background-color 0.3s ease;
-
-  &:hover {
-    background-color: #f0f0f0;
-  }
 }
 
 .dropdown-icon {
