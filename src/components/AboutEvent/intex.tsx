@@ -10,9 +10,9 @@ import ImagemEntretenimento04 from "../../assets/images/ImagemEntretenimento04.j
 
 import ImagemConteudo01 from "../../assets/images/ImagemConteudo01.jpg";
 import ImagemConteudo02 from "../../assets/images/ImagemConteudo02.jpg";
-import ImagemConteudo03 from "../../assets/images/ImagemConteudo03.JPG";
+import ImagemConteudo03 from "../../assets/images/ImagemConteudo03.jpg";
 
-import ImagemZen01 from "../../assets/images/ImagemZen01.JPG";
+import ImagemZen01 from "../../assets/images/ImagemZen01.jpg";
 import ImagemZen02 from "../../assets/images/ImagemZen02.jpg";
 
 export function AboutEvent() {
