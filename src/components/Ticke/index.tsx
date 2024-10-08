@@ -1,9 +1,12 @@
 import { Button } from "../Button";
 import { Icon } from "../icons";
 import styles from "./styles.module.scss";
-import LogoQrcode from "../../assets/logo-qrcode.png"
+import TicketImg from "../../assets/images/Ticket.png"
 
 export function Ticket() {
+  const handleNavigation = () => {
+    window.open('https://www.even3.com.br/sescomp-vii/', '_blank');
+  };
   return (
     <div className={styles.ticket}>
       <section className={styles.info}>
@@ -21,18 +24,12 @@ export function Ticket() {
           <span>Certificado com horas complementares</span>
         </div>
         <Button.Root>
-          <Button.Content label="Garantir meu ingresso" />
+          <Button.Content label="Garantir meu ingresso" onClick={handleNavigation} />
           <Button.Icon icon={Icon.Arrow} />
         </Button.Root>
       </section>
       <section className={styles.card}>
-        <img src={LogoQrcode} alt="Logo QR code" />
-        <div>
-          <h1>SESCOMP - UFC RUSSAS</h1>
-          <span>Data: 22 a 25 de abril</span>
-          <span>Local: Universidade Federal do Ceará - Campus de Russas</span>
-          <h2>R$ 0,00</h2>
-        </div>
+        <img src={TicketImg} alt="ingresso" />
       </section>
     </div>
   );

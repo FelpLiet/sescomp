@@ -2,50 +2,51 @@ import "./App.css";
 import { About } from "./components/About";
 import { AboutEvent } from "./components/AboutEvent/intex";
 import { Banner } from "./components/Banner";
-import Footer from "./components/Footer";
-import { Navbar } from "./components/Navbar/Index";
-import { Organization } from "./components/Organization";
 import { Schedule } from "./components/Schedule";
 import { Slider } from "./components/Slider";
 import { Speakers } from "./components/Speakers";
 import { Strip } from "./components/Strip";
-import { Ticket } from "./components/Ticke";
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Layout from "./Layout.tsx";
+import { EmBreve } from "./components/EmBreve/Index";
 
 function App() {
-  const labels = [
-    "Inicio",
-    "Programação",
-    "Manual",
-      "Patrocinadores"
-  ];
-  return (
-    <>
-      <Navbar.Root>
-        {labels.map((item) => (
-          <Navbar.Item
-            key={item}
-            href="https://images7.memedroid.com/images/UPLOADED634/5c9a4084625f2.jpeg"
-            target="_blank"
-            label={item}
-          />
-        ))}
-      </Navbar.Root>
-      <Slider />
-      <Strip.Root>
-        <Strip.Content />
-      </Strip.Root>
-      <About />
-      <Banner />
-      <AboutEvent />
-      <Speakers />
-      <Schedule />
-      <Ticket />
-      <Organization />
-      {/* <Sponsors />
-      <Shop /> */}
-      <Footer />
-    </>
-  );
+
+    return (
+      <>
+          <Router>
+              <Routes>
+                  <Route path="sescomp" element={<Layout />}>
+                      <Route index element={
+                          <>
+                              <Slider />
+                              <Strip.Root>
+                                  <Strip.Content />
+                              </Strip.Root>
+                              <About />
+                              <Banner />
+                              <AboutEvent />
+                              <Speakers />
+                              <Schedule />
+                          </>
+                      } />
+                      <Route path="programacao" element={
+                          <EmBreve />
+                      } />
+                      <Route path="manual" element={
+                          <EmBreve />
+                      } />
+                      <Route path="patrocinadores" element={
+                          <EmBreve />
+                      } />
+                      <Route path="em-breve" element={
+                          <EmBreve />
+                      } />
+                  </Route>
+              </Routes>
+          </Router>
+      </>
+    );
 }
 
 export default App;

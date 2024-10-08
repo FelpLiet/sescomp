@@ -12,13 +12,10 @@ function Modal({ show, onClose, children }: ModalProps) {
 
   return (
     <>
-      {/* Overlay escurecido */}
       <div className={styles.overlay} onClick={onClose}></div>
 
-      {/* Conteúdo do Modal */}
       <div className={styles.modal}>
         <div className={styles.modalContent}>
-          {/* Botão de Fechar */}
           <button className={styles.closeButton} onClick={onClose}>
             <svg
               width="24"
@@ -44,7 +41,6 @@ function Modal({ show, onClose, children }: ModalProps) {
               </defs>
             </svg>
           </button>
-          {/* Renderizando o conteúdo passado para o modal */}
           {children}
         </div>
       </div>

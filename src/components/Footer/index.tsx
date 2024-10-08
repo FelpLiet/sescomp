@@ -14,25 +14,25 @@ export default function Footer() {
         <h6>Navegação</h6>
         <ul>
           <li>
-            <a href="">Inicio</a>
+            <a href="/sescomp">Inicio</a>
           </li>
           <li>
-            <a href="">Conheça a SESCOMP</a>
+            <a href="/sescomp">Conheça a SESCOMP</a>
           </li>
           <li>
-            <a href="">O que esperar?</a>
+            <a href="/sescomp">O que esperar?</a>
           </li>
           <li>
-            <a href="">Palestrantes</a>
+            <a href="/sescomp">Palestrantes</a>
           </li>
           <li>
-            <a href="">Programação</a>
+            <a href="/sescomp/programacao">Programação</a>
           </li>
           <li>
-            <a href="">Loja Oficial</a>
+            <a href="/sescomp/em-breve">Loja Oficial</a>
           </li>
           <li>
-            <a href="">Patrocinadores</a>
+            <a href="/sescomp/patrocinadores">Patrocinadores</a>
           </li>
         </ul>
       </div>

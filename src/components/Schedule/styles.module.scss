@@ -7,10 +7,37 @@
   background-size: contain;
   background-repeat: no-repeat;
   text-align-last: start;
-  >img{
-    width: 100%;
-    margin-top: -340px;
+  .imgLeft{
+    width: 42%;
+    margin-top: -316px;
     margin-bottom: 28px;
+    align-self: flex-start;
+    @media screen and (max-width: 1024px){
+      margin-bottom: -192px;
+      margin-top: -251px;
+    }
+    @media screen and (max-width: 768px){
+      margin-bottom: -115px;
+      margin-top: -179px;
+    }
+    @media screen and (max-width: 425px){
+      margin-bottom: 71px;
+      margin-top: -101px;
+    }
+  }
+  .imgRight{
+    width: 56.8%;
+    margin-top: -310px;
+    align-self: flex-end;
+    @media screen and (max-width: 1024px){
+      margin-top: -10px;
+    }
+    @media screen and (max-width: 768px){
+      margin-top: -34px;
+    }
+    @media screen and (max-width: 425px){
+              margin-top: -154px;
+    }
   }
   .scheduleItem {
     display: flex;
@@ -68,7 +95,18 @@
     }
   }
   .btn {
-    margin: -43px 0 0 106px;
+    margin: 30px 0 0 28px;
+    @media screen and (max-width: 1024px){
+      margin: 50px 0 0 110px;
+    }
+    @media screen and (max-width: 768px){
+      margin: 0px 0 0 152px;
+      padding-top: 2rem;
+    }
+    @media screen and (max-width: 508px){
+      margin: 0;
+      align-self: center;
+    }
   }
 }
 .scheduleTitle {
@@ -125,10 +163,6 @@
           font-size: 16px;
         }
       }
-    }
-    .btn {
-      margin: 0;
-      padding-top: 2rem;
     }
   }
 }

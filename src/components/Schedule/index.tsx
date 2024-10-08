@@ -3,9 +3,34 @@ import { Icon } from "../icons";
 import styles from "./styles.module.scss";
 import ImgScheduleTitle from "../../assets/title-schedule.png";
 import Imgitem from "../../assets/item.png";
-import TextIllustrative from "../../assets/images/texto_programcao.png";
+import ImgPalavras1 from "../../assets/images/palavrasPart1.svg";
+import ImgPalavras2 from "../../assets/images/palavrasPart2.svg";
+import { useEffect, useState } from "react";
 
 export function Schedule() {
+     const handleNavigation = () => {
+       window.location.href = "/sescomp/programacao";
+     };
+
+      const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+      useEffect(() => {
+        const handleResize = () => {
+          setWindowWidth(window.innerWidth);
+        };
+
+        window.addEventListener("resize", handleResize);
+
+        return () => window.removeEventListener("resize", handleResize);
+      }, []);
+
+      const getHeight = () => {
+        if (windowWidth <= 508) return "200px";
+        if (windowWidth <= 768) return "280px";
+        if (windowWidth <= 1024) return "350px";
+        return "400px"; // Padrão para telas maiores
+      };
+  
   return (
     <div className={styles.schedule}>
       <ScheduleTitle />
@@ -13,11 +38,16 @@ export function Schedule() {
       <ScheduleItem />
       <ScheduleItem />
       <ScheduleItem />
-      <ScheduleItem height="400px" />
-      <img src={TextIllustrative} alt="Texto ilustrativo" />
+      <ScheduleItem height={getHeight()} />
+      <img className={styles.imgLeft} src={ImgPalavras1} alt="palavras" />
+      <img className={styles.imgRight} src={ImgPalavras2} alt="palavras" />
+      {/* <img src={TextIllustrative} alt="Texto ilustrativo" /> */}
       <span className={styles.btn}>
         <Button.Root>
-          <Button.Content label="Ver programação completa" />
+          <Button.Content
+            onClick={handleNavigation}
+            label="Ver programação completa"
+          />
           <Button.Icon icon={Icon.Arrow} />
         </Button.Root>
       </span>

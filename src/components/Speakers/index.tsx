@@ -10,7 +10,9 @@ import { Icon } from "../icons";
 
 export function Speakers() {
   const [isMobile, setIsMobile] = useState(false);
-
+  const handleNavigation = () => {
+    window.open("https://www.even3.com.br/sescomp-vii/", "_blank");
+  };
   useEffect(() => {
     const handleResize = () => {
       const mobile = window.matchMedia("(max-width: 768px)").matches;
@@ -33,7 +35,10 @@ export function Speakers() {
       </Carousel>
       <span style={{ marginTop: "24px" }}>
         <Button.Root>
-          <Button.Content label="Ver programação completa" />
+          <Button.Content
+            onClick={handleNavigation}
+            label="Participar do Evento"
+          />
           <Button.Icon icon={Icon.Arrow} />
         </Button.Root>
       </span>
@@ -50,7 +55,7 @@ function SpeakerItem({ image }: SpeakerItemProps) {
     <figure className={styles.speakerItem}>
       <img src={ImgSpeakers} alt="Palestrante" />
       <figcaption>
-        <h6>palestrante confirmao</h6>
+        <h6>palestrante confirmado</h6>
         <h1>em breve</h1>
       </figcaption>
       <div>

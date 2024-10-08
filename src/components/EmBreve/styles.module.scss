@@ -1,0 +1,18 @@
+.Embreve {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 380px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url("src/assets/images/backgroundembreve.png");
+
+  div img {
+    height: 195px;
+    @media screen and (max-width: 425px) {
+      height: 140px;
+    }
+  }
+}

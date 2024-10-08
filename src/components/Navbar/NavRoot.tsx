@@ -9,6 +9,10 @@ interface NavRootProps {
 }
 
 export function NavRoot({ children }: NavRootProps) {
+  const handleNavigation = () => {
+    window.open('https://www.even3.com.br/sescomp-vii/', '_blank');
+  };
+
   return (
     <nav className={styles.navbar}>
       <Icon.Sescomp />
@@ -18,7 +22,7 @@ export function NavRoot({ children }: NavRootProps) {
           <Dropdown />
         </ul>
         <Button.Root>
-          <Button.Content label="Participar do Evento"></Button.Content>
+          <Button.Content label="Participar do Evento" onClick={handleNavigation}></Button.Content>
         </Button.Root>
       </div>
       <div className={styles.menu}>
@@ -30,7 +34,7 @@ export function NavRoot({ children }: NavRootProps) {
           </DropdownMenu.Item>
           <DropdownMenu.Item>
             <Button.Root>
-              <Button.Content label="Participar do Evento"></Button.Content>
+              <Button.Content label="Participar do Evento" onClick={handleNavigation}></Button.Content>
             </Button.Root>
           </DropdownMenu.Item>
         </DropdownMenu.Root>

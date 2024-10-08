@@ -2,7 +2,9 @@ import styles from "./styles.module.scss";
 import { Button } from "../Button";
 
 export function Slider() {
-
+  const handleNavigation = () => {
+    window.open('https://www.even3.com.br/sescomp-vii/', '_blank');
+  };
   return (
     <div className={styles.slideshow}>
       <div className={styles.slideshow__container}>
@@ -16,7 +18,7 @@ export function Slider() {
           <span>IA e Ética - O Futuro é Agora!</span>
         </h6>
         <Button.Root>
-          <Button.Content label="Participar do Evento" />
+          <Button.Content label="Participar do Evento"  onClick={handleNavigation}/>
         </Button.Root>
       </div>
     </div>
