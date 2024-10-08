@@ -40,13 +40,15 @@ export default function Footer() {
         <h6>Links importantes</h6>
         <ul>
           <li>
-            <a href="">Realizar inscrição no evento</a>
+            <a href="https://www.even3.com.br/sescomp-vii/" target="_blank">
+              Realizar inscrição no evento
+            </a>
           </li>
           <li>
-            <a href="">Programação</a>
+            <a href="/sescomp/#/programacao">Programação</a>
           </li>
           <li>
-            <a href="">Manual</a>
+            <a href="/sescomp/#/manual">Manual</a>
           </li>
         </ul>
       </div>
