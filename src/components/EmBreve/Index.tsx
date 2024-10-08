@@ -6,7 +6,7 @@ export function EmBreve(){
   return (
     <section className={styles.Embreve}>
       <div>
-        <img src={EmbreveImg} alt="Em breve" />
+        <img src={EmbreveImg} alt="Em breve" loading="eager"/>
       </div>
     </section>
   );

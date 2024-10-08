@@ -9,7 +9,7 @@ import { useEffect, useState } from "react";
 
 export function Schedule() {
      const handleNavigation = () => {
-       window.location.href = "/sescomp/programacao";
+       window.location.href = "/sescomp/#/programacao";
      };
 
       const [windowWidth, setWindowWidth] = useState(window.innerWidth);

@@ -6,7 +6,7 @@ import { Schedule } from "./components/Schedule";
 import { Slider } from "./components/Slider";
 import { Speakers } from "./components/Speakers";
 import { Strip } from "./components/Strip";
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import Layout from "./Layout.tsx";
 import { EmBreve } from "./components/EmBreve/Index";
 
@@ -14,37 +14,32 @@ function App() {
 
     return (
       <>
-          <Router>
-              <Routes>
-                  <Route path="sescomp" element={<Layout />}>
-                      <Route index element={
-                          <>
-                              <Slider />
-                              <Strip.Root>
-                                  <Strip.Content />
-                              </Strip.Root>
-                              <About />
-                              <Banner />
-                              <AboutEvent />
-                              <Speakers />
-                              <Schedule />
-                          </>
-                      } />
-                      <Route path="programacao" element={
-                          <EmBreve />
-                      } />
-                      <Route path="manual" element={
-                          <EmBreve />
-                      } />
-                      <Route path="patrocinadores" element={
-                          <EmBreve />
-                      } />
-                      <Route path="em-breve" element={
-                          <EmBreve />
-                      } />
-                  </Route>
-              </Routes>
-          </Router>
+        <Router>
+          <Routes>
+            <Route path="/" element={<Layout />}>
+              <Route
+                index
+                element={
+                  <>
+                    <Slider />
+                    <Strip.Root>
+                      <Strip.Content />
+                    </Strip.Root>
+                    <About />
+                    <Banner />
+                    <AboutEvent />
+                    <Speakers />
+                    <Schedule />
+                  </>
+                }
+              />
+              <Route path="programacao" element={<EmBreve />} />
+              <Route path="manual" element={<EmBreve />} />
+              <Route path="patrocinadores" element={<EmBreve />} />
+              <Route path="em-breve" element={<EmBreve />} />
+            </Route>
+          </Routes>
+        </Router>
       </>
     );
 }

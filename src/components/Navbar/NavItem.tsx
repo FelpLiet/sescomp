@@ -9,10 +9,10 @@ export function NavItem({label, ...rest }: NavItemProps) {
 
   function verificarRota(name: string, router: string) {
     if (
-      (name === "Inicio" && router === "/sescomp") ||
-      (name === "Programação" && router === "/sescomp/programacao") ||
-      (name === "Manual" && router === "/sescomp/manual") ||
-      (name === "Patrocinadores" && router === "/sescomp/patrocinadores")
+      (name === "Inicio" && router === "/") ||
+      (name === "Programação" && router === "/programacao") ||
+      (name === "Manual" && router === "/manual") ||
+      (name === "Patrocinadores" && router === "/patrocinadores")
     ) {
       return true;
     }

@@ -26,13 +26,13 @@ export default function Footer() {
             <a href="/sescomp">Palestrantes</a>
           </li>
           <li>
-            <a href="/sescomp/programacao">Programação</a>
+            <a href="/sescomp/#/programacao">Programação</a>
           </li>
           <li>
-            <a href="/sescomp/em-breve">Loja Oficial</a>
+            <a href="/sescomp/#/em-breve">Loja Oficial</a>
           </li>
           <li>
-            <a href="/sescomp/patrocinadores">Patrocinadores</a>
+            <a href="/sescomp/#/patrocinadores">Patrocinadores</a>
           </li>
         </ul>
       </div>

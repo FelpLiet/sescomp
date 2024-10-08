@@ -7,9 +7,9 @@ import {Navbar} from "./components/Navbar/Index";
 export default function Layout(){
     const labels = [
       { name: "Inicio", router: "/sescomp" },
-      { name: "Programação", router: "/sescomp/programacao" },
-      { name: "Manual", router: "/sescomp/manual" },
-      { name: "Patrocinadores", router: "/sescomp/patrocinadores" },
+      { name: "Programação", router: "/sescomp/#/programacao" },
+      { name: "Manual", router: "/sescomp/#/manual" },
+      { name: "Patrocinadores", router: "/sescomp/#/patrocinadores" },
     ];
     return (
         <>
