@@ -9,6 +9,7 @@ import { Strip } from "./components/Strip";
 import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import Layout from "./Layout.tsx";
 import { EmBreve } from "./components/EmBreve/Index";
+import BigNumbers from "./components/BigNumber/index.tsx";
 
 function App() {
 
@@ -26,6 +27,7 @@ function App() {
                       <Strip.Content />
                     </Strip.Root>
                     <About />
+                    <BigNumbers />
                     <Banner />
                     <AboutEvent />
                     <Speakers />

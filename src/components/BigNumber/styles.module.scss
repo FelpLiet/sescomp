@@ -1,0 +1,70 @@
+.bigNumbersContainer {
+  text-align: center;
+  background-color: #480CA8;
+  padding: 56px 10px;
+}
+
+.title {
+  color: white;
+  font-size: 48px;
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+  margin: 8px;
+}
+
+.subtitle {
+  color: white;
+  font-size: 24px;
+  margin-bottom: 56px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.numbersGrid {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+
+  .bigNumber {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .number {
+    background-color: #4BC9F1;
+    color: #000;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+    width: 200px;
+    height: 100px;
+    align-content: end;
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+  }
+  
+  .label {
+    font-family: 'Montserrat', sans-serif;
+    align-content: center;
+    width: 200px;
+    height: 100px;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    background-color: #000;
+    padding: 0.5rem 1rem;
+    text-transform: lowercase;
+  }
+  &>div:first-child {
+    .label {
+      border-bottom-left-radius: 100px;
+    }
+  }
+    &>div:last-child {
+    .label {
+      border-bottom-right-radius: 100px;
+    }
+  }
+}
+

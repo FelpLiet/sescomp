@@ -1,5 +1,5 @@
 import styles from "./styles.module.scss";
-import Background from "../../assets/images/about.png";
+import Background from "../../assets/images/about.jpg";
 import * as Accordion from "@radix-ui/react-accordion";
 import classNames from "classnames";
 import { LegacyRef, forwardRef, useState } from "react";

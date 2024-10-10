@@ -1,5 +1,5 @@
 import EmbreveImg from "../../assets/images/embreve.png";
-import BackgroundEmbreveImg from "../../assets/images/backgroundembreve.png";
+import BackgroundEmbreveImg from "../../assets/images/backgroundembreve.jpg";
 import styles from "./styles.module.scss";
 
 
