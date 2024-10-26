@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 :root {
   font-family: "Montserrat", sans-serif;
   line-height: 1.5;
@@ -20,6 +22,7 @@
   --color-text-black: #1a1a1a;
   --color-text-white: #ffffff;
   --color-text-highlight: #3f37ca;
+  --color-button-cyan: #4BC9F1;
 }
 * {
   margin: 0;
@@ -50,9 +53,27 @@ body {
   font-style: normal;
 }
 
+.montserrat-light {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
 .montserrat-regular {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
+  font-style: normal;
+}
+
+.montserrat-medium {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.montserrat-semibold {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
   font-style: normal;
 }
 
