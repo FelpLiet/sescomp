@@ -10,6 +10,7 @@ import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import Layout from "./Layout.tsx";
 import { EmBreve } from "./components/EmBreve/Index";
 import BigNumbers from "./components/BigNumber/index.tsx";
+import { Programacao } from "./components/programacao/index.tsx";
 
 function App() {
 
@@ -35,7 +36,7 @@ function App() {
                   </>
                 }
               />
-              <Route path="programacao" element={<EmBreve />} />
+              <Route path="programacao" element={<Programacao />} />
               <Route path="manual" element={<EmBreve />} />
               <Route path="patrocinadores" element={<EmBreve />} />
               <Route path="em-breve" element={<EmBreve />} />

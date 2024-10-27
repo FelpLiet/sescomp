@@ -1,0 +1,157 @@
+.Programacao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 70px;
+}
+
+.atividades {
+    display: flex;
+    flex-direction: column;
+    max-width: 900px;
+    gap: 15px;
+}
+
+.datasContainer {
+    width: 100%;
+    background-color: var(--color-background);
+    position: -webkit-sticky; 
+    position: sticky;
+    padding-top: 20px;
+    top: 0;
+    z-index: 1000;
+}
+
+.datas {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    gap: 20px;
+}
+
+.datas button {
+    display: flex;
+    align-items: center;
+    padding: 15px 10px;
+    background-color: var(--color-background);
+    border: 0.5px solid var(--color-button-cyan);
+    border-radius: 8px;
+    gap: 8px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.1rem;
+    font-weight: 400;
+    cursor: pointer;
+    transition: all ease-in-out 0.3s;
+}
+
+.datas button:hover {
+    background-color: var(--color-button-cyan);
+    border: 0.5px solid var(--color-secondary);
+    font-weight: 600;
+}
+
+.datas button.selected {
+    background-color: var(--color-button-cyan);
+    border: 0.5px solid var(--color-secondary);
+    font-weight: 600;
+}
+
+.datas img:nth-of-type(1){
+    transform: rotate(180deg);
+}
+
+.triangleFadeOut {
+    opacity: 0;
+    transition: opacity 0.3s ease-out;
+}
+
+.triangleFadeIn {
+    opacity: 1;
+    transition: opacity 0.3s ease-in;
+}
+
+.cardAtividades {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.card {
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+    padding: 20px;
+    background-color: var(--color-background);
+    border-radius: 8px;
+    border: 0.5px solid var(--color-primary);
+    transition: all ease-in-out 0.3s;
+}
+
+.card:hover {
+    border: 0.5px solid var(--color-button-cyan);
+    background-color: white;
+}
+
+.cardInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.cardInfo .titulo {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+}
+
+.cardInfo h3 {
+    font-family: "Anonymous Pro", monospace;
+    font-size: 2.0rem;
+}
+
+.infoContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.cardDate {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.dia {
+    position: relative;
+}
+
+.dia span {
+    position: absolute;
+    font-family: "Anonymous Pro", monospace;
+    font-size: 1.5rem;
+    font-weight: 600;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -80%);
+    color: white;
+}
+
+.categoria {
+    display: flex;
+    flex-wrap: nowrap;
+    text-wrap: nowrap;
+    align-items: center;
+    text-align: center;
+    font-weight: 600;
+    background-color: var(--color-secondary);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 24px;
+}
