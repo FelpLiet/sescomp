@@ -26,3 +26,14 @@
     display: block;
     margin: 0 auto;
 }
+
+@media screen and (max-width: 768px) {
+    .header {
+       
+    }
+
+    .titulo {
+        transform: scale(0.8) translate(-60%, -70%);
+    }
+    
+}

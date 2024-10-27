@@ -155,3 +155,60 @@
     padding: 5px 10px;
     border-radius: 24px;
 }
+
+@media screen and (max-width: 768px) {
+    .Programacao {
+        padding: 20px;
+    }
+
+    .atividades {
+        gap: 10px;
+    }
+
+    .datas {
+        // flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .datas button {
+        padding: 10px 5px;
+        font-size: 1rem;
+    }
+
+    .card {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .cardInfo {
+        gap: 10px;
+    }
+
+    .cardInfo h3 {
+        font-size: 1.5rem;
+    }
+
+    .cardInfo .titulo {
+        gap: 5px;
+    }
+
+    .info {
+        gap: 5px;
+    }
+
+    .cardDate {
+        align-items: flex-start;
+        flex-direction: row-reverse;
+        align-items: flex-end;
+    }
+
+    .dia span {
+        font-size: 1.2rem;
+        transform: translate(-50%, -70%);
+    }
+
+    .categoria {
+        padding: 3px 5px;
+    }
+    
+}
