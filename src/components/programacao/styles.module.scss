@@ -8,7 +8,18 @@
 .atividades {
     display: flex;
     flex-direction: column;
+    max-width: 900px;
     gap: 15px;
+}
+
+.datasContainer {
+    width: 100%;
+    background-color: var(--color-background);
+    position: -webkit-sticky; 
+    position: sticky;
+    padding-top: 20px;
+    top: 0;
+    z-index: 1000;
 }
 
 .datas {
@@ -22,7 +33,7 @@
     display: flex;
     align-items: center;
     padding: 15px 10px;
-    background-color: white;
+    background-color: var(--color-background);
     border: 0.5px solid var(--color-button-cyan);
     border-radius: 8px;
     gap: 8px;
@@ -31,6 +42,12 @@
     font-weight: 400;
     cursor: pointer;
     transition: all ease-in-out 0.3s;
+}
+
+.datas button:hover {
+    background-color: var(--color-button-cyan);
+    border: 0.5px solid var(--color-secondary);
+    font-weight: 600;
 }
 
 .datas button.selected {
@@ -56,22 +73,23 @@
 .cardAtividades {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    height: 500px;
     gap: 20px;
 }
 
 .card {
     display: flex;
-    flex-direction: row;
-    align-items: center;
     justify-content: space-between;
+    flex-grow: 1;
     padding: 20px;
-    background-color: white;
+    background-color: var(--color-background);
     border-radius: 8px;
     border: 0.5px solid var(--color-primary);
-    // box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     transition: all ease-in-out 0.3s;
+}
+
+.card:hover {
+    border: 0.5px solid var(--color-button-cyan);
+    background-color: white;
 }
 
 .cardInfo {
@@ -105,16 +123,13 @@
 
 .cardDate {
     display: flex;
-    height: 100%;
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-end;
-    
 }
 
 .dia {
     position: relative;
-    
 }
 
 .dia span {
@@ -130,7 +145,11 @@
 
 .categoria {
     display: flex;
+    flex-wrap: nowrap;
+    text-wrap: nowrap;
     align-items: center;
+    text-align: center;
+    font-weight: 600;
     background-color: var(--color-secondary);
     color: white;
     padding: 5px 10px;
