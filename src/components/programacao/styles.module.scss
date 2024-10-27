@@ -15,7 +15,7 @@
 .datasContainer {
     width: 100%;
     background-color: var(--color-background);
-    position: -webkit-sticky; 
+    position: -webkit-sticky;
     position: sticky;
     padding-top: 20px;
     top: 0;
@@ -56,7 +56,7 @@
     font-weight: 600;
 }
 
-.datas img:nth-of-type(1){
+.datas img:nth-of-type(1) {
     transform: rotate(180deg);
 }
 
@@ -106,7 +106,7 @@
 
 .cardInfo h3 {
     font-family: "Anonymous Pro", monospace;
-    font-size: 2.0rem;
+    font-size: 2rem;
 }
 
 .infoContainer {
@@ -154,4 +154,59 @@
     color: white;
     padding: 5px 10px;
     border-radius: 24px;
+}
+
+@media screen and (max-width: 768px) {
+    .Programacao {
+        padding: 20px;
+    }
+
+    .atividades {
+        gap: 10px;
+    }
+
+    .datas {
+        gap: 10px;
+    }
+
+    .datas button {
+        padding: 10px 5px;
+        font-size: 1rem;
+    }
+
+    .card {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .cardInfo {
+        gap: 10px;
+    }
+
+    .cardInfo h3 {
+        font-size: 1.5rem;
+    }
+
+    .cardInfo .titulo {
+        gap: 5px;
+    }
+
+    .info {
+        gap: 5px;
+    }
+
+    .cardDate {
+        align-items: flex-start;
+        flex-direction: row-reverse;
+        align-items: flex-end;
+    }
+
+    .dia span {
+        font-size: 1.2rem;
+        transform: translate(-50%, -70%);
+    }
+
+    .categoria {
+        padding: 3px 5px;
+    }
 }

@@ -3,7 +3,7 @@
     background-size: cover;
     background-position: center;
     width: 100%;
-    height: 384px; 
+    height: 384px;
 }
 
 .titulo {
@@ -25,4 +25,10 @@
 .titulo img {
     display: block;
     margin: 0 auto;
+}
+
+@media screen and (max-width: 768px) {
+    .titulo {
+        transform: scale(0.8) translate(-60%, -70%);
+    }
 }
