@@ -6,7 +6,7 @@ import { Schedule } from "../../components/Schedule";
 import { Slider } from "../../components/Slider";
 import { Speakers } from "../../components/Speakers";
 import { Strip } from "../../components/Strip";
-import { Ticket } from "../../components/Ticket";
+import { Ticket } from "../../shared/Ticket";
 import { SponsorComponent } from "../../components/Sponsors/SponsorComponent.tsx";
 import { Organization } from "../../components/Organization/index.tsx";
 import { Shop } from "../../components/Shop/index.tsx";

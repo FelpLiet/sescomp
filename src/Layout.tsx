@@ -1,7 +1,7 @@
 import { Outlet } from 'react-router-dom';
-import {Ticket} from "./components/Ticket";
-import Footer from "./components/Footer";
-import {Navbar} from "./components/Navbar/Index";
+import {Ticket} from "./shared/Ticket";
+import Footer from "./shared/Footer";
+import {Navbar} from "./shared/Navbar/Index";
 
 export default function Layout(){
     const labels = [

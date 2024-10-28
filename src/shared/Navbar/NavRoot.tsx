@@ -1,9 +1,10 @@
 import { ReactNode } from "react";
-import { Icon } from "../icons";
+import { Icon } from "../../components/icons";
 import styles from "./styles.module.scss";
-import { Button } from "../Button";
-import { DropdownMenu } from "../DropdownMenu";
-import Dropdown from "../Dropdown";
+import { Button } from "../../components/Button";
+import { DropdownMenu } from "../../components/DropdownMenu";
+import Dropdown from "../../components/Dropdown";
+import { Link } from "react-router-dom";
 interface NavRootProps {
   children: ReactNode;
 }
@@ -15,7 +16,11 @@ export function NavRoot({ children }: NavRootProps) {
 
   return (
     <nav className={styles.navbar}>
-      <Icon.Sescomp />
+      <div className={styles.logo}>
+        <Link to="/">
+          <Icon.Sescomp />
+        </Link>
+      </div>
       <div className={styles.content}>
         <ul>
           {children}
