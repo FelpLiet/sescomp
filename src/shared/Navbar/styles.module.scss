@@ -1,9 +1,18 @@
 .navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
   background-color: #fafafa;
   display: flex;
   align-items: center;
   border-bottom: 1px solid #e6e6e6;
   justify-content: space-between;
+
+  .logo {
+    margin: 10px 20px;
+    width: 10rem;
+  }
 
   > svg {
     margin: 16px 50px;

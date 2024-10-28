@@ -1,5 +1,5 @@
-import { Button } from "../Button";
-import { Icon } from "../icons";
+import { Button } from "../../components/Button";
+import { Icon } from "../../components/icons";
 import styles from "./styles.module.scss";
 import TicketImg from "../../assets/images/Ticket.png"
 
