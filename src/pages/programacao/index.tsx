@@ -1,7 +1,7 @@
 import { useState } from "react";
 import styles from "./styles.module.scss";
-import { Header } from "../header";
-import { ActivityCard } from "./ActivityCard";
+import { Header } from "../../shared/header";
+import { ActivityCard } from "../../components/programacao/ActivityCard";
 import triangles from "../../assets/icon/TRIANGLES.svg";
 import activitiesJson from "../../data/activities.json";
 
@@ -20,8 +20,8 @@ export function Programacao() {
             setFadeIn(true);
             setTimeout(() => {
                 setFadeIn(false);
-            }, 300); // Tempo da transição de fade-in
-        }, 300); // Tempo da transição de fade-out
+            }, 300);
+        }, 300);
     }
     
     const selectedActivities = activities.find(activity => activity.date === selectedDate)?.events || [];

@@ -1,6 +1,5 @@
 import { Outlet } from 'react-router-dom';
-import {Ticket} from "./components/Ticke";
-import {Organization} from "./components/Organization";
+import {Ticket} from "./components/Ticket";
 import Footer from "./components/Footer";
 import {Navbar} from "./components/Navbar/Index";
 
@@ -24,7 +23,6 @@ export default function Layout(){
             </Navbar.Root>
             <Outlet />
             <Ticket />
-            <Organization />
             <Footer />
         </>
     );
