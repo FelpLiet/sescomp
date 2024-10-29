@@ -1,87 +1,149 @@
 .shop {
-  display: flex;
-  flex-direction: column;
-  padding: 50px 72px;
-  background: #fafafa;
-  .btn {
-    display: none;
-  }
-  .header {
-    margin: 0 3rem;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 3rem 0;
-    h1 {
-      color: #1a1a1a;
-      font-family: Montserrat;
-      font-size: 48px;
-      font-weight: 700;
-      line-height: 120%;
-      letter-spacing: -1%;
-      text-align: left;
-    }
-  }
-  section {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    .card {
-      display: flex;
-      width: 362.67px;
-      height: 437px;
-      flex-direction: column;
-      justify-content: space-between;
-      padding: 24px;
-      margin: 0px 24px;
-      box-sizing: border-box;
-      border: 1px solid #cccccc;
-      img {
-        background-color: #cccccc;
-        width: 314.67px;
-        height: 232px;
-      }
-      span {
-        /* Body/MEdium */
-        color: #333333;
-        font-family: Montserrat;
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 150%;
-        letter-spacing: -1%;
-        text-align: left;
-      }
-      h6 {
-        color: #000000;
-        font-family: Anonymous Pro;
-        font-size: 28px;
-        font-weight: 700;
-        line-height: 120%;
-        letter-spacing: -1%;
-        text-align: left;
-        margin: 5px 0;
-      }
-    }
-  }
-}
-@media (max-width: 768px) {
-  .shop {
-    padding: 48px 16px;
-    .header {
-      margin: 0;
-      div {
-        display: none;
-      }
-    }
-    section {
-      flex-direction: column;
-      align-items: center;
-    }
+    flex-direction: column;
+    padding: 50px 32px;
+    background: var(--color-secondary);
     .btn {
-      display: flex;
-      margin: 10px 0;
-      flex-direction: column;
+        display: none;
     }
-  }
+    .header {
+        margin: 0 3rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 3rem 0;
+        h1 {
+            color: var(--color-text-white);
+            font-family: Montserrat;
+            font-size: 48px;
+            font-weight: 700;
+            line-height: 120%;
+            letter-spacing: -1%;
+            text-align: left;
+        }
+    }
+
+    .title {
+        color: var(--color-text-white);
+    }
+
+    section {
+        display: flex;
+		flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-evenly;
+		gap: 24px;
+        .card {
+            display: flex;
+            width: 556px;
+            height: 556px;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 24px;
+            margin: 0px 24px;
+            box-sizing: border-box;
+			background-color: var(--color-background);
+            border: 1px solid #cccccc;
+			border-radius: 8px;
+			transition: border 0.3s;
+            img {
+                background-color: #cccccc;
+                width: 508px;
+                height: 421px;
+            }
+            span {
+                color: #333333;
+                font-family: Montserrat;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 150%;
+                letter-spacing: -1%;
+                text-align: left;
+            }
+            h6 {
+                color: #000000;
+                font-family: Anonymous Pro;
+                font-size: 28px;
+                font-weight: 700;
+                line-height: 120%;
+                letter-spacing: -1%;
+                text-align: left;
+                margin: 5px 0;
+            }
+        }
+
+		.card:hover {
+			border: 1px solid var(--color-primary);
+			background-color: white;
+		}
+    }
+}
+
+@media (max-width: 1300px) {
+	.shop {
+		section {
+			.card {
+				width: 400px;
+				height: 400px;
+				margin: 0;
+				img {
+					width: 352px;
+					height: 321px;
+				}
+				span {
+					font-size: 14px;
+				}
+				h6 {
+					font-size: 24px;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 768px) {
+    .shop {
+		align-items: center;
+        padding: 48px 16px;
+        .header {
+			:nth-of-type(2) {
+				display: none;
+			}
+			h1 {
+				text-align: center;
+			}
+        }
+        section {
+            flex-direction: column;
+            align-items: center;
+        }
+        .btn {
+            display: flex;
+            margin: 25px 0;
+            flex-direction: column;
+			width: 400px;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+	.shop {
+		section {
+			.card {
+				width: 300px;
+				height: 300px;
+				img {
+					width: 252px;
+					height: 221px;
+				}
+				span {
+					font-size: 12px;
+				}
+				h6 {
+					font-size: 20px;
+				}
+			}
+		}
+	}
 }

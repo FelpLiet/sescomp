@@ -9,7 +9,7 @@ import { Strip } from "../../components/Strip";
 import { Ticket } from "../../shared/Ticket";
 import { SponsorComponent } from "../../components/Sponsors/SponsorComponent.tsx";
 import { Organization } from "../../components/Organization/index.tsx";
-import { Shop } from "../../components/Shop/index.tsx";
+// import { Shop } from "../../components/Shop/index.tsx";
 import { SponsorsBanner } from "../../components/Sponsors/SponsorsBanner.tsx";
 
 export function Home() {
@@ -35,7 +35,7 @@ export function Home() {
             <Ticket />
             <SponsorsBanner />
             <SponsorComponent types={sponsorTypes} />
-            <Shop />
+            {/* <Shop /> */}
             <Organization />
         </>
     );
