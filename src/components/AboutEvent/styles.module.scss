@@ -82,9 +82,10 @@
   img {
     transition: opacity 0.5s ease-in-out;
     opacity: 1;
-    width: 100%;
+    width: 320px;
     height: 300px;
     align-self: center;
+    object-fit: cover;
   }
 
   .fadeIn {
@@ -98,16 +99,32 @@
   }
 }
 
+@media (max-width: 1024px) {
+  .container {
+    flex-wrap: wrap;
+  }
 
+  .card img {
+    width: 100%;
+    height: 300px;}
+
+  
+}
+
+@media (max-width: 900px){
+  .card {
+    width: 600px;
+  }
+}
 
 @media (max-width: 768px) {
   .aboutEvent {
     padding: 56px 24px;
     margin-top: -4rem;
-    .container {
-      flex-direction: column;
-      align-items: center;
-    }
+    // .container {
+    //   flex-direction: column;
+    //   align-items: center;
+    // }
     div > h1 {
       font-size: 32px;
     }

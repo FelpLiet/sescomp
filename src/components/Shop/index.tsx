@@ -6,9 +6,12 @@ export function Shop() {
   return (
     <div className={styles.shop}>
       <div className={styles.header}>
-        <h1>Loja Oficial</h1>
+        <div className={styles.title}>
+          <h1>Loja oficial</h1>
+          <p>A venda dos produtos é apenas presencial</p>
+        </div>
         <Button.Root style="primary">
-          <Button.Content label="Ver todos" />
+          <Button.Content label="Ver todos os produtos" />
           <Icon.Arrow />
         </Button.Root>
       </div>
@@ -17,19 +20,21 @@ export function Shop() {
           <img src="" alt="Produto" />
           <span>Camisa</span>
           <h6>R$ 50,00</h6>
-          <Button.Root style="primary">
-            <Button.Content label="Comprar agora" />
-            <Icon.Arrow />
-          </Button.Root>
         </div>
         <div className={styles.card}>
           <img src="" alt="Produto" />
           <span>Camisa</span>
           <h6>R$ 50,00</h6>
-          <Button.Root style="primary">
-            <Button.Content label="Comprar agora" />
-            <Icon.Arrow />
-          </Button.Root>
+        </div>
+        <div className={styles.card}>
+          <img src="" alt="Produto" />
+          <span>Camisa</span>
+          <h6>R$ 50,00</h6>
+        </div>
+        <div className={styles.card}>
+          <img src="" alt="Produto" />
+          <span>Camisa</span>
+          <h6>R$ 50,00</h6>
         </div>
       </section>
       <span className={styles.btn}>
