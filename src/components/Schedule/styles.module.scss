@@ -1,168 +1,220 @@
 .schedule {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 50px 0;
-  background-image: url('/src/assets/images/programacao.png');
-  background-size: contain;
-  background-repeat: no-repeat;
-  text-align-last: start;
-  .imgLeft{
-    width: 42%;
-    margin-top: -316px;
-    margin-bottom: 28px;
-    align-self: flex-start;
-    @media screen and (max-width: 1024px){
-      margin-bottom: -192px;
-      margin-top: -251px;
-    }
-    @media screen and (max-width: 768px){
-      margin-bottom: -115px;
-      margin-top: -179px;
-    }
-    @media screen and (max-width: 425px){
-      margin-bottom: 71px;
-      margin-top: -101px;
-    }
-  }
-  .imgRight{
-    width: 56.8%;
-    margin-top: -310px;
-    align-self: flex-end;
-    @media screen and (max-width: 1024px){
-      margin-top: -10px;
-    }
-    @media screen and (max-width: 768px){
-      margin-top: -34px;
-    }
-    @media screen and (max-width: 425px){
-              margin-top: -154px;
-    }
-  }
-  .scheduleItem {
     display: flex;
-    flex-direction: row;
-    gap: 4rem;
-    align-items: flex-start;
-    margin-left: -68px;
-    @media screen and (max-width: 1440px) {
-      margin-left: -100px;
-    }
-    @media screen and (max-width: 1024px) {
-      margin-left: -36px;
-    }
-    @media screen and (max-width: 768px) {
-      margin-left: -10px;
-    }
-    @media screen and (max-width: 425px) {
-      margin-left: 40px;
-    }
-    figure {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      margin-top: -12px;
-    }
-    h3 {
-      color: #4361ee;
-      font-family: Montserrat;
-      font-size: 20px;
-      font-weight: 600;
-      line-height: 150%;
-      text-align: left;
-    }
-    div {
-      h2 {
-        color: #3f37ca;
-        font-family: Montserrat;
-        font-size: 28px;
-        font-weight: 600;
-        line-height: 120%;
-        text-align: center;
-        padding-bottom: 1rem;
-      }
-      p {
-        color: #4d4d4d;
-        font-family: Montserrat;
-        font-size: 18px;
-        font-weight: 600;
-        line-height: 150%;
-        text-align: left;
-        span {
-          font-weight: 400;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0;
+    background-image: url("/src/assets/images/programacao.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    text-align-last: start;
+    .imgLeft {
+        width: 42%;
+        margin-top: -316px;
+        margin-bottom: 28px;
+        align-self: flex-start;
+        @media screen and (max-width: 1024px) {
+            margin-bottom: -192px;
+            margin-top: -251px;
         }
-      }
+        @media screen and (max-width: 768px) {
+            margin-bottom: -115px;
+            margin-top: -179px;
+        }
+        @media screen and (max-width: 425px) {
+            margin-bottom: 71px;
+            margin-top: -101px;
+        }
     }
-  }
-  .btn {
-    margin: 30px 0 0 28px;
-    @media screen and (max-width: 1024px){
-      margin: 50px 0 0 110px;
+    .imgRight {
+        width: 56.8%;
+        margin-top: -310px;
+        align-self: flex-end;
+        @media screen and (max-width: 1024px) {
+            margin-top: -10px;
+        }
+        @media screen and (max-width: 768px) {
+            margin-top: -34px;
+        }
+        @media screen and (max-width: 425px) {
+            margin-top: -154px;
+        }
     }
-    @media screen and (max-width: 768px){
-      margin: 0px 0 0 152px;
-      padding-top: 2rem;
+
+    .scheduleItem {
+        display: flex;
+        flex-direction: row;
+        gap: 4rem;
+        align-items: flex-start;
+        margin-left: -68px;
+        @media screen and (max-width: 1440px) {
+            margin-left: -100px;
+        }
+        @media screen and (max-width: 1024px) {
+            margin-left: -36px;
+        }
+        @media screen and (max-width: 768px) {
+            margin-left: -10px;
+        }
+        @media screen and (max-width: 425px) {
+            margin-left: 40px;
+        }
+        figure {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: -12px;
+        }
+        h3 {
+            color: #4361ee;
+            font-family: Montserrat;
+            font-size: 20px;
+            font-weight: 600;
+            line-height: 150%;
+            text-align: left;
+        }
+        div {
+            width: 500px;
+            h2 {
+                color: #3f37ca;
+                font-family: Montserrat;
+                font-size: 28px;
+                font-weight: 600;
+                line-height: 120%;
+                text-align: left;
+                padding-bottom: 1rem;
+            }
+            p {
+                color: #4d4d4d;
+                font-family: Montserrat;
+                font-size: 18px;
+                font-weight: 600;
+                line-height: 150%;
+                text-align: left;
+                span {
+                    font-weight: 400;
+                }
+            }
+        }
     }
-    @media screen and (max-width: 508px){
-      margin: 0;
-      align-self: center;
+
+	.scheduleItem:last-of-type{
+		margin-bottom: 100px;
+	}
+
+    .btn {
+        margin: 30px 0 0 28px;
+        @media screen and (max-width: 1024px) {
+            margin: 50px 0 0 110px;
+        }
+        @media screen and (max-width: 768px) {
+            margin: 0px 0 0 152px;
+            padding-top: 2rem;
+        }
+        @media screen and (max-width: 508px) {
+            margin: 0;
+            align-self: center;
+        }
     }
-  }
 }
 .scheduleTitle {
-  display: inline-block;
-  position: relative;
-  padding-bottom: 4rem;
-  figcaption {
-    position: absolute;
-    top: 40px;
-    right: 88px;
-    h1 {
-      color: #ffffff;
-      font-family: Montserrat;
-      font-size: 44px;
-      font-weight: 700;
-      line-height: 120%;
-      letter-spacing: -1%;
-      text-align: center;
-      transform: rotate(-5deg);
-      margin: 0;
+    display: inline-block;
+    position: relative;
+    padding-bottom: 7.0rem;
+    figcaption {
+        position: absolute;
+        top: 40px;
+        right: 88px;
+        h1 {
+            color: #ffffff;
+            font-family: Montserrat;
+            font-size: 44px;
+            font-weight: 700;
+            line-height: 120%;
+            letter-spacing: -1%;
+            text-align: center;
+            transform: rotate(-5deg);
+            margin: 0;
+        }
     }
-  }
 }
 @media (max-width: 768px) {
-  .scheduleTitle {
-    img {
-      width: 20rem;
-    }
-    figcaption {
-      top: 22px;
-      right: 44px;
-      h1 {
-        font-size: 32px;
-      }
-    }
-  }
-  .schedule {
-    .scheduleItem {
-      gap: 1rem;
-      figure {
-        text-align: left;
+    .scheduleTitle {
         img {
-          width: 3rem;
+            width: 20rem;
         }
-      }
-      h3 {
-        font-size: 18px;
-      }
-      div {
-        h2 {
-          font-size: 26px;
+        figcaption {
+            top: 22px;
+            right: 44px;
+            h1 {
+                font-size: 32px;
+            }
         }
-        p {
-          font-size: 16px;
-        }
-      }
     }
-  }
+    .schedule {
+        .scheduleItem {
+            gap: 1rem;
+            figure {
+                text-align: left;
+                img {
+                    width: 3rem;
+                }
+            }
+            h3 {
+                font-size: 18px;
+            }
+            div {
+				width: 450px;
+                h2 {
+                    font-size: 26px;
+                }
+                p {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 585px) {
+	.schedule {
+		.scheduleItem {
+			
+			gap: 1rem;
+			margin-left: 0;
+			figure {
+				img {
+					width: 3rem;
+				}
+			}
+			h3 {
+				font-size: 18px;
+			}
+			div {
+				width: 320px;
+				h2 {
+					font-size: 20px;
+				}
+				p {
+					font-size: 16px;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 440px) {
+	.schedule {
+		.scheduleItem {
+			div {
+				width: 250px;
+				h2 {
+					font-size: 20px;
+				}
+				p {
+					font-size: 16px;
+				}
+			}
+		}
+	}
+	
 }
