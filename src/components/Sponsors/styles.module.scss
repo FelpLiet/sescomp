@@ -24,7 +24,23 @@
       flex-direction: row;
       flex-wrap: wrap;
       gap: 4rem;
+      img {
+        max-width: 200px;
+        height: 80px;
+      }
     }
+  }
+
+  .terabyte img {
+    height: 96px;
+  }
+
+  .gigabyte img {
+    height: 88px;
+  }
+
+  .byte img{
+    height: 69px;
   }
 }
 

@@ -12,6 +12,7 @@ import yeloo from "../../assets/sponsors/parceiros/yeloo.svg";
 import brisanet from "../../assets/sponsors/parceiros/brisanet.svg";
 import MDStudio from "../../assets/sponsors/parceiros/MDStudio.svg";
 import geekDungeon from "../../assets/sponsors/parceiros/geekDungeon.svg";
+import lirios from "../../assets/sponsors/parceiros/Lirios.png";
 
 interface SponsorComponentProps {
   types: string[];
@@ -38,6 +39,7 @@ const sponsors = {
     { src: brisanet, alt: "Patrocinador Brisanet" },
     { src: MDStudio, alt: "Patrocinador MDStudio" },
     { src: geekDungeon, alt: "Patrocinador Geek Dungeon" },
+    { src: lirios, alt: "Patrocinador Lírios" },
   ],
 };
 
@@ -47,7 +49,7 @@ export function SponsorComponent({ types }: SponsorComponentProps) {
       {types.includes("terabyte") && (
         <div>
           <h3>Terabyte</h3>
-          <div className="terabyte">
+          <div className={styles.terabyte}>
             {sponsors.terabyte.map((sponsor, index) => (
               <img key={index} src={sponsor.src} alt={sponsor.alt} />
             ))}
@@ -57,7 +59,7 @@ export function SponsorComponent({ types }: SponsorComponentProps) {
       {types.includes("gigabyte") && (
         <div>
           <h3>Gigabyte</h3>
-          <div className="gigabyte">
+          <div className={styles.gigabyte}>
             {sponsors.gigabyte.map((sponsor, index) => (
               <img key={index} src={sponsor.src} alt={sponsor.alt} />
             ))}
@@ -67,7 +69,7 @@ export function SponsorComponent({ types }: SponsorComponentProps) {
       {types.includes("megabyte") && (
         <div>
           <h3>Megabyte</h3>
-          <div className="megabyte">
+          <div className={styles.megabyte}>
             {sponsors.megabyte.map((sponsor, index) => (
               <img key={index} src={sponsor.src} alt={sponsor.alt} />
             ))}
@@ -77,7 +79,7 @@ export function SponsorComponent({ types }: SponsorComponentProps) {
       {types.includes("kilobyte") && (
         <div>
           <h3>Kilobyte</h3>
-          <div className="kilobyte">
+          <div className={styles.kilobyte}>
             {sponsors.kilobyte.map((sponsor, index) => (
               <img key={index} src={sponsor.src} alt={sponsor.alt} />
             ))}
@@ -87,7 +89,7 @@ export function SponsorComponent({ types }: SponsorComponentProps) {
       {types.includes("byte") && (
         <div>
           <h3>Byte</h3>
-          <div className="byte">
+          <div className={styles.byte}>
             {sponsors.byte.map((sponsor, index) => (
               <img key={index} src={sponsor.src} alt={sponsor.alt} />
             ))}
@@ -97,7 +99,7 @@ export function SponsorComponent({ types }: SponsorComponentProps) {
       {types.includes("parceiros") && (
         <div>
           <h3>Parceiros</h3>
-          <div className="parceiros">
+          <div className={styles.parceiros}>
             {sponsors.parceiros.map((sponsor, index) => (
               <img key={index} src={sponsor.src} alt={sponsor.alt} />
             ))}
