@@ -1,86 +1,534 @@
 [
     {
-      "date": "11/11 - Segunda-feira",
-    "events": [
-      { "name": "Inteligência artificial da indústria do cimento e oportunidades de crescimento", "speaker": "APODI", "location": "", "time": "16:30 às 17:30", "category": "Palestra", "date": "11" }
-    ]
+        "date": "11/11 - Segunda-feira",
+        "events": [
+            {
+                "name": "Inteligência artificial da indústria do cimento e oportunidades de crescimento",
+                "speaker": "APODI",
+                "location": "",
+                "time": "16:30 às 17:30",
+                "category": "Palestra",
+                "date": "11"
+            }
+        ]
     },
     {
-      "date": "12/11 - Terça-feira",
-      "events": [
-        { "name": "Criando Protótipos de APIs de Forma Rápida com API Platform", "speaker": "Bebeto Alves da Costa", "location": "", "time": "08:00 às 10:30", "category": "Oficina", "date": "12" },
-        { "name": "Codando às Cegas", "speaker": "Organização", "location": "", "time": "09:00 às 12:00", "category": "Code Time", "date": "12" },
-        { "name": "Roda de Conversa sobre empreendedorismo e inovação", "speaker": "", "location": "", "time": "09:00 às 11:00", "category": "Roda de Conversa", "date": "12" },
-        { "name": "WSL: Uma porta para o mundo Linux", "speaker": "José Wesley da Silva Gonçalves", "location": "", "time": "09:00 às 10:00", "category": "Palestra", "date": "12" },
-        { "name": "Do Quarto pro Aeroporto: 14 Anos de Experiência Profissional Internacional", "speaker": "Silveira Neto", "location": "", "time": "10:00 às 11:00", "category": "Palestra", "date": "12" },
-        { "name": "Transformando Dados em Decisões: Uma Jornada na Criação de um Projeto de Dados", "speaker": "RAFAEL GOMES DA SILVA", "location": "", "time": "10:00 às 11:00", "category": "Palestra", "date": "12" },
-        { "name": "Inteligência Artificial Aplicada à Saúde", "speaker": "Joaquim Celestino Júnior", "location": "", "time": "13:30 às 14:30", "category": "Palestra", "date": "12" },
-        { "name": "Escape Room", "speaker": "Organização", "location": "", "time": "13:30 às 14:30", "category": "Atividade Cultural", "date": "12" },
-        { "name": "A Importância da Expansão Universitária no Interior e os Avanços Tecnológicos na UFC", "speaker": "Custódio Almeida", "location": "", "time": "13:30 às 14:30", "category": "Palestra", "date": "12" },
-        { "name": "Por Trás das Grandes Marcas: O Poder de um app Whitelabel com interface guiada pelo servidor", "speaker": "Yago Marques (Dev iOS)", "location": "", "time": "14:00 às 15:00", "category": "Palestra", "date": "12" },
-        { "name": "Figma para Iniciantes", "speaker": "Rebeca Alves Sousa", "location": "", "time": "14:00 às 15:00", "category": "Minicurso", "date": "12" },
-        { "name": "Uso de Inteligência Artificial no dia a dia e os impactos na Segurança da Informação e Privacidade.", "speaker": "Vicente Fernandes Duarte Neto", "location": "", "time": "14:30 às 15:30", "category": "Oficina", "date": "12" },
-        { "name": "Oficina de batucada e diálogos sobre cultura", "speaker": "Pedro Berenicce Silva Dourado", "location": "", "time": "14:30 às 15:30", "category": "Oficina", "date": "12" },
-        { "name": "Mulheres na área de STEM juntamente com o MEI", "speaker": "Anna Beatriz Marques, Silvia Teles Vianna", "location": "", "time": "14:30 às 16:30", "category": "Fórum", "date": "12" },
-        { "name": "Os desafios da modernização dos sistemas legados", "speaker": "Renato Alexandre Costa Freitas", "location": "", "time": "15:30 às 16:30", "category": "Palestra", "date": "12" },
-        { "name": "Além da Acurácia: Aprendizado de Máquina com Previsão Conforme", "speaker": "Francisco Romes da Silva Filho", "location": "", "time": "16:30 às 17:30", "category": "Palestra", "date": "12" },
-        { "name": "Uso de Inteligência Artificial no dia a dia e os impactos na Segurança da Informação e Privacidade.", "speaker": "Francisca Maria Rodrigues Andrade", "location": "", "time": "", "category": "Palestra", "date": "12" }
-      ]
+        "date": "12/11 - Terça-feira",
+        "events": [
+            {
+                "name": "Criando Protótipos de APIs de Forma Rápida com API Platform",
+                "speaker": "Bebeto Alves da Costa",
+                "location": "",
+                "time": "08:00 às 10:30",
+                "category": "Oficina",
+                "date": "12"
+            },
+            {
+                "name": "Codando às Cegas",
+                "speaker": "Organização",
+                "location": "",
+                "time": "09:00 às 12:00",
+                "category": "Code Time",
+                "date": "12"
+            },
+            {
+                "name": "WSL: Uma porta para o mundo Linux",
+                "speaker": "José Wesley da Silva Gonçalves",
+                "location": "",
+                "time": "09:00 às 10:00",
+                "category": "Palestra",
+                "date": "12"
+            },
+            {
+                "name": "Roda de Conversa sobre empreendedorismo e inovação",
+                "speaker": "",
+                "location": "",
+                "time": "09:00 às 11:00",
+                "category": "Roda de Conversa",
+                "date": "12"
+            },
+            {
+                "name": "Do Quarto pro Aeroporto: 14 Anos de Experiência Profissional Internacional",
+                "speaker": "Silveira Neto",
+                "location": "",
+                "time": "10:00 às 11:00",
+                "category": "Palestra",
+                "date": "12"
+            },
+            {
+                "name": "Transformando Dados em Decisões: Uma Jornada na Criação de um Projeto de Dados",
+                "speaker": "Rafael Gomes da Silva",
+                "location": "",
+                "time": "10:00 às 11:00",
+                "category": "Palestra",
+                "date": "12"
+            },
+            {
+                "name": "Inteligência Artificial Aplicada à Saúde",
+                "speaker": "Joaquim Celestino Júnior",
+                "location": "",
+                "time": "13:30 às 14:30",
+                "category": "Palestra",
+                "date": "12"
+            },
+            {
+                "name": "Escape Room",
+                "speaker": "Organização",
+                "location": "",
+                "time": "13:30 às 14:30",
+                "category": "Atividade Cultural",
+                "date": "12"
+            },
+            {
+                "name": "A Importância da Expansão Universitária no Interior e os Avanços Tecnológicos na UFC",
+                "speaker": "Custódio Almeida",
+                "location": "",
+                "time": "13:30 às 14:30",
+                "category": "Palestra",
+                "date": "12"
+            },
+            {
+                "name": "Por Trás das Grandes Marcas: O Poder de um app Whitelabel com interface guiada pelo servidor",
+                "speaker": "Yago Marques (Dev iOS)",
+                "location": "",
+                "time": "14:00 às 15:00",
+                "category": "Palestra",
+                "date": "12"
+            },
+            {
+                "name": "Figma para Iniciantes",
+                "speaker": "Rebeca Alves Sousa",
+                "location": "",
+                "time": "14:00 às 15:00",
+                "category": "Minicurso",
+                "date": "12"
+            },
+            {
+                "name": "Uso de Inteligência Artificial no dia a dia e os impactos na Segurança da Informação e Privacidade.",
+                "speaker": "Vicente Fernandes Duarte Neto",
+                "location": "",
+                "time": "14:30 às 15:30",
+                "category": "Oficina",
+                "date": "12"
+            },
+            {
+                "name": "Oficina de batucada e diálogos sobre cultura",
+                "speaker": "Pedro Berenicce Silva Dourado",
+                "location": "",
+                "time": "14:30 às 15:30",
+                "category": "Oficina",
+                "date": "12"
+            },
+            {
+                "name": "Mulheres na área de STEM juntamente com o MEI",
+                "speaker": "Anna Beatriz Marques, Silvia Teles Vianna",
+                "location": "",
+                "time": "14:30 às 16:30",
+                "category": "Fórum",
+                "date": "12"
+            },
+            {
+                "name": "Os desafios da modernização dos sistemas legados",
+                "speaker": "Renato Alexandre Costa Freitas",
+                "location": "",
+                "time": "15:30 às 16:30",
+                "category": "Palestra",
+                "date": "12"
+            },
+            {
+                "name": "Além da Acurácia: Aprendizado de Máquina com Previsão Conforme",
+                "speaker": "Francisco Romes da Silva Filho",
+                "location": "",
+                "time": "16:30 às 17:30",
+                "category": "Palestra",
+                "date": "12"
+            },
+            {
+                "name": "Uso de Inteligência Artificial no dia a dia e os impactos na Segurança da Informação e Privacidade.",
+                "speaker": "Francisca Maria Rodrigues Andrade",
+                "location": "",
+                "time": "",
+                "category": "Palestra",
+                "date": "12"
+            }
+        ]
     },
     {
-      "date": "13/11 - Quarta-feira",
-    "events": [
-        { "name": "Construindo Pontes entre Desenvolvimento e Operações: Um Papo sobre a carreira de DevOps Engineer", "speaker": "Naum Josafa Dieb", "location": "", "time": "08:00 ás 10:00", "category": "Palestra", "date": "13" },
-        { "name": "Programação Criativa com Processing", "speaker": "Francisco Evaldo", "location": "", "time": "08:00 às 10:30", "category": "Minicurso", "date": "13" },
-        { "name": "Desenvolvimento utilizando Jetpack Compose", "speaker": "Marcel Bastos Bleasby", "location": "", "time": "9:00 às 11:00", "category": "Minicurso", "date": "13" },
-        { "name": "Navegando nas Águas da Tipagem: Explorando as Diferenças entre TypeScript e JavaScript e Seus Reflexos nos Padrões de Projeto de Sistemas", "speaker": "Fernanda Nascimento", "location": "", "time": "9:00 às 11:00", "category": "Minicurso", "date": "13" },
-        { "name": "Edge, Fog e Cloud Computing: Descentralizando o Futuro da Infraestrutura Digital", "speaker": "Prof. Me. Pitágoras Graça Martins", "location": "", "time": "09:00 às 10:00", "category": "Palestra", "date": "13" },
-        { "name": "Posicionamento Digital para DEVs", "speaker": "Anny Honorato", "location": "", "time": "09:00 às 10:00", "category": "Palestra", "date": "13" },
-        { "name": "Roda de Conversa com Influencers Locais", "speaker": "Mauricio Leo, Thiago Araújo", "location": "", "time": "09:00 às 11:00", "category": "Roda de Conversa", "date": "13" },
-        { "name": "Robotic Process Automation (RPA) em Apoio às Atividades da Procuradoria-Geral do Estado do Ceará", "speaker": "Bonfim Amaro Junior", "location": "", "time": "10:00 às 11:00", "category": "Palestra", "date": "13" },
-        { "name": "Cybersegurança, ferramentas de conformidade e identificaçao de vulnerabilidades.", "speaker": "Antonio Wendell de Oliveira Rodrigues", "location": "", "time": "10:00 ás 11:00", "category": "Palestra", "date": "13" },
-        { "name": "Desvendando as Camadas da Segurança: Introdução ao BurpSuite e Exploração de Vulnerabilidades", "speaker": "Carlos Gabriel Leite Barros", "location": "", "time": "10:00 às 12:00", "category": "Minicurso", "date": "13" },
-        { "name": "Como vender UX para Stakeholders", "speaker": "Francisco Matias Neto", "location": "", "time": "10:00 às 11:00", "category": "Palestra", "date": "13" },
-        { "name": "O USO ÉTICO É RESPONSÁVEL DA IA GENERATIVA NA PESQUISA CIENTÍFICA", "speaker": "Jessica Neiva de Figueiredo Leite Araujo", "location": "", "time": "11:00 às 12:00", "category": "Palestra", "date": "13" },
-        { "name": "Transformação Ágil: A Sinergia entre Profissionais Ágeis e Especialistas em Dados", "speaker": "Ana Michelle Feitosa Almeida", "location": "", "time": "11:00 às 12:00", "category": "Roda de Conversa", "date": "13" },
-        { "name": "FITDANCE", "speaker": "Thiago Domingos", "location": "", "time": "12:00 às 13:00", "category": "Atividade Cultural", "date": "13" },
-        { "name": "Circuito de Atividades/Gincana", "speaker": "Organização", "location": "", "time": "13:30 às 15:30", "category": "Atividade Cultural", "date": "13" },
-        { "name": "Da Arte ao Trabalho: Como Utilizar Técnicas Teatrais para Desenvolver Soft Skills na Área Profissional", "speaker": "Murilo de Jesus Caires (LABSOCI)", "location": "", "time": "13:30 às 15:30", "category": "Oficina", "date": "13" },
-        { "name": "Carreira e Desenvolvimento de Software", "speaker": "JEOVÁ CAÇULA DE AGUIAR JÚNIOR", "location": "", "time": "13:30 às 14:30", "category": "Palestra", "date": "13" },
-        { "name": "UI Design: Avançando no Figma com Protótipos Responsivos", "speaker": "Fabio Henrique de Souza Pereira e Igor de Castro Dutra", "location": "", "time": "14:00 às 16:00", "category": "Minicurso", "date": "13" },
-        { "name": "Arquitetura em camadas não é só papo para backend", "speaker": "Alessandro Feitoza", "location": "", "time": "14:00 às 15:00", "category": "Palestra", "date": "13" },
-        { "name": "LinkedIn 360°: Domine a Arte da Conexão Profissional e Alcance Seus Objetivos", "speaker": "Dayana Mazete Cordeiro", "location": "", "time": "14:30 às 15:30", "category": "Minicurso", "date": "13" },
-        { "name": "A Importância da Gestão de Riscos para uma Gestão de T.I. eficaz", "speaker": "Alberto Sampaio Lima", "location": "", "time": "15:30 às 16:30", "category": "Palestra", "date": "13" },
-        { "name": "Revolução Silenciosa: A Onda de Transformações da Inteligência Artificial no Mundo", "speaker": "João Ícaro Moreira Loiola", "location": "", "time": "15:30 às 16:30", "category": "Palestra", "date": "13" },
-        { "name": "Diversidade, Equidade e Inclusão nas Organizações: Oportunidades e Desafios Contemporâneos", "speaker": "Bruno de Souza Lessa", "location": "", "time": "16:30 às 17:30", "category": "Videoconferência", "date": "13" },
-        { "name": "O Mercado de Games e o uso de iA no desenvolvimento de jogos", "speaker": "Izequiel Pereira de Norões", "location": "", "time": "16:30 às 17:30", "category": "Palestra", "date": "13" },
-        { "name": "Transformação Ágil: A Sinergia entre Profissionais Ágeis e Especialistas em Dados", "speaker": "Helton Fernandes Costa", "location": "", "time": "", "category": "Roda de Conversa", "date": "13" }
-    ]
+        "date": "13/11 - Quarta-feira",
+        "events": [
+            {
+                "name": "Construindo Pontes entre Desenvolvimento e Operações: Um Papo sobre a carreira de DevOps Engineer",
+                "speaker": "Naum Josafa Dieb",
+                "location": "",
+                "time": "08:00 ás 10:00",
+                "category": "Palestra",
+                "date": "13"
+            },
+            {
+                "name": "Programação Criativa com Processing",
+                "speaker": "Francisco Evaldo",
+                "location": "",
+                "time": "08:00 às 10:30",
+                "category": "Minicurso",
+                "date": "13"
+            },
+            {
+                "name": "Desenvolvimento utilizando Jetpack Compose",
+                "speaker": "Marcel Bastos Bleasby",
+                "location": "",
+                "time": "9:00 às 11:00",
+                "category": "Minicurso",
+                "date": "13"
+            },
+            {
+                "name": "Navegando nas Águas da Tipagem: Explorando as Diferenças entre TypeScript e JavaScript e Seus Reflexos nos Padrões de Projeto de Sistemas",
+                "speaker": "Fernanda Nascimento",
+                "location": "",
+                "time": "9:00 às 11:00",
+                "category": "Minicurso",
+                "date": "13"
+            },
+            {
+                "name": "Edge, Fog e Cloud Computing: Descentralizando o Futuro da Infraestrutura Digital",
+                "speaker": "Prof. Me. Pitágoras Graça Martins",
+                "location": "",
+                "time": "09:00 às 10:00",
+                "category": "Palestra",
+                "date": "13"
+            },
+            {
+                "name": "Posicionamento Digital para DEVs",
+                "speaker": "Anny Honorato",
+                "location": "",
+                "time": "09:00 às 10:00",
+                "category": "Palestra",
+                "date": "13"
+            },
+            {
+                "name": "Roda de Conversa com Influencers Locais",
+                "speaker": "Mauricio Leo, Thiago Araújo",
+                "location": "",
+                "time": "09:00 às 11:00",
+                "category": "Roda de Conversa",
+                "date": "13"
+            },
+            {
+                "name": "Robotic Process Automation (RPA) em Apoio às Atividades da Procuradoria-Geral do Estado do Ceará",
+                "speaker": "Bonfim Amaro Junior",
+                "location": "",
+                "time": "10:00 às 11:00",
+                "category": "Palestra",
+                "date": "13"
+            },
+            {
+                "name": "Cybersegurança, ferramentas de conformidade e identificaçao de vulnerabilidades.",
+                "speaker": "Antonio Wendell de Oliveira Rodrigues",
+                "location": "",
+                "time": "10:00 ás 11:00",
+                "category": "Palestra",
+                "date": "13"
+            },
+            {
+                "name": "Desvendando as Camadas da Segurança: Introdução ao BurpSuite e Exploração de Vulnerabilidades",
+                "speaker": "Carlos Gabriel Leite Barros",
+                "location": "",
+                "time": "10:00 às 12:00",
+                "category": "Minicurso",
+                "date": "13"
+            },
+            {
+                "name": "Como vender UX para Stakeholders",
+                "speaker": "Francisco Matias Neto",
+                "location": "",
+                "time": "10:00 às 11:00",
+                "category": "Palestra",
+                "date": "13"
+            },
+            {
+                "name": "O uso ético e responsável da IA generativa na pesquisa científica",
+                "speaker": "Jessica Neiva de Figueiredo Leite Araujo",
+                "location": "",
+                "time": "11:00 às 12:00",
+                "category": "Palestra",
+                "date": "13"
+            },
+            {
+                "name": "Transformação Ágil: A Sinergia entre Profissionais Ágeis e Especialistas em Dados",
+                "speaker": "Ana Michelle Feitosa Almeida",
+                "location": "",
+                "time": "11:00 às 12:00",
+                "category": "Roda de Conversa",
+                "date": "13"
+            },
+            {
+                "name": "FITDANCE",
+                "speaker": "Thiago Domingos",
+                "location": "",
+                "time": "12:00 às 13:00",
+                "category": "Atividade Cultural",
+                "date": "13"
+            },
+            {
+                "name": "Circuito de Atividades/Gincana",
+                "speaker": "Organização",
+                "location": "",
+                "time": "13:30 às 15:30",
+                "category": "Atividade Cultural",
+                "date": "13"
+            },
+            {
+                "name": "Da Arte ao Trabalho: Como Utilizar Técnicas Teatrais para Desenvolver Soft Skills na Área Profissional",
+                "speaker": "Murilo de Jesus Caires (LABSOCI)",
+                "location": "",
+                "time": "13:30 às 15:30",
+                "category": "Oficina",
+                "date": "13"
+            },
+            {
+                "name": "Carreira e Desenvolvimento de Software",
+                "speaker": "JEOVÁ CAÇULA DE AGUIAR JÚNIOR",
+                "location": "",
+                "time": "13:30 às 14:30",
+                "category": "Palestra",
+                "date": "13"
+            },
+            {
+                "name": "UI Design: Avançando no Figma com Protótipos Responsivos",
+                "speaker": "Fabio Henrique de Souza Pereira e Igor de Castro Dutra",
+                "location": "",
+                "time": "14:00 às 16:00",
+                "category": "Minicurso",
+                "date": "13"
+            },
+            {
+                "name": "Arquitetura em camadas não é só papo para backend",
+                "speaker": "Alessandro Feitoza",
+                "location": "",
+                "time": "14:00 às 15:00",
+                "category": "Palestra",
+                "date": "13"
+            },
+            {
+                "name": "LinkedIn 360°: Domine a Arte da Conexão Profissional e Alcance Seus Objetivos",
+                "speaker": "Dayana Mazete Cordeiro",
+                "location": "",
+                "time": "14:30 às 15:30",
+                "category": "Minicurso",
+                "date": "13"
+            },
+            {
+                "name": "A Importância da Gestão de Riscos para uma Gestão de T.I. eficaz",
+                "speaker": "Alberto Sampaio Lima",
+                "location": "",
+                "time": "15:30 às 16:30",
+                "category": "Palestra",
+                "date": "13"
+            },
+            {
+                "name": "Revolução Silenciosa: A Onda de Transformações da Inteligência Artificial no Mundo",
+                "speaker": "João Ícaro Moreira Loiola",
+                "location": "",
+                "time": "15:30 às 16:30",
+                "category": "Palestra",
+                "date": "13"
+            },
+            {
+                "name": "Diversidade, Equidade e Inclusão nas Organizações: Oportunidades e Desafios Contemporâneos",
+                "speaker": "Bruno de Souza Lessa",
+                "location": "",
+                "time": "16:30 às 17:30",
+                "category": "Videoconferência",
+                "date": "13"
+            },
+            {
+                "name": "O Mercado de Games e o uso de iA no desenvolvimento de jogos",
+                "speaker": "Izequiel Pereira de Norões",
+                "location": "",
+                "time": "16:30 às 17:30",
+                "category": "Palestra",
+                "date": "13"
+            },
+            {
+                "name": "Transformação Ágil: A Sinergia entre Profissionais Ágeis e Especialistas em Dados",
+                "speaker": "Helton Fernandes Costa",
+                "location": "",
+                "time": "",
+                "category": "Roda de Conversa",
+                "date": "13"
+            }
+        ]
     },
     {
-      "date": "14/11 - Quinta-feira",
-    "events": [
-        { "name": "Maratona de Programação", "speaker": "Organização", "location": "", "time": "08:00 às 12:00", "category": "Code Time", "date": "14" },
-        { "name": "Do conceito à execução: a jornada de alunos da UFC desenvolvendo um sistema mobile", "speaker": "Giovana Souza de Araujo", "location": "", "time": "08:00 às 9:30", "category": "Palestra", "date": "14" },
-        { "name": "IA na Segurança da Informação", "speaker": "Lucas Ramony Sabino da Silva", "location": "", "time": "08:00 às 09:00", "category": "Palestra", "date": "14" },
-        { "name": "Desenvolvendo plugins Minecraft com Java", "speaker": "Marcela Sales Rodrigo e Marcos Gregory", "location": "", "time": "09:00 às 11:00", "category": "Minicurso", "date": "14" },
-      { "name": "Ataques de Negação de Serviço (DoS e DDoS): conceitos, formas de execução e métodos de identificação", "speaker": "João Henrique Corrêa", "location": "", "time": "10:00 às 11:00", "category": "Palestra", "date": "14" },
-      { "name": "Explorando a Técnica DevBox Testing: Estratégias Eficazes para Garantir a Qualidade de Software", "speaker": "Julissy Bezerra Tocachelo", "location": "", "time": "10:00 às 11:00", "category": "Palestra", "date": "14" },
-      { "name": "Fandom e Marketing - Como a cultura pop conquista audiência", "speaker": "Thales Wylmar de Oliveira Santos", "location": "", "time": "10:00 às 11:00", "category": "Palestra", "date": "14" },
-      { "name": "Sua carreira precisa de você", "speaker": "Amália beatriz Rocha de moura cunha", "location": "", "time": "11:00 às 12:00", "category": "Palestra", "date": "14" },
-      { "name": "A tecnologia que ler mentes para autismo", "speaker": "Paulo Victor Loureiro", "location": "", "time": "11:00 às 12:00", "category": "Palestra", "date": "14" },
-      { "name": "Do TCC à Criação de Música: Como Redes Neurais Podem Escrever Letras", "speaker": "Jeferson Juliani", "location": "", "time": "11:00 ás 12:00", "category": "Palestra", "date": "14" },
-      { "name": "IA e a profissão do futuro: ser um desempregado?", "speaker": "Alexandre Matos Arruda", "location": "", "time": "11:00 às 12:00", "category": "Palestra", "date": "14" },
-      { "name": "OS PRIMEIROS PASSOS NA CARREIRA DE UM DEVINDEV", "speaker": "CHRISTIAN CASTRO ALVES", "location": "", "time": "11:00 às 12:00", "category": "Palestra", "date": "14" },
-      { "name": "GraphiAI: Transformando Texto em Visualizações de Dados com LLM", "speaker": "Nayara Valevskii", "location": "", "time": "13:30 às 14:30", "category": "Palestra", "date": "14" },
-      { "name": "EXPERIÊNCIA COM A CAPOEIRA E A VIDA", "speaker": "ELVIS  SILVEIRA DE ARAÚJO", "location": "", "time": "13:30 às 14:30", "category": "Oficina", "date": "14" },
-      { "name": "O Impacto Transformador da Inteligência Artificial na Tecnologia Moderna", "speaker": "Sandro Costa Mesquita", "location": "", "time": "13:30 às 14:30", "category": "Palestra", "date": "14" },
-      { "name": "Uma visão do dia a dia de um Analista de Testes em um Ambiente Global", "speaker": "Sara Girão Guimarães", "location": "", "time": "13:30 às 14:30", "category": "Palestra", "date": "14" },
-      { "name": "Competição de Cosplay", "speaker": "Organização", "location": "", "time": "13:30 às 15:30", "category": "Atividade Cultural", "date": "14" },
-      { "name": "AI e Design Inclusivo: reconhecendo os algoritmos de destruição em massa.", "speaker": "Gabriela de Castro Quintino", "location": "", "time": "14:30 às 15:30", "category": "Palestra", "date": "14" },
-      { "name": "Perspectivas em tecnologias quânticas: modelagem de dados e segurança da informação", "speaker": "José Leonardo", "location": "", "time": "14:30 às 15:30", "category": "Palestra", "date": "14" },
-      { "name": "Inovação e empreendedorismo", "speaker": "Paulina Eduarda Freitas Silva Representante do Normalabs", "location": "", "time": "14:30 às 15:30", "category": "Palestra", "date": "14" },
-      { "name": "Apresentação musical: Grupo Instrumental Trancelim", "speaker": "Fátima Rayane Araújo Sousa - GRUPO TRANCELIM", "location": "", "time": "19:00 às 20:00", "category": "Atividade Cultural", "date": "14" }
-    ]
+        "date": "14/11 - Quinta-feira",
+        "events": [
+            {
+                "name": "Maratona de Programação",
+                "speaker": "Organização",
+                "location": "",
+                "time": "08:00 às 12:00",
+                "category": "Code Time",
+                "date": "14"
+            },
+            {
+                "name": "Do conceito à execução: a jornada de alunos da UFC desenvolvendo um sistema mobile",
+                "speaker": "Giovana Souza de Araujo",
+                "location": "",
+                "time": "08:00 às 9:30",
+                "category": "Palestra",
+                "date": "14"
+            },
+            {
+                "name": "IA na Segurança da Informação",
+                "speaker": "Lucas Ramony Sabino da Silva",
+                "location": "",
+                "time": "08:00 às 09:00",
+                "category": "Palestra",
+                "date": "14"
+            },
+            {
+                "name": "Desenvolvendo plugins Minecraft com Java",
+                "speaker": "Marcela Sales Rodrigo e Marcos Gregory",
+                "location": "",
+                "time": "09:00 às 11:00",
+                "category": "Minicurso",
+                "date": "14"
+            },
+            {
+                "name": "Ataques de Negação de Serviço (DoS e DDoS): conceitos, formas de execução e métodos de identificação",
+                "speaker": "João Henrique Corrêa",
+                "location": "",
+                "time": "10:00 às 11:00",
+                "category": "Palestra",
+                "date": "14"
+            },
+            {
+                "name": "Explorando a Técnica DevBox Testing: Estratégias Eficazes para Garantir a Qualidade de Software",
+                "speaker": "Julissy Bezerra Tocachelo",
+                "location": "",
+                "time": "10:00 às 11:00",
+                "category": "Palestra",
+                "date": "14"
+            },
+            {
+                "name": "Fandom e Marketing - Como a cultura pop conquista audiência",
+                "speaker": "Thales Wylmar de Oliveira Santos",
+                "location": "",
+                "time": "10:00 às 11:00",
+                "category": "Palestra",
+                "date": "14"
+            },
+            {
+                "name": "Sua carreira precisa de você",
+                "speaker": "Amália beatriz Rocha de moura cunha",
+                "location": "",
+                "time": "11:00 às 12:00",
+                "category": "Palestra",
+                "date": "14"
+            },
+            {
+                "name": "A tecnologia que ler mentes para autismo",
+                "speaker": "Paulo Victor Loureiro",
+                "location": "",
+                "time": "11:00 às 12:00",
+                "category": "Palestra",
+                "date": "14"
+            },
+            {
+                "name": "Do TCC à Criação de Música: Como Redes Neurais Podem Escrever Letras",
+                "speaker": "Jeferson Juliani",
+                "location": "",
+                "time": "11:00 ás 12:00",
+                "category": "Palestra",
+                "date": "14"
+            },
+            {
+                "name": "IA e a profissão do futuro: ser um desempregado?",
+                "speaker": "Alexandre Matos Arruda",
+                "location": "",
+                "time": "11:00 às 12:00",
+                "category": "Palestra",
+                "date": "14"
+            },
+            {
+                "name": "OS PRIMEIROS PASSOS NA CARREIRA DE UM DEVINDEV",
+                "speaker": "CHRISTIAN CASTRO ALVES",
+                "location": "",
+                "time": "11:00 às 12:00",
+                "category": "Palestra",
+                "date": "14"
+            },
+            {
+                "name": "GraphiAI: Transformando Texto em Visualizações de Dados com LLM",
+                "speaker": "Nayara Valevskii",
+                "location": "",
+                "time": "13:30 às 14:30",
+                "category": "Palestra",
+                "date": "14"
+            },
+            {
+                "name": "EXPERIÊNCIA COM A CAPOEIRA E A VIDA",
+                "speaker": "ELVIS  SILVEIRA DE ARAÚJO",
+                "location": "",
+                "time": "13:30 às 14:30",
+                "category": "Oficina",
+                "date": "14"
+            },
+            {
+                "name": "O Impacto Transformador da Inteligência Artificial na Tecnologia Moderna",
+                "speaker": "Sandro Costa Mesquita",
+                "location": "",
+                "time": "13:30 às 14:30",
+                "category": "Palestra",
+                "date": "14"
+            },
+            {
+                "name": "Uma visão do dia a dia de um Analista de Testes em um Ambiente Global",
+                "speaker": "Sara Girão Guimarães",
+                "location": "",
+                "time": "13:30 às 14:30",
+                "category": "Palestra",
+                "date": "14"
+            },
+            {
+                "name": "Competição de Cosplay",
+                "speaker": "Organização",
+                "location": "",
+                "time": "13:30 às 15:30",
+                "category": "Atividade Cultural",
+                "date": "14"
+            },
+            {
+                "name": "AI e Design Inclusivo: reconhecendo os algoritmos de destruição em massa.",
+                "speaker": "Gabriela de Castro Quintino",
+                "location": "",
+                "time": "14:30 às 15:30",
+                "category": "Palestra",
+                "date": "14"
+            },
+            {
+                "name": "Perspectivas em tecnologias quânticas: modelagem de dados e segurança da informação",
+                "speaker": "José Leonardo",
+                "location": "",
+                "time": "14:30 às 15:30",
+                "category": "Palestra",
+                "date": "14"
+            },
+            {
+                "name": "Inovação e empreendedorismo",
+                "speaker": "Paulina Eduarda Freitas Silva Representante do Normalabs",
+                "location": "",
+                "time": "14:30 às 15:30",
+                "category": "Palestra",
+                "date": "14"
+            },
+            {
+                "name": "Apresentação musical: Grupo Instrumental Trancelim",
+                "speaker": "Fátima Rayane Araújo Sousa - GRUPO TRANCELIM",
+                "location": "",
+                "time": "19:00 às 20:00",
+                "category": "Atividade Cultural",
+                "date": "14"
+            }
+        ]
     }
-  ]
+]
