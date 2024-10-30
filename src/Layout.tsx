@@ -1,5 +1,4 @@
 import { Outlet } from 'react-router-dom';
-import {Ticket} from "./shared/Ticket";
 import Footer from "./shared/Footer";
 import {Navbar} from "./shared/Navbar/Index";
 
@@ -22,7 +21,6 @@ export default function Layout(){
                 ))}
             </Navbar.Root>
             <Outlet />
-            <Ticket />
             <Footer />
         </>
     );

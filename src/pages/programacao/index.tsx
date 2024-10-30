@@ -2,6 +2,7 @@ import { useState } from "react";
 import styles from "./styles.module.scss";
 import { Header } from "../../shared/header";
 import { ActivityCard } from "../../components/programacao/ActivityCard";
+import { Ticket } from "../../shared/Ticket";
 import triangles from "../../assets/icon/TRIANGLES.svg";
 import activitiesJson from "../../data/activities.json";
 
@@ -61,6 +62,7 @@ export function Programacao() {
                     </div>
                 </div>
             </section>
+            <Ticket />
         </>
     );
 }
