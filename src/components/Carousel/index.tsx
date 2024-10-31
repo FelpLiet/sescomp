@@ -23,7 +23,7 @@ const Carousel = ({ children, visibleItems = 1 }: CarouselProps) => {
 
   const slideOffset = {
     transform: `translateX(-${currentIndex * (100 / visibleItems)}%)`,
-    justifyContent: visibleItems == 1 ? "" : "center",
+    // justifyContent: visibleItems == 1 ? "" : "center",
   };
 
   return (
@@ -50,7 +50,7 @@ const Carousel = ({ children, visibleItems = 1 }: CarouselProps) => {
               className={styles.sliderItem}
               style={{
                 flex: `0 0 ${100 / visibleItems}%`,
-                margin: visibleItems !== 1 ? "0 -20px" : "",
+                // margin: visibleItems !== 1 ? "0 -20px" : "",
               }}
             >
               {child}

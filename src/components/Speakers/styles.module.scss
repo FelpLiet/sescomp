@@ -38,18 +38,21 @@
   position: relative;
   z-index: 9;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-
+  
   figcaption {
     position: absolute;
+    width: 100%;
     top: 34px;
     right: 56px;
+    transform: translateX(23%);
     h1 {
       color: #ffffff;
       font-family: Montserrat;
       font-size: 29.97px;
       font-weight: 700;
       line-height: 120%;
-      text-align: left;
+      text-align: center;
+
       margin: 0;
       transform: rotate(-4.32deg);
     }

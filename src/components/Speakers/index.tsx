@@ -23,18 +23,30 @@ const speakersJson = [
     { name: "Gabriela Q.", image: gabriela },
     { name: "Julissy Bezerra", image: julissy },
     { name: "Michelle A.", image: michelle },
-    { name: "Nayara Valesvski", image: nayara },
+    { name: "Nayara V.", image: nayara },
 ];
 
 export function Speakers() {
-    const [isMobile, setIsMobile] = useState(false);
+    const [visibleItems, setVisibleItems] = useState(3);
+
     const handleNavigation = () => {
         window.open("https://www.even3.com.br/sescomp-vii/", "_blank");
     };
+
     useEffect(() => {
         const handleResize = () => {
-            const mobile = window.matchMedia("(max-width: 768px)").matches;
-            setIsMobile(mobile);
+            const width = window.innerWidth;
+            if (width <= 768) {
+                setVisibleItems(1);
+            } else if (width <= 1024) {
+                setVisibleItems(2);
+            } else if (width <= 1440) {
+                setVisibleItems(3);
+            } else if (width <= 1920) {
+                setVisibleItems(4);
+            } else {
+                setVisibleItems(5);
+            }
         };
 
         handleResize();
@@ -46,7 +58,7 @@ export function Speakers() {
     return (
         <div className={styles.speakers}>
             <h1>Palestrantes</h1>
-            <Carousel visibleItems={isMobile ? 1 : 3}>
+            <Carousel visibleItems={visibleItems}>
                 {speakersJson.map((speaker, index) => (
                     <SpeakerItem key={index} name={speaker.name} image={speaker.image} />
                 ))}
