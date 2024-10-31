@@ -1,5 +1,6 @@
 import { SponsorComponent } from "../../components/Sponsors/SponsorComponent";
 import { Header } from "../../shared/header";
+import { Ticket } from "../../shared/Ticket";
 
 export function Sponsors() {
     const sponsorTypes = [
@@ -15,6 +16,7 @@ export function Sponsors() {
         <>
             <Header title="Patrocinadores" bgColor="pink" />
             <SponsorComponent types={sponsorTypes} />
+            <Ticket />
         </>
     );
 }

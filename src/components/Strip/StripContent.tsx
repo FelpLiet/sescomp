@@ -9,7 +9,9 @@ export function StripContent() {
             <img src={Arrow} />
           </li>
           <li>INGRESSO GRATUITO</li>
-          <img src={Arrow} />
+          <li>
+            <img src={Arrow} />
+          </li>
         </ul>
       ))}
     </ul>
