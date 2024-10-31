@@ -28,6 +28,7 @@
   }
   .container {
     display: flex;
+    width: 100%;
     gap: 24px;
     justify-content: center;
   }
@@ -44,6 +45,8 @@
     padding: 0 0 30px 50px;
     align-self: self-end;
   }
+ 
+
 }
 
 .card {
@@ -129,7 +132,7 @@
 @media (max-width: 480px) {
   .aboutEvent {
     .container {
-      flex-direction: column;
+    //   flex-direction: column;
       align-items: center;
     }
     div > h1 {
@@ -139,10 +142,34 @@
       align-self: center;
       width: 300px;
     }
+    .card {
+      width: 200px;
+      height: auto;
+      h2 {
+        font-size: 24px;
+      }
+      p {
+        font-size: 14px;
+      }
+    }
   }
+//   .aboutEvent {
+//     align-items: center;
+//   }
 
-  .card {
-    min-width: none;
-    width: 90%;
-  }
+ 
 }
+
+// @media screen and (max-width: 362px) {
+//     .card{
+
+//         width: 250px;
+//         height: auto;
+//         h2 {
+//             font-size: 24px;
+//     }
+//     p {
+//       font-size: 14px;
+//     }
+// }
+// }
