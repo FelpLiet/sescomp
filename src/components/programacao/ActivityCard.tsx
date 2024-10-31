@@ -1,4 +1,4 @@
-// src/components/programacao/ActivityCard.tsx
+import { Button } from "../Button";
 import styles from './styles.module.scss';
 import mapPin from '../../assets/icon/MAP-PIN.svg';
 import clock from '../../assets/icon/CLOCK.svg';
@@ -13,20 +13,65 @@ interface ActivityCardProps {
     date: string;
 }
 
-const categoryColors: { [key: string]: string } = {
-    'Palestra': '#31009D',
-    'Videoconferência': '#6C24BD',
-    'Roda de Conversa': '#B88BFF',
-    'Minicurso': '#F72585',
-    'Fórum': '#F870A9',
-    'Oficina': '#930059',
-    'Atividade Cultural': '#00A5E3',
-    'Code Time': '#70D1EE',
-    'Organização': '#00609D',
-};
+const categoryColors = [
+    {
+        "category": "Palestra",
+        "bgColor": "#31009D",
+        "textColor": "#FFFFFF"
+    },
+    {
+        "category": "Videoconferência",
+        "bgColor": "#6C24BD",
+        "textColor": "#FFFFFF"
+    },
+    {
+        "category": "Roda de Conversa",
+        "bgColor": "#B88BFF",
+        "textColor": "#000000"
+    },
+    {
+        "category": "Minicurso",
+        "bgColor": "#F72585",
+        "textColor": "#FFFFFF"
+    },
+    {
+        "category": "Fórum",
+        "bgColor": "#F870A9",
+        "textColor": "#000000"
+    },
+    {
+        "category": "Oficina",
+        "bgColor": "#930059",
+        "textColor": "#FFFFFF"
+    },
+    {
+        "category": "Atividade Cultural",
+        "bgColor": "#00A5E3",
+        "textColor": "#000000"
+    },
+    {
+        "category": "Code Time",
+        "bgColor": "#70D1EE",
+        "textColor": "#000000"
+    },
+    {
+        "category": "Organização",
+        "bgColor": "#00609D",
+        "textColor": "#FFFFFF"
+    }
+]
+
+const getCategoryColor = (category: string) => {
+    const categoryColor = categoryColors.find(categoryColor => categoryColor.category === category);
+    return categoryColor || { bgColor: "#FFFFFF", textColor: "#000000" };
+}
+
 
 export function ActivityCard({ name, speaker, location, time, category: type, date }: ActivityCardProps) {
-    const categoryColor = categoryColors[type] || `#000`
+    const { bgColor, textColor } = getCategoryColor(type);
+    const handleNavigation = () => {
+        window.open('https://www.even3.com.br/sescomp-vii/', '_blank');
+      };
 
     return (
         <div className={styles.card}>
@@ -45,14 +90,30 @@ export function ActivityCard({ name, speaker, location, time, category: type, da
                         {time}
                     </div>
                 </div>
+                <div className={styles.desktop}>
+                    <Button.Root>
+                        <Button.Content
+                            label="Inscreva-se na atividade"
+                            onClick={handleNavigation}
+                        />
+                    </Button.Root>
+                </div>
             </div>
             <div className={styles.cardDate}>
                 <div className={styles.dia}>
                     <span>{date}</span>
                     <img src={bgDia} alt="Icone Dia" />
                 </div>
-                <div className={styles.categoria} style={{backgroundColor: categoryColor}}>
-                    {type}
+                <div className={styles.mobile}>
+                    <div className={styles.categoria} style={{backgroundColor: bgColor, color: textColor}}>
+                        {type}
+                    </div>
+                    <Button.Root>
+                        <Button.Content
+                            label="Inscreva-se na atividade"
+                            onClick={handleNavigation}
+                        />
+                    </Button.Root>
                 </div>
             </div>
         </div>

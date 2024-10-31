@@ -31,6 +31,14 @@
     font-size: 2rem;
 }
 
+.cardInfo div:last-child {
+    width: 236px;
+
+    button {
+        height: 100%;
+    }
+}
+
 .infoContainer {
     display: flex;
     flex-direction: column;
@@ -42,6 +50,7 @@
     align-items: center;
     gap: 10px;
 }
+
 
 .cardDate {
     display: flex;
@@ -66,8 +75,13 @@
     color: white;
 }
 
+.mobile :last-child {
+    display: none;
+}
+
 .categoria {
     display: flex;
+    width: fit-content;
     flex-wrap: nowrap;
     text-wrap: nowrap;
     align-items: center;
@@ -75,30 +89,13 @@
     font-weight: 600;
     background-color: var(--color-secondary);
     color: white;
-    padding: 5px 10px;
+    padding: 8px 12px;
     border-radius: 24px;
 }
 
 @media screen and (max-width: 768px) {
-    .Programacao {
-        padding: 20px;
-    }
-
-    .atividades {
-        gap: 10px;
-    }
-
-    .datas {
-        gap: 10px;
-    }
-
-    .datas button {
-        padding: 10px 5px;
-        font-size: 1rem;
-    }
-
     .card {
-        flex-direction: column;
+        // flex-direction: column;
         gap: 10px;
     }
 
@@ -120,16 +117,58 @@
 
     .cardDate {
         align-items: flex-start;
-        flex-direction: row-reverse;
+        // flex-direction: row;
         align-items: flex-end;
     }
 
     .dia span {
-        font-size: 1.2rem;
-        transform: translate(-50%, -70%);
+        // font-size: 1.2rem;
+        // transform: translate(-50%, -70%);
     }
 
     .categoria {
-        padding: 3px 5px;
+        padding: 5px 8px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .card {
+        flex-direction: column;
+    }
+
+    .desktop {
+        display: none;
+    }
+
+    .cardInfo h3 {
+        font-size: 1.2rem;
+    }
+
+    .info {
+        gap: 3px;
+    }
+
+    .cardDate {
+        align-items: flex-end;
+        flex-direction: row-reverse;
+    }
+
+    .dia span {
+        // font-size: 1rem;
+        // transform: translate(-50%, -70%);
+    }
+
+    .mobile :last-child {
+        display: flex;
+    }
+
+    .mobile {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .categoria {
+        
     }
 }

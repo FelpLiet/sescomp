@@ -18,9 +18,8 @@
     position: -webkit-sticky;
     position: sticky;
     padding-top: 20px;
-    top: 0;
     z-index: 100;
-    top: 80px;
+    top: 70px;
 }
 
 .datas {
@@ -93,5 +92,17 @@
     .datas button {
         padding: 10px 5px;
         font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .datas {
+        // flex-direction: column;
+        gap: 10px;
+    }
+
+    .datas button {
+        padding: 10px 5px;
+        font-size: 0.9rem;
     }
 }
