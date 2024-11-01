@@ -72,12 +72,6 @@
     transition: width 0.3s ease-in-out, height 0.3s ease-in-out;
 }
 
-.triangleFadeIn {
-    // opacity: 1;
-    transform: scale(1);
-    transition: opacity 0.3s ease-in, scale 0.3s ease-in;
-}
-
 .cardAtividades {
     display: flex;
     flex-direction: column;

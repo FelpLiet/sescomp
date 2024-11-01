@@ -104,11 +104,9 @@ export function ActivityCard({ name, speaker, location, time, category: type, da
                     <span>{date}</span>
                     <img src={bgDia} alt="Icone Dia" />
                 </div>
-                
                     <div className={styles.categoria} style={{backgroundColor: bgColor, color: textColor}}>
                         {type}
                     </div>
-                
             </div>
             <div className={styles.mobile}>
                 <Button.Root >
