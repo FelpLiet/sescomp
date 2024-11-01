@@ -5,6 +5,8 @@ import { Button } from "../../components/Button";
 import { DropdownMenu } from "../../components/DropdownMenu";
 import Dropdown from "../../components/Dropdown";
 import { Link } from "react-router-dom";
+import React from "react";
+
 interface NavRootProps {
   children: ReactNode;
 }
@@ -13,6 +15,8 @@ export function NavRoot({ children }: NavRootProps) {
   const handleNavigation = () => {
     window.open('https://www.even3.com.br/sescomp-vii/', '_blank');
   };
+
+  const [isOpen, setIsOpen] = React.useState(false);
 
   return (
     <nav className={styles.navbar}>
@@ -44,6 +48,7 @@ export function NavRoot({ children }: NavRootProps) {
           </DropdownMenu.Item>
         </DropdownMenu.Root>
       </div>
+      {isOpen && <div className={styles.overlay} onClick={() => setIsOpen(false)}></div>}
     </nav>
   );
 }

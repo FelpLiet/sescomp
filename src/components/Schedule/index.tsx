@@ -7,13 +7,15 @@ import ImgPalavras2 from "../../assets/images/palavrasPart2.svg";
 import activitiesJson from "../../data/activities.json";
 import { ScheduleItem } from "./scheduleItem";
 import { useEffect, useState } from "react";
+import { useNavigate } from 'react-router-dom';
 
 
 const activities = activitiesJson.slice(0, 2);
 
 export function Schedule() {
+    const navigate = useNavigate();
     const handleNavigation = () => {
-        window.location.href = "/sescomp/#/programacao";
+        navigate('/programacao');
     };
 
     const [windowWidth, setWindowWidth] = useState(window.innerWidth);
