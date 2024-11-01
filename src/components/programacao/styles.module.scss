@@ -17,26 +17,19 @@
 .cardInfo {
     display: flex;
     flex-direction: column;
-    gap: 25px;
+    gap: 24px;
 }
 
-.cardInfo .titulo {
+.titulo {
     display: flex;
     flex-direction: column;
-    gap: 0px;
+    gap: 8px;
 }
 
-.cardInfo h3 {
+.titulo h3 {
     font-family: "Anonymous Pro", monospace;
     font-size: 2rem;
-}
-
-.cardInfo div:last-child {
-    width: 236px;
-
-    button {
-        height: 100%;
-    }
+    line-height: 120%;
 }
 
 .infoContainer {
@@ -51,6 +44,9 @@
     gap: 10px;
 }
 
+.desktop {
+    width: 236px;
+}
 
 .cardDate {
     display: flex;
@@ -75,7 +71,7 @@
     color: white;
 }
 
-.mobile :last-child {
+.mobile {
     display: none;
 }
 
@@ -94,36 +90,8 @@
 }
 
 @media screen and (max-width: 768px) {
-    .card {
-        // flex-direction: column;
-        gap: 10px;
-    }
-
-    .cardInfo {
-        gap: 10px;
-    }
-
-    .cardInfo h3 {
+    .titulo h3 {
         font-size: 1.5rem;
-    }
-
-    .cardInfo .titulo {
-        gap: 5px;
-    }
-
-    .info {
-        gap: 5px;
-    }
-
-    .cardDate {
-        align-items: flex-start;
-        // flex-direction: row;
-        align-items: flex-end;
-    }
-
-    .dia span {
-        // font-size: 1.2rem;
-        // transform: translate(-50%, -70%);
     }
 
     .categoria {
@@ -140,35 +108,28 @@
         display: none;
     }
 
-    .cardInfo h3 {
-        font-size: 1.2rem;
+    .titulo h3 {
+        font-size: 1.4rem;
+    }
+
+    .titulo p {
+        font-size: 0.9rem;
     }
 
     .info {
         gap: 3px;
+        font-size: 0.9rem;
     }
 
     .cardDate {
-        align-items: flex-end;
+        align-items: center;
         flex-direction: row-reverse;
-    }
-
-    .dia span {
-        // font-size: 1rem;
-        // transform: translate(-50%, -70%);
-    }
-
-    .mobile :last-child {
-        display: flex;
     }
 
     .mobile {
         display: flex;
-        flex-direction: column;
-        gap: 30px;
-    }
-
-    .categoria {
-        
-    }
+        justify-content: center;
+        align-items: center;
+        // width: 300px;
+      }
 }

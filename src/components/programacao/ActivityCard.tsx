@@ -70,7 +70,7 @@ const getCategoryColor = (category: string) => {
 export function ActivityCard({ name, speaker, location, time, category: type, date }: ActivityCardProps) {
     const { bgColor, textColor } = getCategoryColor(type);
     const handleNavigation = () => {
-        window.open('https://www.even3.com.br/sescomp-vii/', '_blank');
+        window.open('https://www.even3.com.br/participante/sessions/', '_blank');
       };
 
     return (
@@ -104,17 +104,19 @@ export function ActivityCard({ name, speaker, location, time, category: type, da
                     <span>{date}</span>
                     <img src={bgDia} alt="Icone Dia" />
                 </div>
-                <div className={styles.mobile}>
+                
                     <div className={styles.categoria} style={{backgroundColor: bgColor, color: textColor}}>
                         {type}
                     </div>
-                    <Button.Root>
-                        <Button.Content
-                            label="Inscreva-se na atividade"
-                            onClick={handleNavigation}
-                        />
-                    </Button.Root>
-                </div>
+                
+            </div>
+            <div className={styles.mobile}>
+                <Button.Root >
+                    <Button.Content
+                        label="Inscreva-se na atividade"
+                        onClick={handleNavigation}
+                    />
+                </Button.Root>
             </div>
         </div>
     );
