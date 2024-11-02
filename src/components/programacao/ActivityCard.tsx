@@ -11,6 +11,7 @@ interface ActivityCardProps {
     time: string;
     category: string;
     date: string;
+    link?: string;
 }
 
 const categoryColors = [
@@ -67,10 +68,10 @@ const getCategoryColor = (category: string) => {
 }
 
 
-export function ActivityCard({ name, speaker, location, time, category: type, date }: ActivityCardProps) {
+export function ActivityCard({ name, speaker, location, time, category: type, date, link = 'https://www.even3.com.br/participante/sessions/'}: ActivityCardProps) {
     const { bgColor, textColor } = getCategoryColor(type);
     const handleNavigation = () => {
-        window.open('https://www.even3.com.br/participante/sessions/', '_blank');
+        window.open(link, '_blank');
       };
 
     return (

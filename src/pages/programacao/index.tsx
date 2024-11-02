@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import styles from "./styles.module.scss";
 import { Header } from "../../shared/header";
 import { ActivityCard } from "../../components/programacao/ActivityCard";
@@ -6,10 +6,44 @@ import { Ticket } from "../../shared/Ticket";
 import triangles from "../../assets/icon/TRIANGLES.svg";
 import activitiesJson from "../../data/activities.json";
 
-const activities = activitiesJson;
+interface Event {
+    name: string;
+    speaker: string;
+    location: string;
+    time: string;
+    category: string;
+    date: string;
+    link: string;
+}
+
+interface Activity {
+    date: string;
+    events: Event[];
+}
+
+const jsonUrl = 'https://raw.githubusercontent.com/FelpLiet/sescomp/refs/heads/main/src/data/activities.json';
 
 export function Programacao() {
     const [selectedDate, setSelectedDate] = useState('11/11 - Segunda-feira');
+    const [activities, setActivities] = useState<Activity[]>([]);
+
+    useEffect(() => {
+        const fetchActivities = async () => {
+            try {
+                const response = await fetch(jsonUrl);
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                const data: Activity[] = await response.json();
+                setActivities(data);
+            } catch (error) {
+                console.error('Erro ao buscar os dados remotos:', error);
+                setActivities(activitiesJson as Activity[]);
+            }
+        };
+
+        fetchActivities();
+    }, []);
 
     const handleDateChange = (date: string) => {
             setSelectedDate(date);  
@@ -56,6 +90,7 @@ export function Programacao() {
                                 time={activity.time}
                                 category={activity.category}
                                 date={activity.date}
+                                link={activity.link}
                             />
                         ))}
                     </div>

@@ -24,14 +24,6 @@
         "date": "12"
       },
       {
-        "name": "Codando às Cegas",
-        "speaker": "Organização",
-        "location": "Espaço Up Value",
-        "time": "09:00 às 12:00",
-        "category": "Code Time",
-        "date": "12"
-      },
-      {
         "name": "WSL: Uma porta para o mundo Linux",
         "speaker": "José Wesley da Silva Gonçalves",
         "location": "Espaço Apodi",
@@ -43,7 +35,7 @@
         "name": "Roda de Conversa sobre empreendedorismo e inovação",
         "speaker": "",
         "location": "Tony Stark",
-        "time": "9:00 às 11:00",
+        "time": "15:30 às 17:30",
         "category": "Roda de Conversa",
         "date": "12"
       },
@@ -64,10 +56,19 @@
         "date": "12"
       },
       {
+        "name": "Learninglab - O céu é o limite: A trajetória de 4 anos de sucesso",
+        "speaker": "Pedro de Carvalho Chaaban, Johnath Silva da Costa, Rayla Matias de Lima, Anna Rachel Liberato da Silva e Francisco Honycleytton Rebouças Sena",
+        "location": "Espaço Apodi",
+        "time": "10:00 às 11:00",
+        "category": "Palestra",
+        "date": "12"
+      },
+
+      {
         "name": "Escape Room",
         "speaker": "Organização",
-        "location": "",
-        "time": "11:00 às 12:00",
+        "location": "Sala 14 Und 1",
+        "time": "13:30 às 14:30",
         "category": "Atividade Cultural",
         "date": "12"
       },
@@ -120,14 +121,6 @@
         "date": "12"
       },
       {
-        "name": "Uso de Inteligência Artificial no dia a dia e os impactos na Segurança da Informação e Privacidade.",
-        "speaker": "Vicente Fernandes Duarte Neto e Francisca Maria Rodrigues Andrade",
-        "location": "Espaço Fitbank",
-        "time": "14:30 às 15:30",
-        "category": "Palestra",
-        "date": "12"
-      },
-      {
         "name": "Mulheres na área de STEM juntamente com o MEI",
         "speaker": "Anna Beatriz Marques, Silvia Teles Vianna",
         "location": "Tony Stark",
@@ -138,7 +131,7 @@
       {
         "name": "Carreira em UX Design: como começar e se manter relevante no contexto de IAs",
         "speaker": "Nina Talks",
-        "location": "Espaço Up Value",
+        "location": "Tony Stark",
         "time": "15:30 às 16:30",
         "category": "Videoconferência",
         "date": "12"
@@ -379,6 +372,22 @@
         "time": "16:30 às 17:30",
         "category": "Palestra",
         "date": "13"
+      },
+      {
+        "name": "Oficina de Roteiro para formatos mínimos e curtas-metragens. Apresentação do formato, estrutura, softwares e tira dúvidas sobre o processo de escrita.",
+        "speaker": "Felipe Barreto Arrais",
+        "location": "",
+        "time": "",
+        "category": "Oficina",
+        "date": "13"
+      },
+      {
+        "name": "Como utilizar IA no review e criação de código acessível",
+        "speaker": "Vinicios Neves - ALURA",
+        "location": "",
+        "time": "",
+        "category": "Videoconferência",
+        "date": "13"
       }
     ]
   },
@@ -391,7 +400,8 @@
         "location": "Wall-E",
         "time": "08:00 às 12:00",
         "category": "Code Time",
-        "date": "14"
+        "date": "14",
+        "link": "https://drive.google.com/file/d/129zw12vfVSSuwtKxK0MGPRyn1XNOBdid/view?usp=drive_link"
       },
       {
         "name": "Do conceito à execução: a jornada de alunos da UFC desenvolvendo um sistema mobile",
@@ -416,6 +426,15 @@
         "time": "09:00 às 11:00",
         "category": "Minicurso",
         "date": "14"
+      },
+      {
+        "name": "Codando às Cegas",
+        "speaker": "Organização",
+        "location": "Espaço Up Value",
+        "time": "09:00 às 12:00",
+        "category": "Code Time",
+        "date": "14",
+        "link": "https://drive.google.com/file/d/1EBnLNFDBXgSyeuP06_lo3cfinXrN5hCr/view?usp=sharing"
       },
       {
         "name": "Ataques de Negação de Serviço (DoS e DDoS): conceitos, formas de execução e métodos de identificação",
@@ -519,7 +538,8 @@
         "location": "Ada Lovelace",
         "time": "13:30 às 15:30",
         "category": "Atividade Cultural",
-        "date": "14"
+        "date": "14",
+        "link": "https://drive.google.com/file/d/1CJO_gi_Avj50XdqPHjwAA0fJtGpJR7Ba/view?usp=drive_link"
       },
       {
         "name": "AI e Design Inclusivo: reconhecendo os algoritmos de destruição em massa.",
