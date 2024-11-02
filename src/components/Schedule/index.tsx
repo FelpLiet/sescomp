@@ -16,6 +16,7 @@ export function Schedule() {
     const navigate = useNavigate();
     const handleNavigation = () => {
         navigate('/programacao');
+        window.scrollTo({ top: 0, behavior: 'smooth' });
     };
 
     const [windowWidth, setWindowWidth] = useState(window.innerWidth);
@@ -59,10 +60,9 @@ export function Schedule() {
                 alt="palavras"
             />
             {/* <img src={TextIllustrative} alt="Texto ilustrativo" /> */}
-            <span className={styles.btn}>
+            <span className={styles.btn} onClick={handleNavigation}>
                 <Button.Root>
                     <Button.Content
-                        onClick={handleNavigation}
                         label="Ver programação completa"
                     />
                     <Button.Icon icon={Icon.Arrow} />
