@@ -90,11 +90,11 @@ export function ActivityCard({ name, speaker, location, time, category: type, da
                         {time}
                     </div>
                 </div>
-                <div className={styles.desktop}>
+                <div className={styles.desktop} onClick={handleNavigation}>
                     <Button.Root>
                         <Button.Content
                             label="Inscreva-se na atividade"
-                            onClick={handleNavigation}
+                            
                         />
                     </Button.Root>
                 </div>
@@ -108,11 +108,10 @@ export function ActivityCard({ name, speaker, location, time, category: type, da
                         {type}
                     </div>
             </div>
-            <div className={styles.mobile}>
+            <div className={styles.mobile} onClick={handleNavigation}>
                 <Button.Root >
                     <Button.Content
                         label="Inscreva-se na atividade"
-                        onClick={handleNavigation}
                     />
                 </Button.Root>
             </div>

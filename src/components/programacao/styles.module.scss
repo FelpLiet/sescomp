@@ -46,6 +46,7 @@
 
 .desktop {
     width: 236px;
+    cursor: pointer;
 }
 
 .cardDate {
@@ -130,5 +131,6 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        cursor: pointer;
       }
 }

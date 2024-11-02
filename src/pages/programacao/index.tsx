@@ -4,7 +4,7 @@ import { Header } from "../../shared/header";
 import { ActivityCard } from "../../components/programacao/ActivityCard";
 import { Ticket } from "../../shared/Ticket";
 import triangles from "../../assets/icon/TRIANGLES.svg";
-import activitiesJson from "../../data/activities.json";
+import activitiesJson from "../../data/activitiesNovo.json";
 
 const activities = activitiesJson;
 
@@ -20,7 +20,7 @@ export function Programacao() {
 
     return (
         <>
-            <Header title="Programação" bgColor="lightblue" />
+            <Header title="Programação" />
             <section className={styles.Programacao}>
                 <div className={styles.atividades}>
                     <div className={styles.datasContainer}>
