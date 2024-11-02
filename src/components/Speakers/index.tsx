@@ -56,7 +56,7 @@ export function Speakers() {
     }, []);
 
     return (
-        <div className={styles.speakers}>
+        <div id="speakers" className={styles.speakers}>
             <h1>Palestrantes</h1>
             <Carousel visibleItems={visibleItems}>
                 {speakersJson.map((speaker, index) => (

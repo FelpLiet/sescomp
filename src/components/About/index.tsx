@@ -15,6 +15,7 @@ export function About() {
 
   return (
       <section
+          id="about"
           className={styles.about}
           style={{
             backgroundImage: `url(${Background})`,

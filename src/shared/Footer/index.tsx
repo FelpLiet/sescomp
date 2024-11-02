@@ -1,6 +1,32 @@
 import { Icon } from "../../components/icons";
 import styles from "./styles.module.scss";
 export default function Footer() {
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }
+
+  const handleScrollToSpeakers = () => {
+    const speakersElement = document.getElementById("speakers");
+    if (speakersElement) {
+        const elementPosition = speakersElement.getBoundingClientRect().top + window.scrollY;
+        const offsetPosition = elementPosition - (window.innerHeight / 2) + (speakersElement.clientHeight / 2);
+        window.scrollTo({
+            top: offsetPosition,
+            behavior: "smooth"
+        });
+    }
+  };
+
+  const handleScrollAbout = () => {
+    const aboutElement = document.getElementById("about");
+    if (aboutElement) {
+        aboutElement.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <footer className={styles.footer}>
       <div className={styles.icon}>
@@ -14,25 +40,25 @@ export default function Footer() {
         <h6>Navegação</h6>
         <ul>
           <li>
-            <a href="/sescomp">Inicio</a>
+            <a href="/sescomp" onClick={scrollToTop}>Inicio</a>
           </li>
           <li>
-            <a href="/sescomp">Conheça a SESCOMP</a>
+            <a href="/sescomp/#/#about" onClick={handleScrollAbout}>Conheça a SESCOMP</a>
           </li>
           <li>
-            <a href="/sescomp">O que esperar?</a>
+            <a href="/sescomp/#/em-breve" onClick={scrollToTop}>O que esperar?</a>
           </li>
           <li>
-            <a href="/sescomp">Palestrantes</a>
+            <a href="/sescomp/#/#speakers" onClick={handleScrollToSpeakers}>Palestrantes</a>
           </li>
           <li>
-            <a href="/sescomp/#/programacao">Programação</a>
+            <a href="/sescomp/#/programacao" onClick={scrollToTop}>Programação</a>
           </li>
           <li>
-            <a href="/sescomp/#/em-breve">Loja Oficial</a>
+            <a href="/sescomp/#/em-breve" onClick={scrollToTop}>Loja Oficial</a>
           </li>
           <li>
-            <a href="/sescomp/#/patrocinadores">Patrocinadores</a>
+            <a href="/sescomp/#/patrocinadores" onClick={scrollToTop}>Patrocinadores</a>
           </li>
         </ul>
       </div>
@@ -45,10 +71,10 @@ export default function Footer() {
             </a>
           </li>
           <li>
-            <a href="/sescomp/#/programacao">Programação</a>
+            <a href="/sescomp/#/programacao" onClick={scrollToTop}>Programação</a>
           </li>
           <li>
-            <a href="/sescomp/#/manual">Manual</a>
+            <a href="/sescomp/#/manual" onClick={scrollToTop}>Manual</a>
           </li>
         </ul>
       </div>

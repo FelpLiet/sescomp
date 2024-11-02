@@ -12,6 +12,7 @@ const backgroundColors = [
     { "name": "Manual", "bgColor": "#4361EE" },
     { "name": "Loja", "bgColor": "#F2F2F2" },
     { "name": "Expectativas", "bgColor": "#F2F2F2" },
+    { "name": "Em Breve...", "bgColor": "#004aa2" },
 ]
 
 export function Header({ title }: HeaderProps) {
