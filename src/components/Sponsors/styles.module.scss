@@ -3,6 +3,7 @@
   flex-direction: column;
   align-items: center;
   padding: 20px 40px;
+  margin-bottom: 50px;
   div {
     display: flex;
     flex-direction: column;
@@ -24,6 +25,16 @@
       flex-direction: row;
       flex-wrap: wrap;
       gap: 4rem;
+      
+      a {
+        display: inline-block;
+        transition: transform 0.3s ease;
+      }
+
+      a:hover {
+        transform: scale(1.1);
+      }
+
       img {
         max-width: 200px;
         height: 80px;
@@ -81,4 +92,47 @@
       transform: rotate(-4.15deg);
     }
   }
+}
+
+
+@media (max-width: 768px) {
+  .sponsors {
+    padding: 20px 20px;
+    div {
+      h3 {
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+      }
+      div {
+        gap: 2rem;
+        a {
+          img {
+            max-width: 150px;
+            height: 60px;
+          }
+        }
+      }
+    }
+  }
+
+  .bannerContainer {
+    margin-top: 2rem;
+  }
+
+  .banner {
+    img {
+      width: 12rem;
+    }
+    figcaption {
+      top: 8px;
+      right: 38px;
+      h2 {
+        font-size: 24px;
+      }
+      h6 {
+        font-size: 12px;
+      }
+    }
+  }
+  
 }
