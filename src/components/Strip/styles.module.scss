@@ -25,4 +25,8 @@
     font-weight: 600;
     color: var(--color-text-white);
   }
+
+  li img {
+    transform: translateY(1px);
+  }
 }

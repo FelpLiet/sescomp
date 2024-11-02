@@ -3,15 +3,16 @@
   background-color: #FAFAFA;
   cursor: pointer;
   z-index: 1000;
-
+  transition: all 0.3s ease;
 
   &:hover {
-    filter: brightness(0.95);
+    // filter: brightness(0.95);
+    
   }
 
   &:focus {
-    outline: 1px solid #FAFAFA;
     border-radius: 6px;
+    transform: rotate(180deg);
   }
 }
 

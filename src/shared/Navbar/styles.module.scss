@@ -1,6 +1,5 @@
 .navbar {
   position: fixed;
-  // top: 0;
   width: 100%;
   z-index: 1000;
   background-color: #fafafa;
@@ -41,16 +40,14 @@
       font-size: 16px;
     }
     div {
-      margin-right: 70px;
-      margin-left: 40px;
-      @media (max-width: 1024px){
-        margin-right: 30px;
-        margin-left: 20px;
-      }
+      margin: 0 10px;
     }
   }
   .menu {
     display: none;
+  }
+  .participarButton {
+    cursor: pointer;
   }
 }
 
@@ -67,8 +64,8 @@
     }
     .menu {
       display: flex;
+      justify-content: center;
       padding: 16px 10px;
-      
     }
   }
 }
