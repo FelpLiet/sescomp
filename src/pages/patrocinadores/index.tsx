@@ -14,7 +14,7 @@ export function Sponsors() {
 
     return (
         <>
-            <Header title="Patrocinadores" bgColor="pink" />
+            <Header title="Patrocinadores" />
             <SponsorComponent types={sponsorTypes} />
             <Ticket />
         </>
