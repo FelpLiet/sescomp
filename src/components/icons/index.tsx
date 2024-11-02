@@ -22,6 +22,7 @@ import { ReactComponent as Title } from "../../assets/title.svg";
 import { ReactComponent as Check } from "../../assets/icon/CHECK.svg";
 import { ReactComponent as LogoQrcode } from "../../assets/logo-qrcode.svg";
 import { ReactComponent as Line } from "../../assets/line.svg";
+import { ReactComponent as Close } from "../../assets/icon/CLOSE.svg";
 
 export const Icon = {
   Sescomp,
@@ -42,5 +43,6 @@ export const Icon = {
   Title,
   Check,
   LogoQrcode,
-  Line
+  Line,
+  Close,
 };

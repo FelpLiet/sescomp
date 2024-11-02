@@ -20,7 +20,7 @@ export function Programacao() {
 
     return (
         <>
-            <Header title="Programação" bgColor="lightblue" />
+            <Header title="Programação" />
             <section className={styles.Programacao}>
                 <div className={styles.atividades}>
                     <div className={styles.datasContainer}>
