@@ -100,13 +100,12 @@
     }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 529px) {
     .card {
         display: grid;
         grid-template-areas: 
             "cardInfo cardDate"
             "mobile mobile";
-        gap: 10px;
         padding: 20px;
     }
 
@@ -124,11 +123,23 @@
 
     .info {
         gap: 3px;
-        font-size: 0.9rem;
+        font-size: 0.8rem;
     }
 
     .cardDate {
         align-items: right;
+    }
+
+    .dia span {
+        font-size: 1.1rem;
+    }
+
+    .dia img {
+        width: 60px;
+    }
+
+    .categoria {
+        font-size: 0.8rem;
     }
 
     .mobile {
@@ -137,7 +148,7 @@
         align-items: center;
         cursor: pointer;
         grid-column: 1 / -1;
-        margin-top: 10px;
+        margin-top: 20px;
     }
 
     .mobile :only-child {
