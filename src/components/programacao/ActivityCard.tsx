@@ -83,7 +83,7 @@ export function ActivityCard({ name, speaker, location, time, category: type, da
                 <div className={styles.infoContainer}>
                     <div className={styles.info}>
                         <img src={mapPin} alt="Map Pin" /> 
-                        {location}
+                        {location ? location : "Em breve"}
                     </div>
                     <div className={styles.info}>
                         <img src={clock} alt="Clock" /> 
@@ -94,7 +94,6 @@ export function ActivityCard({ name, speaker, location, time, category: type, da
                     <Button.Root>
                         <Button.Content
                             label="Inscreva-se na atividade"
-                            
                         />
                     </Button.Root>
                 </div>
@@ -109,11 +108,13 @@ export function ActivityCard({ name, speaker, location, time, category: type, da
                     </div>
             </div>
             <div className={styles.mobile} onClick={handleNavigation}>
-                <Button.Root >
-                    <Button.Content
-                        label="Inscreva-se na atividade"
-                    />
-                </Button.Root>
+                <>
+                    <Button.Root>
+                        <Button.Content
+                            label="Inscreva-se na atividade"
+                            />
+                    </Button.Root>
+                </>
             </div>
         </div>
     );

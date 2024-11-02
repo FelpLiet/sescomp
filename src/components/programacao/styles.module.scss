@@ -102,7 +102,12 @@
 
 @media screen and (max-width: 480px) {
     .card {
-        flex-direction: column;
+        display: grid;
+        grid-template-areas: 
+            "cardInfo cardDate"
+            "mobile mobile";
+        gap: 10px;
+        padding: 20px;
     }
 
     .desktop {
@@ -123,8 +128,7 @@
     }
 
     .cardDate {
-        align-items: center;
-        flex-direction: row-reverse;
+        align-items: right;
     }
 
     .mobile {
@@ -132,5 +136,11 @@
         justify-content: center;
         align-items: center;
         cursor: pointer;
-      }
+        grid-column: 1 / -1;
+        margin-top: 10px;
+    }
+
+    .mobile :only-child {
+        width: 100%;
+    }
 }
