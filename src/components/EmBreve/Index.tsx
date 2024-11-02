@@ -1,19 +1,7 @@
-import EmbreveImg from "../../assets/images/embreve.png";
-import BackgroundEmbreveImg from "../../assets/images/backgroundembreve.jpg";
-import styles from "./styles.module.scss";
-
+import { Header } from "../../shared/header";
 
 export function EmBreve(){
   return (
-    <section
-      className={styles.Embreve}
-      style={{
-        backgroundImage: `url(${BackgroundEmbreveImg})`,
-      }}
-    >
-      <div>
-        <img src={EmbreveImg} alt="Em breve" loading="eager" />
-      </div>
-    </section>
+    <Header title="Em Breve..." />
   );
 }
