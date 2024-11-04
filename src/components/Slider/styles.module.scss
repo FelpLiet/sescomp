@@ -10,12 +10,16 @@ $contorno-texto: 1px 1px 0 #fff,  -1px 1px 0 #fff,  1px -1px 0 #fff,  -1px -1px 
   align-items: center;
   justify-content: flex-start;
 
+  
   &__container {
     margin-left: 72px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 24px;
+    @media (max-width: 480px) {
+      margin-left: 40px;
+    }
     h1 {
       color: #ffffff;
       font-family: Montserrat;

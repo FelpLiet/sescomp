@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import styles from "./Carousel.module.scss";
 interface CarouselProps {
   visibleItems: number;
@@ -25,6 +25,14 @@ const Carousel = ({ children, visibleItems = 1 }: CarouselProps) => {
     transform: `translateX(-${currentIndex * (100 / visibleItems)}%)`,
     // justifyContent: visibleItems == 1 ? "" : "center",
   };
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      nextSlide();
+    }
+    , 3000);
+    return () => clearInterval(interval);
+  }, [currentIndex]);
 
   return (
     <div className={styles.sliderContainer}>
