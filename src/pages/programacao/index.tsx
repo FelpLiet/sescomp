@@ -21,7 +21,7 @@ interface Activity {
     events: Event[];
 }
 
-const jsonUrl = 'https://raw.githubusercontent.com/FelpLiet/sescomp/refs/heads/main/src/data/activities.json';
+const jsonUrl = 'https://raw.githubusercontent.com/FelpLiet/sescomp/refs/heads/main/src/data/activities.jso';
 
 export function Programacao() {
     const [selectedDate, setSelectedDate] = useState('11/11 - Segunda-feira');
@@ -46,9 +46,11 @@ export function Programacao() {
     }, []);
 
     const handleDateChange = (date: string) => {
-            setSelectedDate(date);  
+        setSelectedDate(date);  
+        setTimeout(() => {
             window.scrollTo({ top: 0, behavior: 'smooth' });
-    }
+        }, 0);
+    };
     
     const selectedActivities = activities.find(activity => activity.date === selectedDate)?.events || [];
 

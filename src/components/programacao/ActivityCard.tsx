@@ -59,6 +59,20 @@ const categoryColors = [
         "category": "Organização",
         "bgColor": "#00609D",
         "textColor": "#FFFFFF"
+    },
+    {
+        "category": "Encerramento",
+        "bgColor": "#4361EE",
+        "textColor": "#000000"
+    },
+    {
+        "category": "Abertura",
+        "bgColor": "#4361EE",
+    },
+    {
+        "category": "Minicurso Videoconferência",
+        "bgColor": "#6C24BD",
+        "textColor": "#FFFFFF"
     }
 ]
 
@@ -104,9 +118,9 @@ export function ActivityCard({ name, speaker, location, time, category: type, da
                     <span>{date}</span>
                     <img src={bgDia} alt="Icone Dia" />
                 </div>
-                    <div className={styles.categoria} style={{backgroundColor: bgColor, color: textColor}}>
-                        {type}
-                    </div>
+                <div className={`${styles.categoria} ${type === "Minicurso Videoconferência" ? styles.categoriaWrap : ""}`} style={{backgroundColor: bgColor, color: textColor}}>
+                    {type}
+                </div>
             </div>
             <div className={styles.mobile} onClick={handleNavigation}>
                 <>

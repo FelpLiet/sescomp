@@ -3,6 +3,14 @@
     "date": "11/11 - Segunda-feira",
     "events": [
       {
+        "name": "Abertura",
+        "speaker": "",
+        "location": "Espaço Ada Lovelace",
+        "time": "14:30",
+        "category": "Abertura",
+        "date": "11"
+      },
+      {
         "name": "Inteligência artificial da indústria do cimento e oportunidades de crescimento",
         "speaker": "APODI",
         "location": "Ada Lovelace",
@@ -32,10 +40,18 @@
         "date": "12"
       },
       {
+        "name": "Desenvolvimento utilizando Jetpack Compose",
+        "speaker": "Marcel Bastos Bleasby",
+        "location": "Wall-E",
+        "time": "9:00 às 11:00",
+        "category": "Minicurso",
+        "date": "12"
+      },
+      {
         "name": "Roda de Conversa sobre empreendedorismo e inovação",
         "speaker": "",
         "location": "Tony Stark",
-        "time": "15:30 às 17:30",
+        "time": "9:00 às 11:00",
         "category": "Roda de Conversa",
         "date": "12"
       },
@@ -63,13 +79,20 @@
         "category": "Palestra",
         "date": "12"
       },
-
       {
         "name": "Escape Room",
         "speaker": "Organização",
         "location": "Sala 14 Und 1",
-        "time": "13:30 às 14:30",
+        "time": "10:00 às 12:00",
         "category": "Atividade Cultural",
+        "date": "12"
+      },
+      {
+        "name": "O uso ético e responsável da IA generativa na pesquisa científica",
+        "speaker": "Jessica Neiva de Figueiredo Leite Araujo",
+        "location": "Espaço Seelab",
+        "time": "11:00 às 12:00",
+        "category": "Palestra",
         "date": "12"
       },
       {
@@ -83,7 +106,7 @@
       {
         "name": "A Importância da Expansão Universitária no Interior e os Avanços Tecnológicos na UFC",
         "speaker": "Custódio Almeida",
-        "location": "",
+        "location": "Tony Stark",
         "time": "13:30 às 14:30",
         "category": "Palestra",
         "date": "12"
@@ -198,14 +221,6 @@
         "date": "13"
       },
       {
-        "name": "Desenvolvimento utilizando Jetpack Compose",
-        "speaker": "Marcel Bastos Bleasby",
-        "location": "Wall-E",
-        "time": "9:00 às 11:00",
-        "category": "Minicurso",
-        "date": "13"
-      },
-      {
         "name": "Navegando nas Águas da Tipagem: Explorando as Diferenças entre TypeScript e JavaScript e Seus Reflexos nos Padrões de Projeto de Sistemas",
         "speaker": "Fernanda Nascimento",
         "location": "Wall-E",
@@ -262,27 +277,19 @@
         "date": "13"
       },
       {
-        "name": "O uso ético e responsável da IA generativa na pesquisa científica",
-        "speaker": "Jessica Neiva de Figueiredo Leite Araujo",
-        "location": "Espaço Seelab",
-        "time": "11:00 às 12:00",
-        "category": "Palestra",
-        "date": "13"
-      },
-      {
-        "name": "Transformação Ágil: A Sinergia entre Profissionais Ágeis e Especialistas em Dados",
-        "speaker": "Ana Michelle Feitosa Almeida e Helton Fernandes Costa",
-        "location": "Espaço Seelab",
-        "time": "11:00 às 12:00",
-        "category": "Roda de Conversa",
-        "date": "13"
-      },
-      {
         "name": "Como o uso de inteligência artificial e chatbots podem facilitar na gestão de projetos de software",
         "speaker": "Camila Virna Ferreira Monte",
         "location": "Espaço Alura",
         "time": "11:00 às 12:00",
         "category": "Palestra",
+        "date": "13"
+      },
+      {
+        "name": " Exibição do curta: “O milagra de Santa Rita",
+        "speaker": "Nathan Martins",
+        "location": "Ada Lovelace",
+        "time": "11:00 às 12:00",
+        "category": "Atividade Cultural",
         "date": "13"
       },
       {
@@ -305,7 +312,7 @@
         "name": "Da Arte ao Trabalho: Como Utilizar Técnicas Teatrais para Desenvolver Soft Skills na Área Profissional",
         "speaker": "Murilo de Jesus Caires",
         "location": "Espaço Fitbank",
-        "time": "13:30 às 15:30",
+        "time": "13:30 às 17:30",
         "category": "Oficina",
         "date": "13"
       },
@@ -316,6 +323,15 @@
         "time": "13:30 às 14:30",
         "category": "Palestra",
         "date": "13"
+      },
+      {
+        "name": "MARATONA DE PROGRAMAÇÃO",
+        "speaker": "Organização",
+        "location": "Wall-E",
+        "time": "13:30 às 17:30",
+        "category": "Code Time",
+        "date": "13",
+        "link": "https://drive.google.com/file/d/129zw12vfVSSuwtKxK0MGPRyn1XNOBdid/view?usp=drive_link"
       },
       {
         "name": "Arquitetura em camadas não é só papo para backend",
@@ -394,15 +410,6 @@
   {
     "date": "14/11 - Quinta-feira",
     "events": [
-      {
-        "name": "Maratona de Programação",
-        "speaker": "Organização",
-        "location": "Wall-E",
-        "time": "08:00 às 12:00",
-        "category": "Code Time",
-        "date": "14",
-        "link": "https://drive.google.com/file/d/129zw12vfVSSuwtKxK0MGPRyn1XNOBdid/view?usp=drive_link"
-      },
       {
         "name": "Do conceito à execução: a jornada de alunos da UFC desenvolvendo um sistema mobile",
         "speaker": "Giovana Souza de Araujo",
@@ -563,6 +570,14 @@
         "location": "Espaço Apodi",
         "time": "14:30 às 15:30",
         "category": "Palestra",
+        "date": "14"
+      },
+      {
+        "name": "Encerramento Oficial com Premiações",
+        "speaker": "",
+        "location": "Ada Lovelace",
+        "time": "15:30",
+        "category": "Encerramento",
         "date": "14"
       },
       {

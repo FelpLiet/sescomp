@@ -15,15 +15,15 @@ import thales from "../../assets/palestrante/thales.png";
 import yago from "../../assets/palestrante/yago.png";
 
 const speakersJson = [
+    { name: "Izequiel Pereira", image: izequiel },
+    { name: "Nina Talks", image: nina },
+    { name: "Thales Wylmar", image: thales },
     { name: "Paulina Freitas", image: paulina },
     { name: "Silveira Neto", image: silveira },
     { name: "Gabriela Q.", image: gabriela },
     { name: "Sandro Costa", image: sandro },
     { name: "Alessandro F.", image: alessandro },
     { name: "Yago Marques", image: yago },
-    { name: "Izequiel Pereira", image: izequiel },
-    { name: "Nina Talks", image: nina },
-    { name: "Thales Wylmar", image: thales },
 ];
 
 export function Speakers() {
@@ -38,9 +38,9 @@ export function Speakers() {
             const width = window.innerWidth;
             if (width <= 768) {
                 setVisibleItems(1);
-            } else if (width <= 1024) {
+            } else if (width <= 960) {
                 setVisibleItems(2);
-            } else if (width <= 1440) {
+            } else if (width <= 1350) {
                 setVisibleItems(3);
             } else if (width <= 1920) {
                 setVisibleItems(4);
