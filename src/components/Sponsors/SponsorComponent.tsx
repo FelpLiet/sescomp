@@ -14,6 +14,9 @@ import MDStudio from "../../assets/sponsors/parceiros/MDStudio.svg";
 import geekDungeon from "../../assets/sponsors/parceiros/geekDungeon.svg";
 import lirios from "../../assets/sponsors/parceiros/Lirios.png";
 import digitalCollege from "../../assets/sponsors/parceiros/digitalCollege.png";
+import leleo from "../../assets/sponsors/parceiros/leleo.png";
+import nicarolis from "../../assets/sponsors/parceiros/nicarolis.png";
+import panificadora from "../../assets/sponsors/parceiros/panificadora.png";
 
 interface SponsorComponentProps {
   types: string[];
@@ -45,7 +48,10 @@ const sponsors = {
     { src: MDStudio, alt: "MD Studio - Parceria", link: "https://linktr.ee/mdstudioprodutora?fbclid=PAZXh0bgNhZW0CMTEAAaYBA0g_C3oBF1tD8udOuzSx_ll57TMWtjjRYc33kYqmv-MRRSUOkumgwm4_aem_0_dL6LROY_mljKCHPKFOEA" },
     { src: geekDungeon, alt: "Geek Dungeon - Parceria", link: "https://www.instagram.com/gdungeon_/" },
     { src: lirios, alt: "Lírios Essenciais - Parceria", link: "https://www.instagram.com/liriosessencias.russas/" },
-    { src: digitalCollege, alt: "Digital College - Parceria", link: "https://bio.digitalcollege.com.br/?fbclid=PAZXh0bgNhZW0CMTEAAabfE9BYmqE_9sz_MeLcyp8qcRbjJ9mY4K8iDAyX1Fh-cBpCFzzRSZfcORM_aem_i9ksZ2AsRmfabXPylOot_Q" }
+    { src: digitalCollege, alt: "Digital College - Parceria", link: "https://bio.digitalcollege.com.br/?fbclid=PAZXh0bgNhZW0CMTEAAabfE9BYmqE_9sz_MeLcyp8qcRbjJ9mY4K8iDAyX1Fh-cBpCFzzRSZfcORM_aem_i9ksZ2AsRmfabXPylOot_Q" },
+    { src: leleo, alt: "Leleo - Parceria", link: "https://www.leleomoveis.com.br" },
+    { src: nicarolis, alt: "Nicarolis - Parceria", link: "https://www.instagram.com/nicarolis/" },
+    { src: panificadora, alt: "Panificadora - Parceria", link: "https://www.instagram.com/panificadora_sao_jose/" }
   ]
 };
 
