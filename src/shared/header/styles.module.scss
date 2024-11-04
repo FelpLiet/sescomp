@@ -67,3 +67,13 @@
         transform: scale(0.6) translate(-80%, -80%);
     }
 }
+
+@media screen and (max-width: 480px) {
+    .header {
+        height: 256px;
+    }
+
+    .titulo {
+        transform: scale(0.5) translate(-100%, -90%);
+    }
+}

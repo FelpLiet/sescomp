@@ -21,7 +21,7 @@ interface Activity {
     events: Event[];
 }
 
-const jsonUrl = 'https://raw.githubusercontent.com/FelpLiet/sescomp/refs/heads/main/src/data/activities.jso';
+const jsonUrl = 'https://raw.githubusercontent.com/FelpLiet/sescomp/refs/heads/main/src/data/activities.json';
 
 export function Programacao() {
     const [selectedDate, setSelectedDate] = useState('11/11 - Segunda-feira');
