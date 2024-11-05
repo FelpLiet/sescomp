@@ -62,17 +62,18 @@ const categoryColors = [
     },
     {
         "category": "Encerramento",
-        "bgColor": "#4361EE",
-        "textColor": "#000000"
+        "bgColor": "#FFFFFF",
+        "textColor": "#3A0CA3"
     },
     {
         "category": "Abertura",
-        "bgColor": "#4361EE",
+        "bgColor": "#FFFFFF",
+        "textColor": "#4361EE"
     },
     {
         "category": "Minicurso Videoconferência",
-        "bgColor": "#6C24BD",
-        "textColor": "#FFFFFF"
+        "bgColor": "#E1CFFF",
+        "textColor": "#000000"
     }
 ]
 
@@ -87,6 +88,8 @@ export function ActivityCard({ name, speaker, location, time, category: type, da
     const handleNavigation = () => {
         window.open(link, '_blank');
       };
+
+    const borderStyle = (type === "Abertura" || type === "Encerramento") ? `2px solid ${textColor}` : 'none';
 
     return (
         <div className={styles.card}>
@@ -123,7 +126,7 @@ export function ActivityCard({ name, speaker, location, time, category: type, da
                     </div>
                 </div>
                 <div className={styles.cardDate}>
-                    <div className={styles.categoria} style={{backgroundColor: bgColor, color: textColor}}>
+                    <div className={styles.categoria} style={{backgroundColor: bgColor, color: textColor, border: borderStyle}}>
                         {type}
                     </div>
                 </div>
