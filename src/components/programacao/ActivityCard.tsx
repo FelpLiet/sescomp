@@ -90,36 +90,42 @@ export function ActivityCard({ name, speaker, location, time, category: type, da
 
     return (
         <div className={styles.card}>
-            <div className={styles.cardInfo}>
+            <div className={styles.tituloContainer}>
                 <div className={styles.titulo}>
                     <h3>{name}</h3>
                     <p>{speaker}</p>
                 </div>
-                <div className={styles.infoContainer}>
-                    <div className={styles.info}>
-                        <img src={mapPin} alt="Map Pin" /> 
-                        {location ? location : "Em breve"}
+                <div className={styles.diaContainer}>
+                    <div className={styles.dia}>
+                        <span>{date}</span>
+                        <img src={bgDia} alt="Icone Dia" />
                     </div>
-                    <div className={styles.info}>
-                        <img src={clock} alt="Clock" /> 
-                        {time}
-                    </div>
-                </div>
-                <div className={styles.desktop} onClick={handleNavigation}>
-                    <Button.Root>
-                        <Button.Content
-                            label="Inscreva-se na atividade"
-                        />
-                    </Button.Root>
                 </div>
             </div>
-            <div className={styles.cardDate}>
-                <div className={styles.dia}>
-                    <span>{date}</span>
-                    <img src={bgDia} alt="Icone Dia" />
+            <div className={styles.infoContainer}>
+                <div className={styles.botaoLocalContainer}>
+                    <div className={styles.horaLocalContainer}>
+                        <div className={styles.info}>
+                            <img src={mapPin} alt="Map Pin" /> 
+                            {location ? location : "Em breve"}
+                        </div>
+                        <div className={styles.info}>
+                            <img src={clock} alt="Clock" /> 
+                            {time}
+                        </div>
+                    </div>
+                    <div className={styles.desktop} onClick={handleNavigation}>
+                        <Button.Root>
+                            <Button.Content
+                                label="Inscreva-se na atividade"
+                            />
+                        </Button.Root>
+                    </div>
                 </div>
-                <div className={`${styles.categoria} ${type === "Minicurso Videoconferência" ? styles.categoriaWrap : ""}`} style={{backgroundColor: bgColor, color: textColor}}>
-                    {type}
+                <div className={styles.cardDate}>
+                    <div className={styles.categoria} style={{backgroundColor: bgColor, color: textColor}}>
+                        {type}
+                    </div>
                 </div>
             </div>
             <div className={styles.mobile} onClick={handleNavigation}>
