@@ -1,7 +1,10 @@
+
 .card {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     flex-grow: 1;
+    gap: 24px;
     padding: 20px;
     background-color: var(--color-background);
     border-radius: 8px;
@@ -14,10 +17,42 @@
     background-color: white;
 }
 
-.cardInfo {
+.tituloContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 24px;
+    // position: relative;
+}
+
+.dia {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // position: absolute;
+    
+}
+
+.dia span {
+    position: absolute;
+    font-family: "Anonymous Pro", monospace;
+    font-size: 1.5rem;
+    font-weight: 600;
+    transform: translateY(-15%);
+    color: white;
+}
+
+.botaoLocalContainer {
     display: flex;
     flex-direction: column;
     gap: 24px;
+}
+
+.horaLocalContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 12px;
 }
 
 .titulo {
@@ -34,7 +69,7 @@
 
 .infoContainer {
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
     gap: 10px;
 }
 
@@ -51,26 +86,10 @@
 
 .cardDate {
     display: flex;
-    flex-direction: column;
     justify-content: space-between;
     align-items: flex-end;
-    
 }
 
-.dia {
-    position: relative;
-}
-
-.dia span {
-    position: absolute;
-    font-family: "Anonymous Pro", monospace;
-    font-size: 1.5rem;
-    font-weight: 600;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -80%);
-    color: white;
-}
 
 .mobile {
     display: none;
@@ -101,14 +120,6 @@
 }
 
 @media screen and (max-width: 529px) {
-    .card {
-        display: grid;
-        grid-template-areas: 
-            "cardInfo cardDate"
-            "mobile mobile";
-        padding: 20px;
-    }
-
     .desktop {
         display: none;
     }
@@ -122,12 +133,34 @@
     }
 
     .info {
-        gap: 3px;
         font-size: 0.8rem;
     }
+    
+    .mobile {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        margin-top: 10px;
+    }
 
-    .cardDate {
-        align-items: right;
+    .mobile :only-child {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .card {
+        padding: 15px;
+        gap: 12px;
+    }
+
+    .titulo h3 {
+        font-size: 1.2rem;
+    }
+
+    .info {
+        gap: 2px;
     }
 
     .dia span {
@@ -139,19 +172,6 @@
     }
 
     .categoria {
-        font-size: 0.8rem;
-    }
-
-    .mobile {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        cursor: pointer;
-        grid-column: 1 / -1;
-        margin-top: 20px;
-    }
-
-    .mobile :only-child {
-        width: 100%;
+        font-size: 0.7rem;
     }
 }

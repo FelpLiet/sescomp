@@ -59,6 +59,20 @@ const categoryColors = [
         "category": "Organização",
         "bgColor": "#00609D",
         "textColor": "#FFFFFF"
+    },
+    {
+        "category": "Encerramento",
+        "bgColor": "#4361EE",
+        "textColor": "#000000"
+    },
+    {
+        "category": "Abertura",
+        "bgColor": "#4361EE",
+    },
+    {
+        "category": "Minicurso Videoconferência",
+        "bgColor": "#6C24BD",
+        "textColor": "#FFFFFF"
     }
 ]
 
@@ -76,37 +90,43 @@ export function ActivityCard({ name, speaker, location, time, category: type, da
 
     return (
         <div className={styles.card}>
-            <div className={styles.cardInfo}>
+            <div className={styles.tituloContainer}>
                 <div className={styles.titulo}>
                     <h3>{name}</h3>
                     <p>{speaker}</p>
                 </div>
-                <div className={styles.infoContainer}>
-                    <div className={styles.info}>
-                        <img src={mapPin} alt="Map Pin" /> 
-                        {location ? location : "Em breve"}
+                <div className={styles.diaContainer}>
+                    <div className={styles.dia}>
+                        <span>{date}</span>
+                        <img src={bgDia} alt="Icone Dia" />
                     </div>
-                    <div className={styles.info}>
-                        <img src={clock} alt="Clock" /> 
-                        {time}
-                    </div>
-                </div>
-                <div className={styles.desktop} onClick={handleNavigation}>
-                    <Button.Root>
-                        <Button.Content
-                            label="Inscreva-se na atividade"
-                        />
-                    </Button.Root>
                 </div>
             </div>
-            <div className={styles.cardDate}>
-                <div className={styles.dia}>
-                    <span>{date}</span>
-                    <img src={bgDia} alt="Icone Dia" />
+            <div className={styles.infoContainer}>
+                <div className={styles.botaoLocalContainer}>
+                    <div className={styles.horaLocalContainer}>
+                        <div className={styles.info}>
+                            <img src={mapPin} alt="Map Pin" /> 
+                            {location ? location : "Em breve"}
+                        </div>
+                        <div className={styles.info}>
+                            <img src={clock} alt="Clock" /> 
+                            {time}
+                        </div>
+                    </div>
+                    <div className={styles.desktop} onClick={handleNavigation}>
+                        <Button.Root>
+                            <Button.Content
+                                label="Inscreva-se na atividade"
+                            />
+                        </Button.Root>
+                    </div>
                 </div>
+                <div className={styles.cardDate}>
                     <div className={styles.categoria} style={{backgroundColor: bgColor, color: textColor}}>
                         {type}
                     </div>
+                </div>
             </div>
             <div className={styles.mobile} onClick={handleNavigation}>
                 <>

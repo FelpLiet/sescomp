@@ -21,10 +21,11 @@ interface Activity {
     events: Event[];
 }
 
-const jsonUrl = 'https://raw.githubusercontent.com/FelpLiet/sescomp/refs/heads/main/src/data/activities.json';
+const jsonUrl =
+    "https://raw.githubusercontent.com/FelpLiet/sescomp/refs/heads/main/src/data/activities.json";
 
 export function Programacao() {
-    const [selectedDate, setSelectedDate] = useState('11/11 - Segunda-feira');
+    const [selectedDate, setSelectedDate] = useState("11/11 - Segunda-feira");
     const [activities, setActivities] = useState<Activity[]>([]);
 
     useEffect(() => {
@@ -32,12 +33,12 @@ export function Programacao() {
             try {
                 const response = await fetch(jsonUrl);
                 if (!response.ok) {
-                    throw new Error('Network response was not ok');
+                    throw new Error("Network response was not ok");
                 }
                 const data: Activity[] = await response.json();
                 setActivities(data);
             } catch (error) {
-                console.error('Erro ao buscar os dados remotos:', error);
+                console.error("Erro ao buscar os dados remotos:", error);
                 setActivities(activitiesJson as Activity[]);
             }
         };
@@ -46,11 +47,15 @@ export function Programacao() {
     }, []);
 
     const handleDateChange = (date: string) => {
-            setSelectedDate(date);  
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-    }
-    
-    const selectedActivities = activities.find(activity => activity.date === selectedDate)?.events || [];
+        setSelectedDate(date);
+        setTimeout(() => {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+        }, 0);
+    };
+
+    const selectedActivities =
+        activities.find((activity) => activity.date === selectedDate)?.events ||
+        [];
 
     return (
         <>
@@ -59,23 +64,36 @@ export function Programacao() {
                 <div className={styles.atividades}>
                     <div className={styles.datasContainer}>
                         <div className={styles.datas}>
-                            {activities.map(activity => (
+                            {activities.map((activity) => (
                                 <button
-                                key={activity.date}
-                                className={activity.date === selectedDate ? styles.selected : ''}
-                                onClick={() => handleDateChange(activity.date)}
-                                >
-                                     <img
-                                    src={triangles}
-                                    alt="Triangles"
-                                    className={`${activity.date === selectedDate ? styles.triangleNormal : styles.triangleSmall}`}
-                                />
-                                {activity.date}
-                                <img
-                                    src={triangles}
-                                    alt="Triangles"
-                                    className={`${activity.date === selectedDate ? styles.triangleNormal : styles.triangleSmall}`}
-                                />
+                                    key={activity.date}
+                                    className={
+                                        activity.date === selectedDate
+                                            ? styles.selected
+                                            : ""
+                                    }
+                                    onClick={() =>
+                                        handleDateChange(activity.date)
+                                    }>
+                                    <img
+                                        src={triangles}
+                                        alt="Triangles"
+                                        className={`${
+                                            activity.date === selectedDate
+                                                ? styles.triangleNormal
+                                                : styles.triangleSmall
+                                        }`}
+                                    />
+                                    {activity.date}
+                                    <img
+                                        src={triangles}
+                                        alt="Triangles"
+                                        className={`${
+                                            activity.date === selectedDate
+                                                ? styles.triangleNormal
+                                                : styles.triangleSmall
+                                        }`}
+                                    />
                                 </button>
                             ))}
                         </div>

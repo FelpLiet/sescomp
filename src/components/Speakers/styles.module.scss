@@ -88,12 +88,14 @@
   align-items: end;
   justify-items: center;
 }
+
 @media (max-width: 1024px) {
   .container {
     display: grid;
     grid-template-columns: repeat(3, 290px);
   }
 }
+
 @media (max-width: 768px) {
   .container {
     display: grid;
@@ -101,6 +103,7 @@
     grid-template-rows: Repeat(4, 280px);
   }
 }
+
 @media (max-width: 560px) {
   .container {
     display: grid;

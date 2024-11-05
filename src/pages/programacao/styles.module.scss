@@ -13,7 +13,7 @@
 }
 
 .datasContainer {
-    width: 100%;
+    width: 96vw;
     background-color: var(--color-background);
     position: -webkit-sticky;
     position: sticky;
@@ -24,9 +24,20 @@
 
 .datas {
     display: flex;
-    justify-content: space-around;
-    margin-bottom: 20px;
-    gap: 20px;
+    justify-content: flex-start;
+    gap: 26px;
+    overflow-x: auto;
+    white-space: nowrap; 
+    padding-bottom: 10px;
+}
+
+.datas::-webkit-scrollbar {
+    display: none; 
+}
+
+.datas {
+    -ms-overflow-style: none;  
+    scrollbar-width: none;     
 }
 
 .datas button {
@@ -40,6 +51,7 @@
     font-family: "Montserrat", sans-serif;
     font-size: 1.1rem;
     font-weight: 400;
+    text-wrap: nowrap;
     cursor: pointer;
     transition: all ease-in-out 0.3s;
 }
@@ -105,12 +117,18 @@
 
 @media screen and (max-width: 480px) {
     .datas {
-        // flex-direction: column;
         gap: 10px;
     }
 
     .datas button {
         padding: 10px 5px;
         font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .datas button {
+        padding: 10px 5px;
+        font-size: 0.8rem;
     }
 }
