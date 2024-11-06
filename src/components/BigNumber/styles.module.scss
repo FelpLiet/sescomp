@@ -59,12 +59,14 @@
     padding: 0.5rem 1rem;
     text-transform: lowercase;
   }
+
   &>div:first-child {
     .label {
       border-bottom-left-radius: 100px;
     }
   }
-    &>div:last-child {
+
+  &>div:last-child {
     .label {
       border-bottom-right-radius: 100px;
     }
