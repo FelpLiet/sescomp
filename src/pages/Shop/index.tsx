@@ -1,6 +1,6 @@
 import styles from "./styles.module.scss";
-import { Button } from "../../components/Button";
-import { Icon } from "../../components/icons";
+// import { Button } from "../../components/Button";
+// import { Icon } from "../../components/icons";
 import { Header } from "../../shared/header";
 
 export function Shop() {
