@@ -14,11 +14,6 @@
     justify-content: center;
     
     gap: 30px;
-    // @media screen and (max-width: 1024px) {
-    //   flex-direction: column;
-      
-      
-    // }
   }
 
   &_img_org {
@@ -29,4 +24,15 @@
     width: 320px;
   }
   
+}
+
+
+@media screen and (max-width: 768px) {
+  .organization_logos {
+    gap: 44px;
+  }
+  .organization_img_org {
+    width: 230px;
+    // max-height: 36px;
+  }
 }

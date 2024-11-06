@@ -13,6 +13,7 @@ import sandro from "../../assets/palestrante/sandro.png";
 import silveira from "../../assets/palestrante/silveira.png";
 import thales from "../../assets/palestrante/thales.png";
 import yago from "../../assets/palestrante/yago.png";
+import fernanda from "../../assets/palestrante/fernanda.png";
 
 const speakersJson = [
     { name: "Izequiel Pereira", image: izequiel },
@@ -24,6 +25,7 @@ const speakersJson = [
     { name: "Sandro Costa", image: sandro },
     { name: "Alessandro F.", image: alessandro },
     { name: "Yago Marques", image: yago },
+    { name: "Fernanda Kipper", image: fernanda },
 ];
 
 export function Speakers() {
@@ -40,12 +42,8 @@ export function Speakers() {
                 setVisibleItems(1);
             } else if (width <= 960) {
                 setVisibleItems(2);
-            } else if (width <= 1350) {
-                setVisibleItems(3);
-            } else if (width <= 1920) {
-                setVisibleItems(4);
             } else {
-                setVisibleItems(5);
+                setVisibleItems(3);
             }
         };
 
