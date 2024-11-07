@@ -5,6 +5,7 @@ import { EmBreve } from "./components/EmBreve/Index";
 import { Programacao } from "./pages/programacao/index.tsx";
 import { Sponsors } from "./pages/patrocinadores/index.tsx";
 import { Home } from "./pages/home/index.tsx";
+import { Shop } from "./pages/Shop/index.tsx";
 
 function App() {
     return (
@@ -16,6 +17,7 @@ function App() {
               <Route path="programacao" element={<Programacao />} />
               <Route path="manual" element={<EmBreve />} />
               <Route path="patrocinadores" element={<Sponsors />} />
+              <Route path="loja" element={<Shop />} />
               <Route path="em-breve" element={<EmBreve />} />
             </Route>
           </Routes>

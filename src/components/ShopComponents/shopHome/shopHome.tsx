@@ -11,19 +11,19 @@ import pins from "../../../assets/shop/pins.png";
 export function ShopHome() {
     const items = [
         {
-            img: copoBeijos,
-            name: "Copo Beijos",
-            price: 0,
+            "img": copoBeijos,
+            "name": "Copo Beijos BUGS e Poesia",
+            "price": 0,
         },
         {
-            img: cadernoYouAreMyCss,
-            name: "Caderno You Are The Css to my Html",
-            price: 0,
+            "img": cadernoYouAreMyCss,
+            "name": "Caderno You Are The Css to my Html",
+            "price": 0,
         },
         {
-            img: pins,
-            name: "Pins",
-            price: 0,
+            "img": pins,
+            "name": "Pins",
+            "price": 0,
         },
     ];
 

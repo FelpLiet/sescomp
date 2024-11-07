@@ -1,13 +1,14 @@
-import { Outlet } from 'react-router-dom';
+import { Outlet } from "react-router-dom";
 import Footer from "./shared/Footer";
-import {Navbar} from "./shared/Navbar/Index";
+import { Navbar } from "./shared/Navbar/Index";
 
-export default function Layout(){
+export default function Layout() {
     const labels = [
-      { name: "Inicio", router: "/sescomp" },
-      { name: "Programação", router: "/sescomp/#/programacao" },
-      { name: "Manual", router: "/sescomp/#/manual" },
-      { name: "Patrocinadores", router: "/sescomp/#/patrocinadores" },
+        { name: "Inicio", router: "/sescomp" },
+        { name: "Programação", router: "/sescomp/#/programacao" },
+        { name: "Manual", router: "/sescomp/#/manual" },
+        { name: "Patrocinadores", router: "/sescomp/#/patrocinadores" },
+        { name: "Loja", router: "/sescomp/#/loja" },
     ];
     return (
         <>

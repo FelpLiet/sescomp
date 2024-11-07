@@ -19,7 +19,7 @@ export function ShopItem({ img, name, price }: ShopItemProps) {
                 <div className={styles.prices}>
                 {price === 0 ? (
                         <>
-                            <span>R$0,00</span>
+                            <span>-----</span>
                             <h6>Preço em breve</h6>
                         </>
                     ) : (
