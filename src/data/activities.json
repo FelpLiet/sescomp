@@ -49,7 +49,7 @@
       },
       {
         "name": "Roda de Conversa sobre empreendedorismo e inovação",
-        "speaker": "",
+        "speaker": "Ragma - CEO da RGYM, Carlos - CEO da Panificadora Nossa Senhora de Fatima, Silvio - CEO do Mandacaru Restaurante, José Hamilton - CEO da Facilita, John - CEO do Óculos do John, Adriana - CEO do Leleo Móveis",
         "location": "Tony Stark",
         "time": "9:00 às 11:00",
         "category": "Roda de Conversa",
@@ -82,7 +82,7 @@
       {
         "name": "Escape Room",
         "speaker": "Organização",
-        "location": "Sala 14 Und 1",
+        "location": "Sala 11 Und 1",
         "time": "10:00 às 12:00",
         "category": "Atividade Cultural",
         "date": "12"
@@ -176,6 +176,14 @@
         "date": "12"
       },
       {
+        "name": "Desafios e Lições: Tudo que aprendi trabalhando como desenvolvedora em Startups e Grandes Corporações",
+        "speaker": "Fernanda Kipper",
+        "location": "Tony Stark",
+        "time": "16:30 às 17:30",
+        "category": "Videoconferência",
+        "date": "12"
+      },
+      {
         "name": "Além da Acurácia: Aprendizado de Máquina com Previsão Conforme",
         "speaker": "Francisco Romes da Silva Filho",
         "location": "Espaço Seelab",
@@ -215,7 +223,7 @@
       {
         "name": "Posicionamento Digital para DEVs",
         "speaker": "Anny Honorato",
-        "location": "",
+        "location": "Espaço Seelab",
         "time": "09:00 às 10:00",
         "category": "Palestra",
         "date": "13"
@@ -242,6 +250,14 @@
         "location": "Espaço Fitbank",
         "time": "10:00 às 11:00",
         "category": "Palestra",
+        "date": "13"
+      },
+      {
+        "name": "DevOps: The World is Yours",
+        "speaker": "Francisco Cauan Victor da Silva Gonçalves - Digital College",
+        "location": "Espaço Up Value",
+        "time": "10:00 às 11:00",
+        "category": "Videoconferência",
         "date": "13"
       },
       {
@@ -342,6 +358,22 @@
         "date": "13"
       },
       {
+        "name": "Da Graduação ao Sucesso Profissional: Minha Jornada no Mercado de Trabalho",
+        "speaker": "Luis Franklin",
+        "location": "Espaço Apodi",
+        "time": "14:30 às 15:30",
+        "category": "Palestra",
+        "date": "13"
+      },
+      {
+        "name": "Da Universidade ao Mercado de Trabalho: A Evolução de Carreira na Área de TI e o Futuro da Profissão",
+        "speaker": "Vinicius de Assis - Up Value",
+        "location": "Espaço Alura",
+        "time": "14:30 às 15:30",
+        "category": "Palestra",
+        "date": "13"
+      },
+      {
         "name": "UI Design: Avançando no Figma com Protótipos Responsivos",
         "speaker": "Fabio Henrique de Souza Pereira e Igor de Castro Dutra",
         "location": "BB-8",
@@ -374,14 +406,6 @@
         "date": "13"
       },
       {
-        "name": "Diversidade, Equidade e Inclusão nas Organizações: Oportunidades e Desafios Contemporâneos",
-        "speaker": "Bruno de Souza Lessa",
-        "location": "Espaço Up Value",
-        "time": "16:30 às 17:30",
-        "category": "Videoconferência",
-        "date": "13"
-      },
-      {
         "name": "O Mercado de Games e o uso de iA no desenvolvimento de jogos",
         "speaker": "Izequiel Pereira de Norões",
         "location": "Espaço Apodi",
@@ -392,16 +416,16 @@
       {
         "name": "Oficina de Roteiro para formatos mínimos e curtas-metragens. Apresentação do formato, estrutura, softwares e tira dúvidas sobre o processo de escrita.",
         "speaker": "Felipe Barreto Arrais",
-        "location": "",
-        "time": "",
+        "location": "Sala Cultural",
+        "time": "08:00 às 10:00",
         "category": "Oficina",
         "date": "13"
       },
       {
         "name": "Como utilizar IA no review e criação de código acessível",
         "speaker": "Vinicios Neves - ALURA",
-        "location": "",
-        "time": "",
+        "location": "Espaço Up Value",
+        "time": "15:30 às 16:30",
         "category": "Videoconferência",
         "date": "13"
       }
@@ -468,7 +492,7 @@
         "date": "14"
       },
       {
-        "name": "Em breve",
+        "name": "Inteligência Artificial",
         "speaker": "Marcelo Finger",
         "location": "Espaço Up Value",
         "time": "10:00 às 11:00",
@@ -479,14 +503,6 @@
         "name": "Sua carreira precisa de você",
         "speaker": "Amália beatriz Rocha de moura cunha",
         "location": "Espaço Alura",
-        "time": "11:00 às 12:00",
-        "category": "Palestra",
-        "date": "14"
-      },
-      {
-        "name": "A tecnologia que ler mentes para autismo",
-        "speaker": "Paulo Victor Loureiro",
-        "location": "",
         "time": "11:00 às 12:00",
         "category": "Palestra",
         "date": "14"
