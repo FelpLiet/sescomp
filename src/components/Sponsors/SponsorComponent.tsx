@@ -17,6 +17,8 @@ import digitalCollege from "../../assets/sponsors/parceiros/digitalCollege.png";
 import leleo from "../../assets/sponsors/parceiros/leleo.png";
 import nicarolis from "../../assets/sponsors/parceiros/nicarolis.png";
 import panificadora from "../../assets/sponsors/parceiros/panificadora.png";
+import Rgym from "../../assets/sponsors/parceiros/Rgym.png";
+import cairu from "../../assets/sponsors/parceiros/cairu.png";
 
 interface SponsorComponentProps {
   types: string[];
@@ -51,7 +53,9 @@ const sponsors = {
     { src: digitalCollege, alt: "Digital College - Parceria", link: "https://bio.digitalcollege.com.br/?fbclid=PAZXh0bgNhZW0CMTEAAabfE9BYmqE_9sz_MeLcyp8qcRbjJ9mY4K8iDAyX1Fh-cBpCFzzRSZfcORM_aem_i9ksZ2AsRmfabXPylOot_Q" },
     { src: leleo, alt: "Leleo - Parceria", link: "https://www.leleomoveis.com.br" },
     { src: nicarolis, alt: "Nicarolis - Parceria", link: "https://www.instagram.com/nicarolis/" },
-    { src: panificadora, alt: "Panificadora - Parceria", link: "https://www.instagram.com/panificadora_sao_jose/" }
+    { src: panificadora, alt: "Panificadora - Parceria", link: "https://www.instagram.com/padariadohelder/" },
+    { src: Rgym, alt: "Rgym - Parceria", link: "https://www.instagram.com/r_gym1/" },
+    { src: cairu, alt: "Cairu - Par", link: "https://www.instagram.com/ciclocairuoficial/" }
   ]
 };
 
