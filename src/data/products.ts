@@ -10,6 +10,7 @@ import canecaWhile from "../assets/shop/canecaWhile.png";
 import cadernetaBeijos from "../assets/shop/cadernetaBeijos.png";
 import cadernetaWhile from "../assets/shop/cadernetaWhile.png";
 import cadernetaAprendizado from "../assets/shop/cadernetaAprendizado.png";
+import cadernetaIdeas from "../assets/shop/cadernetaIdeas.png";
 import camisaBrancaFrente from "../assets/shop/camisaBrancaFrente.png";
 import camisaBrancaVerso from "../assets/shop/camisaBrancaVerso.png";
 import camisaRoxaFrente from "../assets/shop/camisaRoxaFrente.png";
@@ -17,13 +18,13 @@ import camisaRoxaVerso from "../assets/shop/camisaRoxaVerso.png";
 
 export const produtos = [
     {
-        nome: "Copo Beijos",
+        nome: "Copo Beijos BUGS e Poesia",
         preco: 0,
         categoria: "Copos",
         imgFront: copoBeijos,
     },
     {
-        nome: "Copo Breakpoints",
+        nome: "Copo Breakpoints Coffee Breaks",
         preco: 0,
         categoria: "Copos",
         imgFront: copoBeakpoint,
@@ -53,13 +54,13 @@ export const produtos = [
         imgFront: copoSescomp,
     },
     {
-        nome: "Caneca Beijos",
+        nome: "Caneca Beijos BUGS e Poesia",
         preco: 0,
         categoria: "Canecas",
         imgFront: canecaBeijos,
     },
     {
-        nome: "Caneca Breakpoints",
+        nome: "Caneca Breakpoints Coffee Breaks",
         preco: 0,
         categoria: "Canecas",
         imgFront: canecaBreakpoints,
@@ -71,7 +72,7 @@ export const produtos = [
         imgFront: canecaWhile,
     },
     {
-        nome: "Caderneta Beijos",
+        nome: "Caderneta Beijos BUGS e Poesia",
         preco: 0,
         categoria: "Cadernetas",
         imgFront: cadernetaBeijos,
@@ -87,6 +88,12 @@ export const produtos = [
         preco: 0,
         categoria: "Cadernetas",
         imgFront: cadernetaAprendizado,
+    },
+    {
+        nome: "Caderneta Ideas",
+        preco: 0,
+        categoria: "Cadernetas",
+        imgFront: cadernetaIdeas,
     },
     {
         nome: "Camisa Branca",

@@ -9,7 +9,6 @@ interface ShopItemProps {
 }
 
 export function ShopItem({ imgFront, imgBack, name, price }: ShopItemProps) {
-    const [currentImg, setCurrentImg] = useState(imgFront);
     const [isHovered, setIsHovered] = useState(false);
     const previousPrice = price * 1.1;
 
@@ -17,11 +16,10 @@ export function ShopItem({ imgFront, imgBack, name, price }: ShopItemProps) {
         <div
             className={styles.shopItem}
             onMouseEnter={() => {
-                imgBack && setCurrentImg(imgBack);
+                if (imgBack)
                 setIsHovered(true);
             }}
             onMouseLeave={() => {
-                setCurrentImg(imgFront);
                 setIsHovered(false);
             }}
         >
@@ -44,7 +42,7 @@ export function ShopItem({ imgFront, imgBack, name, price }: ShopItemProps) {
                 <div className={styles.prices}>
                     {price === 0 ? (
                         <>
-                            <span>-----</span>
+                            <span>R$0,00</span>
                             <h6>Preço em breve</h6>
                         </>
                     ) : (

@@ -1,30 +1,22 @@
-import { useNavigate } from "react-router-dom";
-import styles from "./shopHome.module.scss";
 import { ShopItem } from "../shopItem/shopItem";
 import { Button } from "../../Button";
 import { Icon } from "../../icons";
-import camisaRoxaFrente from "../../../assets/shop/camisaRoxaFrente.png";
-import canecaBreakpoints from "../../../assets/shop/canecaBreakpoints.png";
-import cadernetaBeijos from "../../../assets/shop/cadernetaBeijos.png";
+import { produtos } from "../../../data/products";
+import { useNavigate } from "react-router-dom";
+import styles from "./shopHome.module.scss";
 
 export function ShopHome() {
-    const items = [
-        {
-            "img": camisaRoxaFrente,
-            "name": "Camisa Aprendizado",
-            "price": 0,
-        },
-        {
-            "img": canecaBreakpoints,
-            "name": "Caneca Breakpoints",
-            "price": 0,
-        },
-        {
-            "img": cadernetaBeijos,
-            "name": "Caderneta Beijos",
-            "price": 0,
-        },
-    ];
+    const filteredItems = produtos.reduce((acc, item) => {
+        const categories = acc.map(produto => produto.categoria);
+        if (
+            (item.categoria === "Camisas" && !categories.includes("Camisas")) ||
+            (item.categoria === "Canecas" && !categories.includes("Canecas")) ||
+            (item.categoria === "Cadernetas" && !categories.includes("Cadernetas"))
+        ) {
+            acc.push(item);
+        }
+        return acc;
+    }, [] as typeof produtos);
 
     const navigate = useNavigate();
     const handleNavigation = () => {
@@ -47,12 +39,13 @@ export function ShopHome() {
                 </div>
             </div>
             <section className={styles.itens}>
-                {items.map((item, index) => (
+                {filteredItems.map((produto) => (
                     <ShopItem
-                        key={index}
-                        img={item.img}
-                        name={item.name}
-                        price={item.price}
+                        key={produto.nome}
+                        imgFront={produto.imgFront}
+                        imgBack={produto.imgBack}
+                        name={produto.nome}
+                        price={produto.preco}
                     />
                 ))}
             </section>

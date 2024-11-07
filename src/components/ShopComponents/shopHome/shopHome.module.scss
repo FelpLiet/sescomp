@@ -1,6 +1,7 @@
 .shop {
     display: flex;
     flex-direction: column;
+    align-items: center;
     padding: 50px 32px;
     background: var(--color-secondary);
     .header {
@@ -10,6 +11,8 @@
         justify-content: space-between;
         align-items: flex-end;
         padding: 3rem 0;
+        width: 90%;
+        max-width: 1100px;
         h1 {
             color: var(--color-text-white);
             font-family: Montserrat;
@@ -38,15 +41,17 @@
 		flex-wrap: wrap;
         flex-direction: row;
         justify-content: space-evenly;
+        max-width: 1290px;
 		gap: 24px;
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 760px) {
     .shop {
 		align-items: center;
         padding: 48px 16px;
         .header {
+            justify-content: center;
 			:nth-of-type(2) {
 				display: none;
 			}
@@ -64,18 +69,6 @@
             flex-direction: column;
 			width: 300px;
             cursor: pointer;
-        }
-    }
-}
-
-@media (max-width: 480px) {
-    .shop {
-        .header {
-            margin: 0 1rem;
-        }
-        
-        .title {
-            text-align: center;
         }
     }
 }

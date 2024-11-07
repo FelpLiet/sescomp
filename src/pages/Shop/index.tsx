@@ -2,7 +2,6 @@ import { useState } from "react";
 import styles from "./styles.module.scss";
 // import { Button } from "../../components/Button";
 // import { Icon } from "../../components/icons";
-import { Header } from "../../shared/header";
 import { ShopItem } from "../../components/ShopComponents/shopItem/shopItem";
 import { produtos } from "../../data/products";
 
@@ -13,15 +12,9 @@ export function Shop() {
 
     const handleCategoryClick = (category: string) => {
         setSelectedCategory(category);
-        const element = document.getElementById("Shop");
-        const offset = 76;
-        const bodyRect = document.body.getBoundingClientRect().top;
-        const elementRect = element?.getBoundingClientRect().top || 0;
-        const elementPosition = elementRect - bodyRect;
-        const offsetPosition = elementPosition - offset;
 
         window.scrollTo({
-            top: offsetPosition,
+            top: 0,
             behavior: "smooth",
         });
     };
@@ -33,7 +26,6 @@ export function Shop() {
 
     return (
         <>
-            <Header title="Loja oficial" />
             <section id="Shop" className={styles.shop}>
                 <div className={styles.title}>
                     <h1>Loja oficial</h1>
