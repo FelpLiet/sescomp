@@ -31,7 +31,7 @@ export function NavRoot({ children }: NavRootProps) {
           {children}
           <Dropdown />
         </ul>
-        <div className={styles.participarButton} onClick={handleNavigation}>
+        <div className={styles.desktop} onClick={handleNavigation}>
           <Button.Root>
             <Button.Content label="Participar do Evento"></Button.Content>
           </Button.Root>
@@ -46,9 +46,11 @@ export function NavRoot({ children }: NavRootProps) {
           </DropdownMenu.Item>
           <DropdownMenu.Item>
             <div className={styles.participarButton} onClick={handleNavigation}>
-              <Button.Root>
-                <Button.Content label="Participar do Evento"></Button.Content>
-              </Button.Root>
+              <>
+                <Button.Root>
+                  <Button.Content label="Participar do Evento"></Button.Content>
+                </Button.Root>
+              </>
             </div>
           </DropdownMenu.Item>
         </DropdownMenu.Root>
