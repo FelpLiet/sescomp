@@ -3,15 +3,12 @@
     flex-direction: column;
     padding: 50px 32px;
     background: var(--color-secondary);
-    .btn {
-        display: none;
-    }
     .header {
         margin: 0 3rem;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        align-items: center;
+        align-items: flex-end;
         padding: 3rem 0;
         h1 {
             color: var(--color-text-white);
@@ -22,6 +19,14 @@
             letter-spacing: -1%;
             text-align: left;
         }
+    }
+    
+    .mobile {
+        display: none;
+    }
+
+    .btn {
+        cursor: pointer;
     }
 
     .title {
@@ -53,11 +58,12 @@
             flex-direction: column;
             align-items: center;
         }
-        .btn {
+        .mobile {
             display: flex;
             margin: 25px 0;
             flex-direction: column;
-			width: 400px;
+			width: 300px;
+            cursor: pointer;
         }
     }
 }

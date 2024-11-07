@@ -59,7 +59,6 @@ export function Schedule() {
                 src={ImgPalavras2}
                 alt="palavras"
             />
-            {/* <img src={TextIllustrative} alt="Texto ilustrativo" /> */}
             <span className={styles.btn} onClick={handleNavigation}>
                 <Button.Root>
                     <Button.Content
