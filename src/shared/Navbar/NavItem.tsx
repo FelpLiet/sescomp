@@ -13,7 +13,8 @@ export function NavItem({ label, ...rest }: NavItemProps) {
       (name === "Inicio" && router === "/") ||
       (name === "Programação" && router === "/programacao") ||
       (name === "Manual" && router === "/manual") ||
-      (name === "Patrocinadores" && router === "/patrocinadores")
+      (name === "Patrocinadores" && router === "/patrocinadores") ||
+      (name === "Loja" && router === "/loja")
     ) {
       return true;
     }

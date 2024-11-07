@@ -1,18 +1,18 @@
 .shop {
     display: flex;
     flex-direction: column;
+    align-items: center;
     padding: 50px 32px;
     background: var(--color-secondary);
-    .btn {
-        display: none;
-    }
     .header {
         margin: 0 3rem;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        align-items: center;
+        align-items: flex-end;
         padding: 3rem 0;
+        width: 90%;
+        max-width: 1100px;
         h1 {
             color: var(--color-text-white);
             font-family: Montserrat;
@@ -22,6 +22,14 @@
             letter-spacing: -1%;
             text-align: left;
         }
+    }
+    
+    .mobile {
+        display: none;
+    }
+
+    .btn {
+        cursor: pointer;
     }
 
     .title {
@@ -33,15 +41,17 @@
 		flex-wrap: wrap;
         flex-direction: row;
         justify-content: space-evenly;
+        max-width: 1290px;
 		gap: 24px;
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 760px) {
     .shop {
 		align-items: center;
         padding: 48px 16px;
         .header {
+            justify-content: center;
 			:nth-of-type(2) {
 				display: none;
 			}
@@ -53,23 +63,12 @@
             flex-direction: column;
             align-items: center;
         }
-        .btn {
+        .mobile {
             display: flex;
             margin: 25px 0;
             flex-direction: column;
-			width: 400px;
-        }
-    }
-}
-
-@media (max-width: 480px) {
-    .shop {
-        .header {
-            margin: 0 1rem;
-        }
-        
-        .title {
-            text-align: center;
+			width: 300px;
+            cursor: pointer;
         }
     }
 }

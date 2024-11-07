@@ -1,31 +1,28 @@
-import styles from "./shopHome.module.scss";
 import { ShopItem } from "../shopItem/shopItem";
-// import { Button } from "../../Button";
-// import { Icon } from "../../icons";
-import copoBeijos from "../../../assets/shop/copoBeijos.png";
-import cadernoYouAreMyCss from "../../../assets/shop/cadernoYouAreMyCss.png";
-import pins from "../../../assets/shop/pins.png";
-// import copoBeakpoint from "../../../assets/shop/copoBreakPoints.png";
-// import ecobagAprendizado from "../../../assets/shop/ecobagAprendizado.png";
+import { Button } from "../../Button";
+import { Icon } from "../../icons";
+import { produtos } from "../../../data/products";
+import { useNavigate } from "react-router-dom";
+import styles from "./shopHome.module.scss";
 
 export function ShopHome() {
-    const items = [
-        {
-            img: copoBeijos,
-            name: "Copo Beijos",
-            price: 0,
-        },
-        {
-            img: cadernoYouAreMyCss,
-            name: "Caderno You Are The Css to my Html",
-            price: 0,
-        },
-        {
-            img: pins,
-            name: "Pins",
-            price: 0,
-        },
-    ];
+    const filteredItems = produtos.reduce((acc, item) => {
+        const categories = acc.map(produto => produto.categoria);
+        if (
+            (item.categoria === "Camisas" && !categories.includes("Camisas")) ||
+            (item.categoria === "Canecas" && !categories.includes("Canecas")) ||
+            (item.categoria === "Cadernetas" && !categories.includes("Cadernetas"))
+        ) {
+            acc.push(item);
+        }
+        return acc;
+    }, [] as typeof produtos);
+
+    const navigate = useNavigate();
+    const handleNavigation = () => {
+        navigate('/loja');
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
 
     return (
         <div className={styles.shop}>
@@ -34,27 +31,30 @@ export function ShopHome() {
                     <h1>Loja oficial</h1>
                     <p>A venda dos produtos é apenas presencial</p>
                 </div>
-                {/* <Button.Root style="primary">
-                    <Button.Content label="Ver todos os produtos" />
-                    <Icon.Arrow />
-                </Button.Root> */}
+                <div className={styles.btn} onClick={handleNavigation}>
+                    <Button.Root style="primary">
+                        <Button.Content label="Ver todos os produtos" />
+                        <Icon.Arrow />
+                    </Button.Root>
+                </div>
             </div>
             <section className={styles.itens}>
-                {items.map((item, index) => (
+                {filteredItems.map((produto) => (
                     <ShopItem
-                        key={index}
-                        img={item.img}
-                        name={item.name}
-                        price={item.price}
+                        key={produto.nome}
+                        imgFront={produto.imgFront}
+                        imgBack={produto.imgBack}
+                        name={produto.nome}
+                        price={produto.preco}
                     />
                 ))}
             </section>
-            {/* <span className={styles.btn}>
+            <div className={styles.mobile} onClick={handleNavigation}>
                 <Button.Root style="primary">
-                    <Button.Content label="Ver todos" />
+                    <Button.Content label="Ver todos os produtos" />
                     <Icon.Arrow />
                 </Button.Root>
-            </span> */}
+            </div>
         </div>
     );
 }
