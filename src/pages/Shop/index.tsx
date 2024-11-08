@@ -32,42 +32,54 @@ export function Shop() {
                     <p>A venda dos produtos é apenas presencial</p>
                 </div>
                 <div className={styles.categoriasContainer}>
-                    <button
-                        className={
-                            selectedCategory === "Todos" ? styles.selected : ""
-                        }
-                        onClick={() => handleCategoryClick("Todos")}
-                    >
-                        Todos
-                    </button>
-                    <button
-                        className={
-                            selectedCategory === "Copos" ? styles.selected : ""
-                        }
-                        onClick={() => handleCategoryClick("Copos")}
-                    >
-                        Copos
-                    </button>
-                    <button
-                        className={
-                            selectedCategory === "Camisas"
-                                ? styles.selected
-                                : ""
-                        }
-                        onClick={() => handleCategoryClick("Camisas")}
-                    >
-                        Camisas
-                    </button>
-                    <button
-                        className={
-                            selectedCategory === "Cadernetas"
-                                ? styles.selected
-                                : ""
-                        }
-                        onClick={() => handleCategoryClick("Cadernetas")}
-                    >
-                        Cadernetas
-                    </button>
+                    <div className={styles.categorias}>
+                        <button
+                            className={
+                                selectedCategory === "Todos" ? styles.selected : ""
+                            }
+                            onClick={() => handleCategoryClick("Todos")}
+                        >
+                            Todos
+                        </button>
+                        <button
+                            className={
+                                selectedCategory === "Copos" ? styles.selected : ""
+                            }
+                            onClick={() => handleCategoryClick("Copos")}
+                        >
+                            Copos
+                        </button>
+                        <button
+                            className={
+                                selectedCategory === "Camisas"
+                                    ? styles.selected
+                                    : ""
+                            }
+                            onClick={() => handleCategoryClick("Camisas")}
+                        >
+                            Camisas
+                        </button>
+                        <button
+                            className={
+                                selectedCategory === "Cadernetas"
+                                    ? styles.selected
+                                    : ""
+                            }
+                            onClick={() => handleCategoryClick("Cadernetas")}
+                        >
+                            Cadernetas
+                        </button>
+                        <button
+                            className={
+                                selectedCategory === "Canecas"
+                                    ? styles.selected
+                                    : ""
+                            }
+                            onClick={() => handleCategoryClick("Canecas")}
+                        >
+                            Canecas
+                        </button>
+                    </div>
                 </div>
                 <div className={styles.products}>
                     {filteredProducts.map((produto, index) => (
