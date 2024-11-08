@@ -22,15 +22,12 @@
     flex-direction: row;
     justify-content: space-between;
     gap: 24px;
-    // position: relative;
 }
 
 .dia {
     display: flex;
     justify-content: center;
     align-items: center;
-    // position: absolute;
-    
 }
 
 .dia span {
@@ -172,6 +169,6 @@
     }
 
     .categoria {
-        font-size: 0.7rem;
+        font-size: 0.8rem;
     }
 }
