@@ -3,17 +3,13 @@
   background-color: #FAFAFA;
   cursor: pointer;
   z-index: 1000;
+  rotate: 0;
+  outline: none;
   transition: all 0.3s ease;
+}
 
-  &:hover {
-    // filter: brightness(0.95);
-    
-  }
-
-  &:focus {
-    border-radius: 6px;
-    transform: rotate(180deg);
-  }
+.dropdownMenuOpen {
+  rotate: 180deg;
 }
 
 .dropdownMenuContent {
