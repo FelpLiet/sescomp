@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import styles from "./Carousel.module.scss";
+
 interface CarouselProps {
   visibleItems: number;
   children: React.ReactNode;
@@ -11,26 +12,24 @@ const Carousel = ({ children, visibleItems = 1 }: CarouselProps) => {
 
   const nextSlide = () => {
     setCurrentIndex((prevIndex) =>
-      prevIndex + visibleItems >= totalItems ? 0 : prevIndex + visibleItems
+      prevIndex + visibleItems >= totalItems ? 0 : prevIndex + 1
     );
   };
 
   const prevSlide = () => {
     setCurrentIndex((prevIndex) =>
-      prevIndex === 0 ? totalItems - visibleItems : prevIndex - visibleItems
+      prevIndex === 0 ? totalItems - visibleItems : prevIndex - 1
     );
   };
 
   const slideOffset = {
     transform: `translateX(-${currentIndex * (100 / visibleItems)}%)`,
-    // justifyContent: visibleItems == 1 ? "" : "center",
   };
 
   useEffect(() => {
     const interval = setInterval(() => {
       nextSlide();
-    }
-    , 3000);
+    }, 6000);
     return () => clearInterval(interval);
   }, [currentIndex]);
 
@@ -58,7 +57,6 @@ const Carousel = ({ children, visibleItems = 1 }: CarouselProps) => {
               className={styles.sliderItem}
               style={{
                 flex: `0 0 ${100 / visibleItems}%`,
-                // margin: visibleItems !== 1 ? "0 -20px" : "",
               }}
             >
               {child}

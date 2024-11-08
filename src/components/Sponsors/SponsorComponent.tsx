@@ -124,8 +124,16 @@ export function SponsorComponent({ types }: SponsorComponentProps) {
           <div className={styles.parceiros}>
             {sponsors.parceiros.map((sponsor, index) => (
               <a key={index} href={sponsor.link} target="_blank" rel="noopener noreferrer">
-                <img src={sponsor.src} alt={sponsor.alt} />
-              </a>            
+              <img
+                src={sponsor.src}
+                alt={sponsor.alt}
+                className={
+                  ["Digital College", "Leleo", "Nicarolis", "Panificadora"].includes(sponsor.alt.split(" - ")[0])
+                    ? styles.sponsorImageFix
+                    : ""
+                }
+              />
+            </a>           
             ))}
           </div>
         </div>

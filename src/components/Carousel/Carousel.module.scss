@@ -3,7 +3,7 @@
   align-items: center;
   position: relative;
   overflow: hidden;
-  width: 100%;
+  width: 1276px;
 }
 
 .slider {
@@ -52,4 +52,10 @@
 
 .navButton:hover {
   filter: brightness(0.8);
+}
+
+@media screen and (max-width: 1300px) {
+  .sliderContainer {
+    width: 100vw;
+  }
 }
