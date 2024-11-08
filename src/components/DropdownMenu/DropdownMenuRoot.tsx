@@ -8,8 +8,8 @@ export function DropdownMenuRoot({ children }: { children: React.ReactNode }) {
 
     return (
         <DropdownMenu.Root onOpenChange={setIsOpen}>
-            <DropdownMenu.Trigger className={styles.dropdownMenu}>
-                    {isOpen ? <Icon.Close /> : <Icon.Menu />}
+            <DropdownMenu.Trigger className={`${styles.dropdownMenu} ${isOpen ? styles.dropdownMenuOpen : ""}`}>
+            {isOpen ? <Icon.Close /> : <Icon.Menu />}
             </DropdownMenu.Trigger>
             <DropdownMenu.Portal>
                 <DropdownMenu.Content
