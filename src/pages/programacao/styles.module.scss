@@ -119,9 +119,12 @@
 }
 
 @media screen and (max-width: 480px) {
+    .datasContainer {
+        padding: 5px;
+    }
+
     .datas {
         gap: 10px;
-
         &::-webkit-scrollbar {
             height: 5px;
         }
