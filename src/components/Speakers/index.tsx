@@ -14,18 +14,24 @@ import silveira from "../../assets/palestrante/silveira.png";
 import thales from "../../assets/palestrante/thales.png";
 import yago from "../../assets/palestrante/yago.png";
 import fernanda from "../../assets/palestrante/fernanda.png";
+import jeova from "../../assets/palestrante/jeova.png";
+import custodio from "../../assets/palestrante/custodio.png";
+import marcelo from "../../assets/palestrante/marcelo.png";
 
 const speakersJson = [
-    { name: "Izequiel Pereira", image: izequiel },
     { name: "Nina Talks", image: nina },
-    { name: "Thales Wylmar", image: thales },
-    { name: "Paulina Freitas", image: paulina },
-    { name: "Silveira Neto", image: silveira },
+    { name: "Custódio A.", image: custodio },
+    { name: "Fernanda Kipper", image: fernanda },
+    { name: "Marcelo Finger", image: marcelo },
     { name: "Gabriela Q.", image: gabriela },
+    { name: "Jeová Caçula", image: jeova },
     { name: "Sandro Costa", image: sandro },
     { name: "Alessandro F.", image: alessandro },
     { name: "Yago Marques", image: yago },
-    { name: "Fernanda Kipper", image: fernanda },
+    { name: "Silveira Neto", image: silveira },
+    { name: "Izequiel Pereira", image: izequiel },
+    { name: "Thales Wylmar", image: thales },
+    { name: "Paulina Freitas", image: paulina },
 ];
 
 export function Speakers() {

@@ -46,9 +46,17 @@
   .menu {
     display: none;
   }
-  .participarButton {
-    cursor: pointer;
-  }
+}
+
+.desktop {
+  cursor: pointer;
+}
+
+.participarButton {
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  width: 100%;
 }
 
 @media (max-width: 768px) {
