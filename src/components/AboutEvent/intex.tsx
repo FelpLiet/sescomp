@@ -2,6 +2,7 @@ import styles from "./styles.module.scss";
 import { Button } from "../Button";
 import { Icon } from "../icons";
 import { useEffect, useMemo, useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 import ImagemEntretenimento01 from "../../assets/images/ImagemEntretenimento01.jpg";
 import ImagemEntretenimento02 from "../../assets/images/ImagemEntretenimento02.jpg";
@@ -16,8 +17,10 @@ import ImagemZen01 from "../../assets/images/ImagemZen01.jpg";
 import ImagemZen02 from "../../assets/images/ImagemZen02.jpg";
 
 export function AboutEvent() {
+    const navigate = useNavigate();
     const handleNavigation = () => {
-        window.open("https://www.even3.com.br/sescomp-vii/", "_blank");
+        navigate("/o-que-esperar");
+        window.scrollTo({ top: 0, behavior: "smooth" });
     };
     const ImagemZen = [ImagemZen01, ImagemZen02];
     const ImagemEntretenimento = [
@@ -39,10 +42,9 @@ export function AboutEvent() {
                     ESPERAR?
                 </h1>
                 <div style={{ width: "362px" }}></div>
-                <span>
+                <span onClick={handleNavigation}>
                     <Button.Root>
                         <Button.Content
-                            onClick={handleNavigation}
                             label="Ver detalhes do evento"
                         ></Button.Content>
                         <Button.Icon icon={Icon.Arrow} />
