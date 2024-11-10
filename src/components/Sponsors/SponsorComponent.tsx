@@ -19,6 +19,8 @@ import nicarolis from "../../assets/sponsors/parceiros/nicarolis.png";
 import panificadora from "../../assets/sponsors/parceiros/panificadora.png";
 import Rgym from "../../assets/sponsors/parceiros/Rgym.png";
 import cairu from "../../assets/sponsors/parceiros/cairu.png";
+import FDC from "../../assets/sponsors/parceiros/FDC.png";
+import UCEG from "../../assets/sponsors/parceiros/UCEG.png";
 
 interface SponsorComponentProps {
   types: string[];
@@ -55,7 +57,9 @@ const sponsors = {
     { src: nicarolis, alt: "Nicarolis - Parceria", link: "https://www.instagram.com/nicarolis/" },
     { src: panificadora, alt: "Panificadora - Parceria", link: "https://www.instagram.com/padariadohelder/" },
     { src: Rgym, alt: "Rgym - Parceria", link: "https://www.instagram.com/r_gym1/" },
-    { src: cairu, alt: "Cairu - Par", link: "https://www.instagram.com/ciclocairuoficial/" }
+    { src: cairu, alt: "Cairu - Par", link: "https://www.instagram.com/ciclocairuoficial/" },
+    { src: FDC, alt: "FDC - Parceria", link: "https://feiradoconhecimento.com.br/" },
+    { src: UCEG, alt: "UCEG - Parceria", link: "https://www.instagram.com/ucegamers/" }
   ]
 };
 
