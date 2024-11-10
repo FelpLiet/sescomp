@@ -52,7 +52,7 @@ export const produtos = [
     },
     {
         nome: "Caderneta Ideas",
-        preco: 0,
+        preco: 5,
         categoria: "Cadernetas",
         imgFront: cadernetaIdeas,
     },

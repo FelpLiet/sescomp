@@ -9,7 +9,7 @@ export function ShopHome() {
     const filteredItems = produtos.reduce((acc, item) => {
         const categories = acc.map(produto => produto.categoria);
         if (
-            (item.categoria === "Camisas" && !categories.includes("Camisas")) ||
+            (item.categoria === "Copos" && !categories.includes("Copos")) ||
             (item.categoria === "Canecas" && !categories.includes("Canecas")) ||
             (item.categoria === "Cadernetas" && !categories.includes("Cadernetas"))
         ) {
@@ -43,7 +43,6 @@ export function ShopHome() {
                     <ShopItem
                         key={produto.nome}
                         imgFront={produto.imgFront}
-                        imgBack={produto.imgBack}
                         name={produto.nome}
                         price={produto.preco}
                     />
