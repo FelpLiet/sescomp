@@ -46,7 +46,7 @@ export default function Footer() {
             <a href="/sescomp/#/#about" onClick={handleScrollAbout}>Conheça a SESCOMP</a>
           </li>
           <li>
-            <a href="/sescomp/#/em-breve" onClick={scrollToTop}>O que esperar?</a>
+            <a href="/sescomp/#/o-que-esperar" onClick={scrollToTop}>O que esperar?</a>
           </li>
           <li>
             <a href="/sescomp/#/#speakers" onClick={handleScrollToSpeakers}>Palestrantes</a>
