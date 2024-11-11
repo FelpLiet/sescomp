@@ -3,10 +3,26 @@
     "date": "11/11 - Segunda-feira",
     "events": [
       {
-        "name": "Abertura",
+        "name": "Credenciamento",
         "speaker": "",
         "location": "Espaço Ada Lovelace",
-        "time": "14:30",
+        "time": "13:30 às 14:30",
+        "category": "Abertura",
+        "date": "11"
+      },
+      {
+        "name": "Falas das diretorias",
+        "speaker": "",
+        "location": "Espaço Ada Lovelace",
+        "time": "14:30 às 15:30",
+        "category": "Abertura",
+        "date": "11"
+      },
+      {
+        "name": "Atração Musical",
+        "speaker": "",
+        "location": "Espaço Ada Lovelace",
+        "time": "15:30 às 16:30",
         "category": "Abertura",
         "date": "11"
       },
@@ -15,7 +31,7 @@
         "speaker": "APODI",
         "location": "Espaço Ada Lovelace",
         "time": "16:30 às 17:30",
-        "category": "Palestra",
+        "category": "Roda de Conversa",
         "date": "11"
       }
     ]
@@ -64,8 +80,8 @@
         "date": "12"
       },
       {
-        "name": "Transformando Dados em Decisões: Uma Jornada na Criação de um Projeto de Dados",
-        "speaker": "Rafael Gomes da Silva",
+        "name": "Fotogrametria - Tornando seu celular em um scanner 3d",
+        "speaker": "Rafael Fernandes Ivo",
         "location": "Espaço Alura",
         "time": "10:00 às 11:00",
         "category": "Palestra",
@@ -74,7 +90,7 @@
       {
         "name": "Learninglab - O céu é o limite: A trajetória de 4 anos de sucesso",
         "speaker": "Pedro de Carvalho Chaaban, Johnath Silva da Costa, Rayla Matias de Lima, Anna Rachel Liberato da Silva e Francisco Honycleytton Rebouças Sena",
-        "location": "Espaço Apodi",
+        "location": "Espaço Cyrille",
         "time": "10:00 às 11:00",
         "category": "Palestra",
         "date": "12"
@@ -231,7 +247,7 @@
       {
         "name": "Identificando bugs de inclusão de gênero com GenderMag",
         "speaker": "Anna Beatriz dos Santos Marques, Kellen Raizy Noronha Monteiro e Mylena Silva Nascimento",
-        "location": "Espaço Cyrrile",
+        "location": "Espaço Cyrille",
         "time": "09:00 às 11:00",
         "category": "Oficina",
         "date": "13"
@@ -317,7 +333,7 @@
         "date": "13"
       },
       {
-        "name": "Forró",
+        "name": "Forró no Campus",
         "speaker": "Organização",
         "location": "Ada Lovelace",
         "time": "13:30 às 14:30",
@@ -362,6 +378,14 @@
         "speaker": "Alessandro Feitoza",
         "location": "Espaço Apodi",
         "time": "14:00 às 15:00",
+        "category": "Palestra",
+        "date": "13"
+      },
+      {
+        "name": "Sistema Nacional de CTI",
+        "speaker": "Cláudia Linhares",
+        "location": "Espaço Seelab",
+        "time": "14:30 às 15:30",
         "category": "Palestra",
         "date": "13"
       },
