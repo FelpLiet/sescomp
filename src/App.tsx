@@ -6,6 +6,8 @@ import { Programacao } from "./pages/programacao/index.tsx";
 import { Sponsors } from "./pages/patrocinadores/index.tsx";
 import { Home } from "./pages/home/index.tsx";
 import { Shop } from "./pages/Shop/index.tsx";
+import { Manual } from "./pages/manual/index.tsx";
+import { OQueEsperar } from './pages/o-que-esperar/index.tsx';
 
 function App() {
     return (
@@ -15,9 +17,10 @@ function App() {
             <Route path="/" element={<Layout />}>
               <Route index  element={<Home />} />
               <Route path="programacao" element={<Programacao />} />
-              <Route path="manual" element={<EmBreve />} />
+              <Route path="manual" element={<Manual />} />
               <Route path="patrocinadores" element={<Sponsors />} />
               <Route path="loja" element={<Shop />} />
+              <Route path="o-que-esperar" element={<OQueEsperar />} />
               <Route path="em-breve" element={<EmBreve />} />
             </Route>
           </Routes>

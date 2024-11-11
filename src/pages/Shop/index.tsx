@@ -43,21 +43,21 @@ export function Shop() {
                         </button>
                         <button
                             className={
+                                selectedCategory === "Canecas"
+                                    ? styles.selected
+                                    : ""
+                            }
+                            onClick={() => handleCategoryClick("Canecas")}
+                        >
+                            Canecas
+                        </button>
+                        <button
+                            className={
                                 selectedCategory === "Copos" ? styles.selected : ""
                             }
                             onClick={() => handleCategoryClick("Copos")}
                         >
                             Copos
-                        </button>
-                        <button
-                            className={
-                                selectedCategory === "Camisas"
-                                    ? styles.selected
-                                    : ""
-                            }
-                            onClick={() => handleCategoryClick("Camisas")}
-                        >
-                            Camisas
                         </button>
                         <button
                             className={
@@ -69,16 +69,6 @@ export function Shop() {
                         >
                             Cadernetas
                         </button>
-                        <button
-                            className={
-                                selectedCategory === "Canecas"
-                                    ? styles.selected
-                                    : ""
-                            }
-                            onClick={() => handleCategoryClick("Canecas")}
-                        >
-                            Canecas
-                        </button>
                     </div>
                 </div>
                 <div className={styles.products}>
@@ -88,7 +78,7 @@ export function Shop() {
                             name={produto.nome}
                             price={produto.preco}
                             imgFront={produto.imgFront}
-                            imgBack={produto.imgBack}
+                            
                         />
                     ))}
                 </div>

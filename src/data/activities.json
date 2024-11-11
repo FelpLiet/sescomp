@@ -128,14 +128,6 @@
         "date": "12"
       },
       {
-        "name": "Oficina de batucada e diálogos sobre cultura",
-        "speaker": "Pedro Berenicce Silva Dourado",
-        "location": "Sala Cultural",
-        "time": "14:30 às 15:30",
-        "category": "Oficina",
-        "date": "12"
-      },
-      {
         "name": "Uso de Inteligência Artificial no dia a dia e os impactos na Segurança da Informação e Privacidade.",
         "speaker": "Vicente Fernandes Duarte Neto e Francisca Maria Rodrigues Andrade",
         "location": "Espaço Fitbank",
@@ -237,6 +229,14 @@
         "date": "13"
       },
       {
+        "name": "Identificando bugs de inclusão de gênero com GenderMag",
+        "speaker": "Anna Beatriz dos Santos Marques, Kellen Raizy Noronha Monteiro e Mylena Silva Nascimento",
+        "location": "Espaço Cyrrile",
+        "time": "09:00 às 11:00",
+        "category": "Oficina",
+        "date": "13"
+      },
+      {
         "name": "Roda de Conversa com Influencers Locais",
         "speaker": "Mauricio Leo e Thiago Araújo",
         "location": "Ada Lovelace",
@@ -317,18 +317,26 @@
         "date": "13"
       },
       {
+        "name": "Forró",
+        "speaker": "Organização",
+        "location": "Ada Lovelace",
+        "time": "13:30 às 14:30",
+        "category": "Atividade Cultural",
+        "date": "13"
+      },
+      {
         "name": "Circuito de Atividades/Gincana",
         "speaker": "Organização",
         "location": "Ada Lovelace",
-        "time": "13:30 às 15:30",
+        "time": "14:30",
         "category": "Atividade Cultural",
         "date": "13"
       },
       {
         "name": "Da Arte ao Trabalho: Como Utilizar Técnicas Teatrais para Desenvolver Soft Skills na Área Profissional",
         "speaker": "Murilo de Jesus Caires",
-        "location": "Espaço Fitbank",
-        "time": "13:30 às 17:30",
+        "location": "Sala cultural",
+        "time": "13:30 às 15:30",
         "category": "Oficina",
         "date": "13"
       },
@@ -369,6 +377,14 @@
         "name": "Da Universidade ao Mercado de Trabalho: A Evolução de Carreira na Área de TI e o Futuro da Profissão",
         "speaker": "Vinicius de Assis - Up Value",
         "location": "Espaço Alura",
+        "time": "14:30 às 15:30",
+        "category": "Palestra",
+        "date": "13"
+      },
+      {
+        "name": "Em breve",
+        "speaker": "Cláudia Linhares",
+        "location": "Espaço Seelab",
         "time": "14:30 às 15:30",
         "category": "Palestra",
         "date": "13"
@@ -495,7 +511,7 @@
         "name": "Inteligência Artificial",
         "speaker": "Marcelo Finger",
         "location": "Espaço Up Value",
-        "time": "10:00 às 11:00",
+        "time": "13:30 às 14:30",
         "category": "Videoconferência",
         "date": "14"
       },
