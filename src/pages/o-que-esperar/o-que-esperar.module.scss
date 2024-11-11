@@ -216,7 +216,12 @@
 
 @media screen and (max-width: 768px) {
     .OQueEsperar {
-        padding: 120px 16px;
+        padding: 100px 16px;
+        gap: 64px;
+        .indicator{
+            padding-bottom: 0;
+        }
+
         .infoContainer {
             .info {
                 width: 90vw;
