@@ -2,10 +2,34 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 32px;
+    gap: 112px;
     padding: 100px 32px;
     background: white;
     
+    .indicator{
+        display: flex;
+        justify-content:flex-start;
+        width: 100%;
+        max-width: 1136px;
+        padding: 32px 0;
+        p{
+            font-family: Montserrat;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 120%;
+            letter-spacing: -1%;
+            color: #666666;
+        }
+        span{
+            cursor: pointer;
+            font-family: Montserrat;
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 120%;
+            letter-spacing: -1%;
+            color: var(--color-secondary);
+        }
+    }
     .infoContainer {
         display: flex;
         flex-wrap: wrap;
@@ -43,5 +67,188 @@
                 cursor: pointer;
             }
         }
+
+        .conteudoImg{
+            border-right: 4px solid var(--color-primary);
+            border-bottom: 4px solid var(--color-primary);
+        }
+
+        .entretenimentoImg{
+            border-right: 4px solid var(--color-secondary);
+            border-bottom: 4px solid var(--color-secondary);
+        }
+
+        .zenImg{
+            border-right: 4px solid #3A0CA3;
+            border-bottom: 4px solid #3A0CA3;
+        }
+
     }
+
+    .conteudo {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 24px;
+        .card {
+            padding: 24px;
+            border: 1px solid var(--color-button-cyan);
+            width: 362px;
+            height: 253px;
+
+            h2{
+                color: var(--color-primary);
+                font-family: "Anonymous Pro";
+                font-size: 24px;
+                font-weight: 700;
+                line-height: 120%;
+                text-align: left;
+                margin-bottom: 8px;
+            }
+
+            p{
+                color: #666666;
+                font-family: Montserrat;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 120%;
+                text-align: left;
+            }
+        }
+    }
+
+    .entretenimento {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+        .card {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: space-between;
+            padding: 24px;
+            border: 1px solid var(--color-secondary);
+            width: 556px;
+            height: 340px;
+            .details{
+                display: flex;
+                flex-direction: column;
+                gap: 16px;
+                .text{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 8px;
+                    h2{
+                        color: var(--color-secondary);
+                        font-family: "Anonymous Pro";
+                        font-size: 24px;
+                        font-weight: 700;
+                        line-height: 120%;
+                        text-align: left;
+                    }
+        
+                    p{
+                        color: #666666;
+                        font-family: Montserrat;
+                        font-size: 16px;
+                        font-weight: 400;
+                        line-height: 120%;
+                        text-align: left;
+                    }
+                }
+                .premios{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 8px;
+                    h3 {
+                        font-size: 16px;
+                        font-weight: 700;
+                        line-height: 120%;
+                    }
+    
+                    ul {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 4px;
+                        list-style: none;
+                        padding: 0;
+                        margin: 0;
+                        li {
+                            display: flex;
+                            align-items: center;
+                        }
+                    }
+                }
+
+
+            }
+
+            span{
+                cursor: pointer;
+                width: 150px;
+                height: 43px;
+                button{
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+
+}
+
+@media (max-width: 1140px) {
+    .OQueEsperar {
+        .infoContainer {
+            flex-direction: column;
+            gap: 32px;
+            
+        }
+
+        .conteudo {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 16px;
+        }
+
+        .entretenimento {
+            grid-template-columns: 1fr;
+            gap: 16px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .OQueEsperar {
+        padding: 120px 16px;
+        .infoContainer {
+            .info {
+                width: 90vw;
+                h1 {
+                    font-size: 40px;
+                }
+            }
+            img {
+                width: 100%;
+                height: 300px;
+                object-fit: cover;
+            }
+        }
+
+        .conteudo {
+            grid-template-columns: 1fr;
+            gap: 16px;
+            .card {
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        .entretenimento {
+            grid-template-columns: 1fr;
+            .card {
+                width: 100%;
+                height: fit-content;
+                gap: 16px;
+            }
+        }
+    }
+    
 }
