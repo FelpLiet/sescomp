@@ -10,19 +10,19 @@ import cadernetaIdeas from "../assets/shop/cadernetaIdeas.png";
 export const produtos = [
     {
         nome: "Caneca Circular",
-        preco: 40,
+        preco: 35,
         categoria: "Canecas",
         imgFront: canecaCircular,
     },
     {
         nome: "Caneca While",
-        preco: 40,
+        preco: 35,
         categoria: "Canecas",
         imgFront: canecaWhile,
     },
     {
         nome: "Caneca Beijos BUGS e Poesia",
-        preco: 40,
+        preco: 35,
         categoria: "Canecas",
         imgFront: canecaBeijos,
     },
@@ -33,7 +33,7 @@ export const produtos = [
         imgFront: copoCircular,
     },
     {
-        nome: "Copo </>Breakpoints Coffee Breaks",
+        nome: "Copo Breakpoints Coffee Breaks",
         preco: 12,
         categoria: "Copos",
         imgFront: copoBeakpoint,
@@ -52,7 +52,7 @@ export const produtos = [
     },
     {
         nome: "Caderneta Ideas",
-        preco: 5,
+        preco: 4,
         categoria: "Cadernetas",
         imgFront: cadernetaIdeas,
     },

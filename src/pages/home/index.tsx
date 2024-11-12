@@ -17,6 +17,8 @@ export function Home() {
         "terabyte",
         "gigabyte",
         "megabyte",
+        "kilobyte",
+        "byte",
         "parceiros",
     ];
 
