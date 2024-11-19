@@ -1,30 +1,40 @@
-# React + TypeScript + Vite
+![SESCOMP Logo](src/assets/icon.svg)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# SESCOMP Website
 
-Currently, two official plugins are available:
+Este é o site oficial da Semana de Engenharia de Software e Ciência da Computação (SESCOMP), um evento que conecta alunos, professores e profissionais apaixonados por tecnologia. O site foi desenvolvido para fornecer informações sobre o evento, programação, atividades e facilitar a inscrição dos participantes.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Sobre o Evento
 
-## Expanding the ESLint configuration
+A SESCOMP é um evento anual que promove palestras, minicursos, rodas de conversa e diversas atividades relacionadas à tecnologia e inovação. É uma oportunidade para ampliar conhecimentos, trocar experiências e estabelecer networking com profissionais da área.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Necessidade do Site
 
-- Configure the top-level `parserOptions` property like this:
+O site serve como plataforma central para divulgar todas as informações relevantes do evento, incluindo detalhes sobre as atividades, horários, locais e formas de participação. Ele facilita o acesso dos participantes às informações e permite que se inscrevam em atividades específicas.
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+## Como Rodar a Aplicação
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+Para executar o site localmente, siga os passos abaixo:
+
+1. Certifique-se de ter o [Node.js](https://nodejs.org/en/download/package-manager) instalado em sua máquina.
+2. Clone este repositório:
+  ```bash
+  git clone <URL_DO_REPOSITORIO>
+  ```
+3. Navegue até o diretório do projeto:
+  ```bash
+  cd sescomp
+  ```
+4. Instale as dependências:
+  ```bash
+  npm install
+  ```
+5. Inicie a aplicação:
+  ```bash
+  npm run dev
+  ```
+6. Acesse o site fornecido pelo terminal.
+  ```bash
+  http://localhost:<PORT>
+  ```
+
